@@ -30,7 +30,7 @@ const MOBILEVIEW=()=>{
 
             CLICK(ELs,()=>{
 
-                runUssd("*131#","1");
+                runUssd("*131#",0);
 
             });
 
@@ -42,7 +42,7 @@ const MOBILEVIEW=()=>{
 
             CLICK(ELs,()=>{
 
-                runUssd("*131#","2");
+                runUssd("*131#",1);
 
             });
 
