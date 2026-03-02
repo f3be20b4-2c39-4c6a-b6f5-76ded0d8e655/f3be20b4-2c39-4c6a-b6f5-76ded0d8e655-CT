@@ -1,1 +1,33 @@
-<h1>Build</h1>
+<section id="build-erandix">
+  <div class="container">
+    <h1>🚀 Build Beyond Imagination</h1>
+    <p>
+      Ideas ignite the spark — but <strong>Erandix</strong> fuels the fire. 
+      We don’t just dream with you, we roll up our sleeves and <strong>build</strong> 
+      the future you imagined. From concept to code, from vision to victory — 
+      we make it real.
+    </p>
+    
+    <h2>🌍 Everywhere Your Business Needs</h2>
+    <p>
+      Whether it’s <strong>Mobile apps</strong> that connect, 
+      <strong>Web platforms</strong> that scale, 
+      <strong>Desktop solutions</strong> that empower, 
+      or full‑blown <strong>Systems</strong> that transform industries — 
+      Erandix builds across every frontier.
+    </p>
+    
+    <h2>⚡ Why Choose Erandix?</h2>
+    <ul>
+      <li><strong>Speed with Precision:</strong> We deliver fast without cutting corners.</li>
+      <li><strong>Innovation with Impact:</strong> Products that don’t just work, they wow.</li>
+      <li><strong>Scalability:</strong> Solutions that grow as your business grows.</li>
+      <li><strong>Fun Factor:</strong> We make building exciting, not exhausting.</li>
+    </ul>
+    
+    <p class="tagline">
+      <em>You imagine. We build. Mobile, Web, Desktop — even Systems. 
+      Everywhere your business dreams, we deliver.</em>
+    </p>
+  </div>
+</section>
