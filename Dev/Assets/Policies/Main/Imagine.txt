@@ -1,1 +1,26 @@
-<h1>Imagine</h1>
+<section id="about-erandix">
+  <div class="container">
+    <h2>At Erandix</h2>
+    <p>
+      We empower our clients to transform the ideas they imagine into powerful realities for their businesses. 
+      You dream it — we perfect it.
+    </p>
+  </div>
+</section>
+
+<section id="fork-point">
+  <div class="container">
+    <h1>Fork Point</h1>
+    <p>
+      Every groundbreaking product in history began as a spark of imagination. 
+      One person — or a team — envisioned something extraordinary, united around a clear vision, 
+      and then took the bold step of making it real. That’s the moment when imagination meets execution, 
+      and impact is born.
+    </p>
+    <p>
+      At <strong>Erandix</strong>, we specialize in guiding businesses through that fork point: 
+      turning raw ideas into refined solutions that don’t just exist, but thrive — creating lasting value 
+      for individuals, teams, and entire communities.
+    </p>
+  </div>
+</section>

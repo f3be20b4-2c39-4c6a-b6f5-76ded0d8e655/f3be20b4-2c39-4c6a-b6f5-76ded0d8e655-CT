@@ -4,555 +4,11 @@ const ERANDES=()=>{
 
 };
 
-const DESKTOPVIEW=()=>{
-
-    HEADERVIEW((ELEMENT)=>{
-
-        LEFTTEXTVIEW(ELEMENT,"Doctor Mjomba Ali",()=>{
-
-        });
-
-        RIGHTICONVIEW(ELEMENT,WHITEYOUTUBEICON,(ELEMENTSS)=>{
-
-            CLICK(ELEMENTSS,()=>{
-
-                ROUTE(" ",VIDEOPAGES,MOBILEVIEW);
-
-            });
-
-        });
-
-        RIGHTICONVIEW(ELEMENT,WHITEWHATSAPPICON,(ELEMENT)=>{
-
-            CLICK(ELEMENT,()=>{
-
-                WHATSAPP("+254748352113");
-
-            });
-
-        });
-
-    },(ELEMENT)=>{
-
-        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
-
-            TEXTVIEW(ELEMENTS,"Family",(ELEMENTSS)=>{
-
-                CLICK(ELEMENTSS,()=>{
-
-                    DATASTORE("","Sector","Family Problems");
-
-                    DATASTORE("","SectorID","Family");
-
-                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
-
-                });
-
-            });
-
-            TEXTVIEW(ELEMENTS,"Business",(ELEMENTSS)=>{
-
-                CLICK(ELEMENTSS,()=>{
-
-                    DATASTORE("","Sector","Business Problems");
-
-                    DATASTORE("","SectorID","Business");
-
-                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
-
-                });
-
-            });
-
-            TEXTVIEW(ELEMENTS,"Health",(ELEMENTSS)=>{
-
-                CLICK(ELEMENTSS,()=>{
-
-                    DATASTORE("","Sector","Health Problems");
-
-                    DATASTORE("","SectorID","Health");
-
-                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
-
-                });
-
-            });
-
-            TEXTVIEW(ELEMENTS,"Jobs",(ELEMENTSS)=>{
-
-                CLICK(ELEMENTSS,()=>{
-
-                    DATASTORE("","Sector","Jobs Problems");
-
-                    DATASTORE("","SectorID","Jobs");
-
-                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
-
-                });
-
-            });
-
-        });
-
-        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
-
-            SERVERCOMPONENTS("Images/DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
-
-                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
-
-                    POSITIONABSOLUTE(ELEMENTS);
-                    LEFT(ELEMENTS);
-
-                });
-                
-            });
-
-            BREAK(ELEMENTS);
-
-            TEXTVIEW(ELEMENTS,"FAMILY PROBLEMS",(ELEMENTSIS)=>{
-
-                COLOR(ELEMENTSIS,BLACK);
-                BACKGROUND(ELEMENTSIS,WHITE);
-                PADDING(ELEMENTSIS,"2%");
-                WIDTH(ELEMENTSIS,"90%");
-
-            });
-
-            BREAK(ELEMENTS);
-
-            TEXTVIEW(ELEMENTS,"Tired Of Unending Family Problems,One After the Other Be It in Finances,Relationship and More.Doctor Mjomba Ali can Give You a Rest so as So Recieve the Benefits of Your Marriage.",(ELEMENTSIS)=>{
-
-                COLOR(ELEMENTSIS,WHITE);
-                BACKGROUND(ELEMENTSIS,BLACK);
-                PADDING(ELEMENTSIS,"2%");
-                WIDTH(ELEMENTSIS,"90%");
-
-            });
-
-            FOOTER(ELEMENTS,(ELEMENTSS)=>{
-
-                BACKGROUND(ELEMENTSS,BLACK);
-
-                ICONVIEW(ELEMENTSS,WHITEPHONEICON,(ELEMENTSS)=>{
-
-                    CLICK(ELEMENTSS,()=>{
-
-                        CALL("+254794094414");
-
-                    });
-
-                });
-
-                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
-
-                    CLICK(ELEMENTSS,()=>{
-
-                        WHATSAPP("+254748352113");
-
-                    });
-
-                });
-
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
-
-            SERVERCOMPONENTS("Images/DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
-
-                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
-
-                    POSITIONABSOLUTE(ELEMENTS);
-                    LEFT(ELEMENTS);
-
-                });
-                
-            });
-
-            BREAK(ELEMENTS);
-
-            TEXTVIEW(ELEMENTS,"BUSINESS PROBLEMS",(ELEMENTSIS)=>{
-
-                COLOR(ELEMENTSIS,BLACK);
-                BACKGROUND(ELEMENTSIS,WHITE);
-                PADDING(ELEMENTSIS,"2%");
-                WIDTH(ELEMENTSIS,"90%");
-
-            });
-
-            BREAK(ELEMENTS);
-
-            TEXTVIEW(ELEMENTS,"Always Failing In Business,let Doctor Mjomba Ali get you the solution so as you never get stack in making money.lets make it rain even in dry season as your neighbours husttle.Work Smart not Hard with Doctor Mjomba Ali",(ELEMENTSIS)=>{
-
-                COLOR(ELEMENTSIS,WHITE);
-                BACKGROUND(ELEMENTSIS,BLACK);
-                PADDING(ELEMENTSIS,"2%");
-                WIDTH(ELEMENTSIS,"90%");
-
-            });
-
-            FOOTER(ELEMENTS,(ELEMENTSS)=>{
-
-                BACKGROUND(ELEMENTSS,BLACK);
-
-                ICONVIEW(ELEMENTSS,WHITEPHONEICON,(ELEMENTSS)=>{
-
-                    CLICK(ELEMENTSS,()=>{
-
-                        CALL("+254794094414");
-
-                    });
-
-                });
-
-                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
-
-                    CLICK(ELEMENTSS,()=>{
-
-                        WHATSAPP("+254748352113");
-
-                    });
-
-                });
-
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
-
-            SERVERCOMPONENTS("Images/DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
-
-                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
-
-                    POSITIONABSOLUTE(ELEMENTS);
-                    LEFT(ELEMENTS);
-
-                });
-                
-            });
-
-            BREAK(ELEMENTS);
-
-            TEXTVIEW(ELEMENTS,"MARRIAGE PROBLEMS",(ELEMENTSIS)=>{
-
-                COLOR(ELEMENTSIS,BLACK);
-                BACKGROUND(ELEMENTSIS,WHITE);
-                PADDING(ELEMENTSIS,"2%");
-                WIDTH(ELEMENTSIS,"90%");
-
-            });
-
-            BREAK(ELEMENTS);
-
-            TEXTVIEW(ELEMENTS,"Are You Known in the neighbour hood for Fights with Your Loved Ones,Parthner and Kids.<br>Come Let Us Make Your Marriage a living example of peace and success without chaores in the community.Contact Us Via Our Resources.",(ELEMENTSIS)=>{
-
-                COLOR(ELEMENTSIS,WHITE);
-                BACKGROUND(ELEMENTSIS,BLACK);
-                PADDING(ELEMENTSIS,"2%");
-                WIDTH(ELEMENTSIS,"90%");
-
-            });
-
-            FOOTER(ELEMENTS,(ELEMENTSS)=>{
-
-                BACKGROUND(ELEMENTSS,BLACK);
-
-                ICONVIEW(ELEMENTSS,WHITEPHONEICON,(ELEMENTSS)=>{
-
-                    CLICK(ELEMENTSS,()=>{
-
-                        CALL("+254794094414");
-
-                    });
-
-                });
-
-                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
-
-                    CLICK(ELEMENTSS,()=>{
-
-                        WHATSAPP("+254748352113");
-
-                    });
-
-                });
-
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
-
-            SERVERCOMPONENTS("Images/DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
-
-                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
-
-                    POSITIONABSOLUTE(ELEMENTS);
-                    LEFT(ELEMENTS);
-
-                });
-                
-            });
-
-            BREAK(ELEMENTS);
-
-            TEXTVIEW(ELEMENTS,"HEALTH PROBLEMS",(ELEMENTSIS)=>{
-
-                COLOR(ELEMENTSIS,BLACK);
-                BACKGROUND(ELEMENTSIS,WHITE);
-                PADDING(ELEMENTSIS,"2%");
-                WIDTH(ELEMENTSIS,"90%");
-
-            });
-
-            BREAK(ELEMENTS);
-
-            TEXTVIEW(ELEMENTS,"Are You Well Known In the Hospitals,Month In and Month Out Your Never Leaving The Hospital ,Either YourSelf Or A Loved One<br>Let Doctor Mjomba Ali Solve That issue For You ,You Will Never Visit a Hospital Again.",(ELEMENTSIS)=>{
-
-                COLOR(ELEMENTSIS,WHITE);
-                BACKGROUND(ELEMENTSIS,BLACK);
-                PADDING(ELEMENTSIS,"2%");
-                WIDTH(ELEMENTSIS,"90%");
-
-            });
-
-            FOOTER(ELEMENTS,(ELEMENTSS)=>{
-
-                BACKGROUND(ELEMENTSS,BLACK);
-
-                ICONVIEW(ELEMENTSS,WHITEPHONEICON,(ELEMENTSS)=>{
-
-                    CLICK(ELEMENTSS,()=>{
-
-                        CALL("+254794094414");
-
-                    });
-
-                });
-
-                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
-
-                    CLICK(ELEMENTSS,()=>{
-
-                        WHATSAPP("+254748352113");
-
-                    });
-
-                });
-
-            });
-
-        });
-        
-        BREAK(ELEMENT);
-
-        TEXTVIEW(ELEMENT,"All Problems Below",(ELEMENTS)=>{
-
-            COLOR(ELEMENTS,ORANGE);
-
-        });
-
-        BREAK(ELEMENT);
-
-        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{``
-
-            TEXTVIEW(ELEMENTS,"Marriage",(ELEMENTSS)=>{
-
-                CLICK(ELEMENTSS,()=>{
-
-                    DATASTORE("","Sector","Marriage Problems");
-
-                    DATASTORE("","SectorID","Marriage");
-
-                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
-
-                });
-
-            });
-
-            TEXTVIEW(ELEMENTS,"Lost Items",(ELEMENTSS)=>{
-
-                CLICK(ELEMENTSS,()=>{
-
-                    DATASTORE("","Sector","Lost Items Problems");
-
-                    DATASTORE("","SectorID","ItemLoss");
-
-                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
-
-                });
-
-            });
-
-            TEXTVIEW(ELEMENTS,"Jobs",(ELEMENTSS)=>{
-
-                CLICK(ELEMENTSS,()=>{
-
-                    DATASTORE("","Sector","Jobs Problems");
-
-                    DATASTORE("","SectorID","Jobs");
-
-                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
-
-                });
-
-            });
-
-        });
-
-        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{``
-
-            TEXTVIEW(ELEMENTS,"Family",(ELEMENTSS)=>{
-
-                CLICK(ELEMENTSS,()=>{
-
-                    DATASTORE("","Sector","Family Problems");
-
-                    DATASTORE("","SectorID","Family");
-
-                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
-
-                });
-
-            });
-
-            TEXTVIEW(ELEMENTS,"Witch Craft",(ELEMENTSS)=>{
-
-                CLICK(ELEMENTSS,()=>{
-
-                    DATASTORE("","Sector","Witch Craft Problems");
-
-                    DATASTORE("","SectorID","WitchCraft");
-
-                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
-
-                });
-
-            });
-
-            TEXTVIEW(ELEMENTS,"Business",(ELEMENTSS)=>{
-
-                CLICK(ELEMENTSS,()=>{
-
-                    DATASTORE("","Sector","Business Problems");
-
-                    DATASTORE("","SectorID","Business");
-
-                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
-
-                });
-
-            });
-
-        });
-
-        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{``
-
-            TEXTVIEW(ELEMENTS,"Demon Attacks",(ELEMENTSS)=>{
-
-                CLICK(ELEMENTSS,()=>{
-
-                    DATASTORE("","Sector","Demon Attacks Problems");
-
-                    DATASTORE("","SectorID","DemonAttacks");
-
-                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
-
-                });
-
-            });
-
-            TEXTVIEW(ELEMENTS,"Relationship",(ELEMENTSS)=>{
-
-                CLICK(ELEMENTSS,()=>{
-
-                    DATASTORE("","Sector","Relationship Problems");
-
-                    DATASTORE("","SectorID","Relationship");
-
-                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
-
-                });
-
-            });
-
-            TEXTVIEW(ELEMENTS,"Health",(ELEMENTSS)=>{
-
-                CLICK(ELEMENTSS,()=>{
-
-                    DATASTORE("","Sector","Health Problems");
-
-                    DATASTORE("","SectorID","Health");
-
-                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
-
-                });
-
-            });
-
-        });
-        
-        BREAK(ELEMENT);
-
-        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{``
-
-            TEXTVIEW(ELEMENTS,"Email",(ELEMENTSS)=>{
-
-                CLICK(ELEMENTSS,()=>{
-
-                    ROUTE(" ",EMAILPAGES,"MOBILEVIEW");
-
-                })
-
-            });
-
-            TEXTVIEW(ELEMENTS,"App",(ELEMENTSS)=>{
-
-                COLOR(ELEMENTSS,FORESTGREEN);
-
-                CLICK(ELEMENTSS,()=>{
-
-                    SERVERCOMPONENTS("Apps/Android/DoctorMjombaAli.apk",(Data)=>{
-                        
-                        WEBSITE(Data);
-
-                    })
-
-                });
-
-            });
-
-            TEXTVIEW(ELEMENTS,"Policies",(ELEMENTSS)=>{
-
-                CLICK(ELEMENTSS,()=>{
-
-                    ROUTE(" ",POLICIESPAGES,MOBILEVIEW);
-
-                });
-
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-    });
-    
-};
-
 const MOBILEVIEW=()=>{
 
     HEADERVIEW((ELEMENT)=>{
 
-        LEFTTEXTVIEW(ELEMENT,"Doctor Mjomba Ali",()=>{
+        LEFTTEXTVIEW(ELEMENT,"Erandix",()=>{
 
         });
 
@@ -562,95 +18,129 @@ const MOBILEVIEW=()=>{
 
         });
 
-        RIGHTICONVIEW(ELEMENT,WHITEYOUTUBEICON,BLACKYOUTUBEICON,(ELEMENTSS)=>{
+        RIGHTTEXTVIEW(ELEMENT,"About Us",(ELEMENTSS)=>{
 
-            CLICK(ELEMENTSS,()=>{
-
-                ROUTE(" ",VIDEOPAGES,MOBILEVIEW);
-
-            });
-
-        });
-
-        RIGHTICONVIEW(ELEMENT,WHITEWHATSAPPICON,BLACKWHATSAPPICON,(ELEMENT)=>{
-
-            CLICK(ELEMENT,()=>{
-
-                WHATSAPP("+254748352113");
-
-            });
+            FORWARDNAV(ELEMENTSS,MOBILEABOUTUSPAGE,MOBILEVIEW);
 
         });
 
     },(ELEMENT)=>{
 
-        BREAK(ELEMENT);
+        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
+
+            TEXTVIEW(ELEMENTS,"Imagine",(ELSEE)=>{
+
+                CLICK(ELSEE,()=>{
+
+                    BOTTOMNAV("","Imagine",(ELSE)=>{
+
+                        LOADERVIEW(ELEMENT,(LOAD)=>{
+
+                            SERVERASSETS("Policies/Main/Imagine.txt",(Data)=>{
+
+                                DISPLAYHIDDEN(LOAD);
+
+                                DISPLAY(ELSE,Data);
+
+                            });
+
+                        });
+
+                    });
+
+                });
+
+            });
+
+            TEXTVIEW(ELEMENTS,"Build",(ELSEE)=>{
+
+                CLICK(ELSEE,()=>{
+
+                    BOTTOMNAV("","Build",(ELSE)=>{
+
+                        LOADERVIEW(ELEMENT,(LOAD)=>{
+
+                            SERVERASSETS("Policies/Main/Build.txt",(Data)=>{
+
+                                DISPLAYHIDDEN(LOAD);
+
+                                DISPLAY(ELSE,Data);
+
+                            });
+
+                        });
+
+                    });
+
+                });
+
+            });
+
+            TEXTVIEW(ELEMENTS,"Inspire",(ELSEE)=>{
+
+                CLICK(ELSEE,()=>{
+
+                    BOTTOMNAV("","Inspire",(ELSE)=>{
+
+                        LOADERVIEW(ELEMENT,(LOAD)=>{
+
+                            SERVERASSETS("Policies/Main/Inspire.txt",(Data)=>{
+
+                                DISPLAYHIDDEN(LOAD);
+
+                                DISPLAY(ELSE,Data);
+
+                            });
+
+                        });
+
+                    });
+
+                });
+
+            });
+
+        });
 
         DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
 
-            SERVERCOMPONENTS("Images/DoctorMjombaAli/Lucky.jpg",(DATA)=>{
+            OVERFLOWHIDDEN(ELEMENTS);
 
-                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
+            RADIUS(ELEMENTS,"0");
 
-                    POSITIONABSOLUTE(ELEMENTS);
-                    LEFT(ELEMENTS);
-        
+            SERVERCOMPONENTS("Images/AppDevelopment.webp",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELIS)=>{
+    
                 });
-                
-            });
-
-            BREAK(ELEMENTS);
-
-            TEXTVIEW(ELEMENTS,"TRADITIONAL AFRICAN <br><br>African Rennounced Herbal Doctor,Lets Get Your Problems Solved WithOut Hustle.<br><br>With Years Of experience in African chemistry,<br><br>Come Become Financially Rich With Doctor Mjomba Ali.",(ELEMENTSIS)=>{
-
-                COLOR(ELEMENTSIS,WHITE);
-                BACKGROUND(ELEMENTSIS,"#00000090");
-                PADDING(ELEMENTSIS,"2%");
-                WIDTH(ELEMENTSIS,"90%");
 
             });
 
-        });
+            FOOTER(ELEMENTS,(ELEMENTSI)=>{
 
-        BREAK(ELEMENT);
+                ELEMENTEDBACKGROUND(ELEMENTSI);
 
-        TEXTVIEW(ELEMENT,"OUR SERVICES",(ELEMENTSIS)=>{
+                LEFTTEXTVIEW(ELEMENTSI,"App Development",()=>{
 
-        });
+                });
 
-        DIVVIEW(ELEMENT,"95%","auto",TRANSPARENT,(ELEMENTS)=>{
+                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,BLACKNEXTICON,()=>{
 
-            LOADERVIEW(ELEMENTS,(LOAD)=>{
+                });
 
-                REDUXEDDATA(MJOMBAALIDATABASELINK,"Catergory",(Data)=>{
+            });
 
-                    DISPLAYHIDDEN(LOAD);
+            CLICK(ELEMENTS,()=>{
 
-                    TABLEVIEW(ELEMENTS,"45%","200px",TRANSPARENT,"2%",(ELES)=>{
+                BOTTOMNAV("","App Development",(ELSE)=>{
 
-                        IMAGE(ELES,"","",Data.Image,TRANSPARENT,(ELEMENTS)=>{
+                    LOADERVIEW(ELEMENT,(LOAD)=>{
 
-                            POSITIONABSOLUTE(ELEMENTS);
-                            LEFT(ELEMENTS);
+                        SERVERASSETS("Policies/Main/AppDevt.txt",(Data)=>{
 
-                        });
+                            DISPLAYHIDDEN(LOAD);
 
-                        TEXTVIEW(ELES,Data.Name,(ELEMENTSIS)=>{
-
-                            ELEMENTEDBACKGROUND(ELEMENTSIS);
-                            PADDING(ELEMENTSIS,"2%");
-                            WIDTH(ELEMENTSIS,"90%");
-                            TOP(ELEMENTSIS,"30%");
-
-                        });
-
-                        CLICK(ELES,()=>{
-
-                            DATASTORE("","Sector",Data.Name);
-
-                            DATASTORE("","Names",Data.Link);
-
-                            ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+                            DISPLAY(ELSE,Data);
 
                         });
 
@@ -659,274 +149,6 @@ const MOBILEVIEW=()=>{
                 });
 
             });
-            
-        });
- 
-        BREAK(ELEMENT);
-
-        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
-
-            SERVERCOMPONENTS("Images/DoctorMjombaAli/fproblems.jpeg",(DATA)=>{
-
-                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
-
-                    POSITIONABSOLUTE(ELEMENTS);
-                    LEFT(ELEMENTS);
-
-                });
-                
-            });
-
-            BREAK(ELEMENTS);
-
-            TEXTVIEW(ELEMENTS,"FAMILY PROBLEMS",(ELEMENTSIS)=>{
-
-                COLOR(ELEMENTSIS,BLACK);
-                BACKGROUND(ELEMENTSIS,WHITE);
-                PADDING(ELEMENTSIS,"2%");
-                WIDTH(ELEMENTSIS,"90%");
-
-            });
-
-            BREAK(ELEMENTS);
-
-            TEXTVIEW(ELEMENTS,"Tired Of Unending Family Problems,One After the Other Be It in Finances,Relationship and More.Doctor Mjomba Ali can Give You a Rest so as So Recieve the Benefits of Your Marriage.",(ELEMENTSIS)=>{
-
-                COLOR(ELEMENTSIS,WHITE);
-                BACKGROUND(ELEMENTSIS,"#00000090");
-                PADDING(ELEMENTSIS,"2%");
-                WIDTH(ELEMENTSIS,"90%");
-
-            });
-
-            FOOTER(ELEMENTS,(ELEMENTSS)=>{
-
-                ELEMENTEDBACKGROUND(ELEMENTSS);
-
-                ICONVIEW(ELEMENTSS,WHITEPHONEICON,BLACKPHONEICON,(ELEMENTSS)=>{
-
-                    CLICK(ELEMENTSS,()=>{
-
-                        CALL("+254794094414");
-
-                    });
-
-                });
-
-                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,BLACKWHATSAPPICON,(ELEMENTSS)=>{
-
-                    CLICK(ELEMENTSS,()=>{
-
-                        WHATSAPP("+254748352113");
-
-                    });
-
-                });
-
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
-
-            SERVERCOMPONENTS("Images/DoctorMjombaAli/Third.jpeg",(DATA)=>{
-
-                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
-
-                    POSITIONABSOLUTE(ELEMENTS);
-                    LEFT(ELEMENTS);
-
-                });
-                
-            });
-
-            BREAK(ELEMENTS);
-
-            TEXTVIEW(ELEMENTS,"BUSINESS PROBLEMS",(ELEMENTSIS)=>{
-
-                COLOR(ELEMENTSIS,BLACK);
-                BACKGROUND(ELEMENTSIS,WHITE);
-                PADDING(ELEMENTSIS,"2%");
-                WIDTH(ELEMENTSIS,"90%");
-
-            });
-
-            BREAK(ELEMENTS);
-
-            TEXTVIEW(ELEMENTS,"Always Failing In Business,let Doctor Mjomba Ali get you the solution so as you never get stack in making money.lets make it rain even in dry season as your neighbours husttle.Work Smart not Hard with Doctor Mjomba Ali",(ELEMENTSIS)=>{
-
-                COLOR(ELEMENTSIS,WHITE);
-                BACKGROUND(ELEMENTSIS,"#00000090");
-                PADDING(ELEMENTSIS,"2%");
-                WIDTH(ELEMENTSIS,"90%");
-
-            });
-
-            FOOTER(ELEMENTS,(ELEMENTSS)=>{
-
-                ELEMENTEDBACKGROUND(ELEMENTSS);
-
-                ICONVIEW(ELEMENTSS,WHITEPHONEICON,BLACKPHONEICON,(ELEMENTSS)=>{
-
-                    CLICK(ELEMENTSS,()=>{
-
-                        CALL("+254794094414");
-
-                    });
-
-                });
-
-                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,BLACKWHATSAPPICON,(ELEMENTSS)=>{
-
-                    CLICK(ELEMENTSS,()=>{
-
-                        WHATSAPP("+254748352113");
-
-                    });
-
-                });
-
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
-
-            SERVERCOMPONENTS("Images/DoctorMjombaAli/mmarraige.jpeg",(DATA)=>{
-
-                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
-
-                    POSITIONABSOLUTE(ELEMENTS);
-                    LEFT(ELEMENTS);
-
-                });
-                
-            });
-
-            BREAK(ELEMENTS);
-
-            TEXTVIEW(ELEMENTS,"MARRIAGE PROBLEMS",(ELEMENTSIS)=>{
-
-                COLOR(ELEMENTSIS,BLACK);
-                BACKGROUND(ELEMENTSIS,WHITE);
-                PADDING(ELEMENTSIS,"2%");
-                WIDTH(ELEMENTSIS,"90%");
-
-            });
-
-            BREAK(ELEMENTS);
-
-            TEXTVIEW(ELEMENTS,"Are You Known in the neighbour hood for Fights with Your Loved Ones,Parthner and Kids.<br>Come Let Us Make Your Marriage a living example of peace and success without chaores in the community.Contact Us Via Our Resources.",(ELEMENTSIS)=>{
-
-                COLOR(ELEMENTSIS,WHITE);
-                BACKGROUND(ELEMENTSIS,"#00000090");
-                PADDING(ELEMENTSIS,"2%");
-                WIDTH(ELEMENTSIS,"90%");
-
-            });
-
-            FOOTER(ELEMENTS,(ELEMENTSS)=>{
-
-                ELEMENTEDBACKGROUND(ELEMENTSS);
-
-                ICONVIEW(ELEMENTSS,WHITEPHONEICON,BLACKPHONEICON,(ELEMENTSS)=>{
-
-                    CLICK(ELEMENTSS,()=>{
-
-                        CALL("+254794094414");
-
-                    });
-
-                });
-
-                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,BLACKWHATSAPPICON,(ELEMENTSS)=>{
-
-                    CLICK(ELEMENTSS,()=>{
-
-                        WHATSAPP("+254748352113");
-
-                    });
-
-                });
-
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
-
-            SERVERCOMPONENTS("Images/DoctorMjombaAli/health.jpeg",(DATA)=>{
-
-                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
-
-                    POSITIONABSOLUTE(ELEMENTS);
-                    LEFT(ELEMENTS);
-
-                });
-                
-            });
-
-            BREAK(ELEMENTS);
-
-            TEXTVIEW(ELEMENTS,"HEALTH PROBLEMS",(ELEMENTSIS)=>{
-
-                COLOR(ELEMENTSIS,BLACK);
-                BACKGROUND(ELEMENTSIS,WHITE);
-                PADDING(ELEMENTSIS,"2%");
-                WIDTH(ELEMENTSIS,"90%");
-
-            });
-
-            BREAK(ELEMENTS);
-
-            TEXTVIEW(ELEMENTS,"Are You Well Known In the Hospitals,Month In and Month Out Your Never Leaving The Hospital ,Either YourSelf Or A Loved One<br>Let Doctor Mjomba Ali Solve That issue For You ,You Will Never Visit a Hospital Again.",(ELEMENTSIS)=>{
-
-                COLOR(ELEMENTSIS,WHITE);
-                BACKGROUND(ELEMENTSIS,"#00000090");
-                PADDING(ELEMENTSIS,"2%");
-                WIDTH(ELEMENTSIS,"90%");
-
-            });
-
-            FOOTER(ELEMENTS,(ELEMENTSS)=>{
-
-                ELEMENTEDBACKGROUND(ELEMENTSS);
-
-                ICONVIEW(ELEMENTSS,WHITEPHONEICON,BLACKPHONEICON,(ELEMENTSS)=>{
-
-                    CLICK(ELEMENTSS,()=>{
-
-                        CALL("+254794094414");
-
-                    });
-
-                });
-
-                ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,BLACKWHATSAPPICON,(ELEMENTSS)=>{
-
-                    CLICK(ELEMENTSS,()=>{
-
-                        WHATSAPP("+254748352113");
-
-                    });
-
-                });
-
-            });
-
-        });
-        
-        BREAK(ELEMENT);
-
-        TEXTVIEW(ELEMENT,"All Problems Below",(ELEMENTS)=>{
-
-            COLOR(ELEMENTS,ORANGE);
 
         });
 
@@ -934,38 +156,47 @@ const MOBILEVIEW=()=>{
 
         DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
 
-            SERVERCOMPONENTS("Images/DoctorMjombaAli/First.jpeg",(DATA)=>{
+            OVERFLOWHIDDEN(ELEMENTS);
 
-                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
+            SERVERCOMPONENTS("Images/DesktopDevelopment.png",(DATA)=>{
 
-                    POSITIONABSOLUTE(ELEMENTS);
-                    LEFT(ELEMENTS);
-                    WIDTH(ELEMENTS,"50%");
-
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,()=>{
+    
                 });
-                
+
             });
 
-            SERVERCOMPONENTS("Images/DoctorMjombaAli/Second.jpeg",(DATA)=>{
+            FOOTER(ELEMENTS,(ELEMENTSI)=>{
 
-                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
+                ELEMENTEDBACKGROUND(ELEMENTSI);
 
-                    POSITIONABSOLUTE(ELEMENTS);
-                    RIGHT(ELEMENTS);
-                    WIDTH(ELEMENTS,"50%");
+                LEFTTEXTVIEW(ELEMENTSI,"Desktop Development",()=>{
 
                 });
-                
+
+                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,BLACKNEXTICON,()=>{
+
+                });
+
             });
-            
-            BREAK(ELEMENTS);
 
-            TEXTVIEW(ELEMENTS,"PERSONAL ISSUES<br><br>Doctor Mjomba Ali Works On People With All Issues,Starting From Those with Ghost Attacks Up to those with generational curses. <br><br>Whats Wrong With You Being Broke All The Time,Come Taste Money In Your Life.",(ELEMENTSIS)=>{
+            CLICK(ELEMENTS,()=>{
 
-                COLOR(ELEMENTSIS,WHITE);
-                BACKGROUND(ELEMENTSIS,"#00000090");
-                PADDING(ELEMENTSIS,"2%");
-                WIDTH(ELEMENTSIS,"90%");
+                BOTTOMNAV("","Desktop Development",(ELSE)=>{
+
+                    LOADERVIEW(ELEMENT,(LOAD)=>{
+
+                        SERVERASSETS("Policies/Main/DesktopDevt.txt",(Data)=>{
+
+                            DISPLAYHIDDEN(LOAD);
+
+                            DISPLAY(ELSE,Data);
+
+                        });
+
+                    });
+
+                });
 
             });
 
@@ -973,91 +204,47 @@ const MOBILEVIEW=()=>{
 
         BREAK(ELEMENT);
 
-        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{``
+        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
 
-            TEXTVIEW(ELEMENTS,"Marriage",(ELEMENTSS)=>{
+            OVERFLOWHIDDEN(ELEMENTS);
 
-                CLICK(ELEMENTSS,()=>{
+            SERVERCOMPONENTS("Images/WebDevelopment.webp",(DATA)=>{
 
-                    DATASTORE("","Sector","Marriage Problems");
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,()=>{
+    
+                });
 
-                    DATASTORE("","SectorID","Marriage");
+            });
 
-                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+            FOOTER(ELEMENTS,(ELEMENTSI)=>{
+
+                ELEMENTEDBACKGROUND(ELEMENTSI);
+
+                LEFTTEXTVIEW(ELEMENTSI,"WebSite Development",()=>{
+
+                });
+
+                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,BLACKNEXTICON,()=>{
 
                 });
 
             });
 
-            TEXTVIEW(ELEMENTS,"Lost Items",(ELEMENTSS)=>{
+            CLICK(ELEMENTS,()=>{
 
-                CLICK(ELEMENTSS,()=>{
+                BOTTOMNAV("","WebSite Development",(ELSE)=>{
 
-                    DATASTORE("","Sector","Lost Items Problems");
+                    LOADERVIEW(ELEMENT,(LOAD)=>{
 
-                    DATASTORE("","SectorID","ItemLoss");
+                        SERVERASSETS("Policies/Main/WebDevt.txt",(Data)=>{
 
-                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+                            DISPLAYHIDDEN(LOAD);
 
-                });
+                            DISPLAY(ELSE,Data);
 
-            });
+                        });
 
-            TEXTVIEW(ELEMENTS,"Jobs",(ELEMENTSS)=>{
-
-                CLICK(ELEMENTSS,()=>{
-
-                    DATASTORE("","Sector","Jobs Problems");
-
-                    DATASTORE("","SectorID","Jobs");
-
-                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
-
-                });
-
-            });
-
-        });
-
-        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{``
-
-            TEXTVIEW(ELEMENTS,"Family",(ELEMENTSS)=>{
-
-                CLICK(ELEMENTSS,()=>{
-
-                    DATASTORE("","Sector","Family Problems");
-
-                    DATASTORE("","SectorID","Family");
-
-                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
-
-                });
-
-            });
-
-            TEXTVIEW(ELEMENTS,"Witch Craft",(ELEMENTSS)=>{
-
-                CLICK(ELEMENTSS,()=>{
-
-                    DATASTORE("","Sector","Witch Craft Problems");
-
-                    DATASTORE("","SectorID","WitchCraft");
-
-                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
-
-                });
-
-            });
-
-            TEXTVIEW(ELEMENTS,"Business",(ELEMENTSS)=>{
-
-                CLICK(ELEMENTSS,()=>{
-
-                    DATASTORE("","Sector","Business Problems");
-
-                    DATASTORE("","SectorID","Business");
-
-                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+                    });
 
                 });
 
@@ -1065,254 +252,75 @@ const MOBILEVIEW=()=>{
 
         });
 
-        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{``
-
-            TEXTVIEW(ELEMENTS,"Demon Attacks",(ELEMENTSS)=>{
-
-                CLICK(ELEMENTSS,()=>{
-
-                    DATASTORE("","Sector","Demon Attacks Problems");
-
-                    DATASTORE("","SectorID","DemonAttacks");
-
-                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
-
-                });
-
-            });
-
-            TEXTVIEW(ELEMENTS,"Relationship",(ELEMENTSS)=>{
-
-                CLICK(ELEMENTSS,()=>{
-
-                    DATASTORE("","Sector","Relationship Problems");
-
-                    DATASTORE("","SectorID","Relationship");
-
-                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
-
-                });
-
-            });
-
-            TEXTVIEW(ELEMENTS,"Health",(ELEMENTSS)=>{
-
-                CLICK(ELEMENTSS,()=>{
-
-                    DATASTORE("","Sector","Health Problems");
-
-                    DATASTORE("","SectorID","Health");
-
-                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
-
-                });
-
-            });
-
-        });
-        
         BREAK(ELEMENT);
 
-        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{``
+        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
 
-            TEXTVIEW(ELEMENTS,"Email",(ELEMENTSS)=>{
+            OVERFLOWHIDDEN(ELEMENTS);
 
-                CLICK(ELEMENTSS,()=>{
+            SERVERCOMPONENTS("Images/SystemDevelopment.webp",(DATA)=>{
 
-                    ROUTE(" ",EMAILPAGES,"MOBILEVIEW");
-
-                })
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,()=>{
+    
+                });
 
             });
 
-            TEXTVIEW(ELEMENTS,"App",(ELEMENTSS)=>{
+            FOOTER(ELEMENTS,(ELEMENTSI)=>{
 
-                COLOR(ELEMENTSS,FORESTGREEN);
+                ELEMENTEDBACKGROUND(ELEMENTSI);
 
-                CLICK(ELEMENTSS,()=>{
+                LEFTTEXTVIEW(ELEMENTSI,"System Development",()=>{
 
-                    SERVERCOMPONENTS("Apps/Android/DoctorMjombaAli.apk",(Data)=>{
-                        
-                        WEBSITE(Data);
+                });
 
-                    })
+                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,BLACKNEXTICON,()=>{
 
                 });
 
             });
+
+            CLICK(ELEMENTS,()=>{
+
+                BOTTOMNAV("","System Development",(ELSE)=>{
+
+                    LOADERVIEW(ELEMENT,(LOAD)=>{
+
+                        SERVERASSETS("Policies/Main/SystemDevt.txt",(Data)=>{
+
+                            DISPLAYHIDDEN(LOAD);
+
+                            DISPLAY(ELSE,Data);
+
+                        });
+
+                    });
+
+                });
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
 
             TEXTVIEW(ELEMENTS,"Policies",(ELEMENTSS)=>{
 
-                CLICK(ELEMENTSS,()=>{
-
-                    ROUTE(" ",POLICIESPAGES,MOBILEVIEW);
-
-                });
+                FORWARDNAV(ELEMENTSS,MOBILEPOLICY,MOBILEVIEW);
 
             });
 
-        });
+            TEXTVIEW(ELEMENTS,"Apps",(ELEMENTSS)=>{
 
-        BREAK(ELEMENT);
-        BREAK(ELEMENT);
-        BREAK(ELEMENT);
-        BREAK(ELEMENT);
-
-    });
-
-    BUTTON("","Chat",GREEN,(ELEMENT)=>{
-
-        POSITIONABSOLUTE(ELEMENT);
-        WIDTH(ELEMENT,"100px");
-        BOTTOM(ELEMENT,"10px");
-        RIGHT(ELEMENT,"2%");
-        RADIUS(ELEMENT,"10px");
-
-        COLOR(ELEMENT,WHITE);
-
-        CLICK(ELEMENT,()=>{
-
-            ROUTE(" ",CONTACTUSPAGE,"MOBILEVIEW");
-
-        });
-
-    });
-
-};
-
-const CONTACTUSPAGE=()=>{
-
-    DELETEDATASTORE("","Message");
-    DELETEDATASTORE("","Number");
-
-    HEADERVIEW((ELEMENT)=>{
-
-        LEFTICONVIEW(ELEMENT,WHITEBACKICON,BLACKBACKICON,(ELEMENTSS)=>{
-
-            CLICK(ELEMENTSS,()=>{
-
-                ROUTE(" ",MOBILEVIEW,MOBILEVIEW);
+                FORWARDNAV(ELEMENTSS,MOBILEAPPS,MOBILEVIEW);
 
             });
 
-        });
+            TEXTVIEW(ELEMENTS,"Contact Us",(ELEMENTSS)=>{
 
-        RIGHTTEXTVIEW(ELEMENT,"Live Chat",()=>{
-
-        });
-
-    },(ELEMENT)=>{
-
-        OVERFLOWHIDDEN(ELEMENT);
-
-        CONDITION(localStorage.getItem("ChatterId"),()=>{
-
-            BREAK(ELEMENT);
-
-            DIVVIEW(ELEMENT,"100%","80%",TRANSPARENT,(ELEMENTIS)=>{
-
-                ARRAYJSONCONVERTOR(localStorage.getItem("SavedChatMessages"),(Data)=>{
-
-                    REDUX(Data,(Element)=>{
-
-                        DIVVIEW(ELEMENTIS,"80%","auto",TRANSPARENT,(ELEMENTIS)=>{
-
-                            MARGINRIGHT(ELEMENTIS,"1%");
-
-                            MARGINTOP(ELEMENTIS,"10px");
-
-                            RIGHTTEXTVIEW(ELEMENTIS,Element.message,()=>{
-
-                            });
-
-                        });
-
-                    });
-
-                });
-
-                DIVVIEW(ELEMENT,"100%","auto",TRANSPARENT,(ELEMENTS)=>{
-
-                    POSITIONABSOLUTE(ELEMENTS);
-
-                    BOTTOM(ELEMENTS,"");
-
-                    LEFT(ELEMENTS,"");
-                    
-                    HEIGHT(ELEMENTS,"15%");
-
-                    DISPLAYFLEX(ELEMENTS);
-
-                    ROUNDTEXTAREAVIEW(ELEMENTS,"Chat With Doctor","Message",(ELEMENTSS)=>{
-
-                        WIDTH(ELEMENTSS,"80%");
-
-                        HEIGHT(ELEMENTSS,"70px");
-
-                    });
-                    
-                    LEFTICONVIEW(ELEMENTS,WHITESENDICON,BLACKSENDICON,(ELEMENTSS)=>{
-
-                        CLICK(ELEMENTSS,()=>{
-
-                            TOASTCONDITION(sessionStorage.getItem("Message"),"Please Type a Message",()=>{
-
-                                TOASTVIEW("Please Wait");
-
-                                MJOMBAALIDIRECTMESSAGE();
-
-                            });
-                            
-                        });
-
-                    });
-
-                });
-
-            });
-
-        },()=>{
-
-            BREAK(ELEMENT);
-
-            TEXTVIEW(ELEMENT,"Doctor Mjomba Ali Live Chat",()=>{
-
-            });
-
-            BREAK(ELEMENT);
-
-            TEXTVIEW(ELEMENT,"Access Live Chat Number",(ELS)=>{
-
-                FONTSIZE(ELS,"16px");
-
-            });
-
-            BREAK(ELEMENT);
-
-            ROUNDINPUTVIEW(ELEMENT,"tel","Enter Your Phone With Country Code","Number",()=>{
-
-            });
-
-            BREAK(ELEMENT);
-
-            BUTTON(ELEMENT,"Chat",GREEN,(ELEMENTS)=>{
-               
-                WIDTH(ELEMENTS,"100px");
-                BOTTOM(ELEMENTS,"10px");
-                RIGHT(ELEMENTS,"2%");
-                RADIUS(ELEMENTS,"10px");
-
-                CLICK(ELEMENTS,()=>{
-
-                    TOASTCONDITION(sessionStorage.getItem("Number"),"Enter Your Phone Number",()=>{
-
-                        DATASTORE(" ","ChatterId",sessionStorage.getItem("Number"));
-
-                        CONTACTUSPAGE();
-
-                    });
-
-                });
+                FORWARDNAV(ELEMENTSS,MOBILECONTACTUS,MOBILEVIEW);
 
             });
 
@@ -1322,173 +330,13 @@ const CONTACTUSPAGE=()=>{
 
 };
 
-const HEADERPAGES=()=>{
+const MOBILEABOUTUSPAGE=()=>{
 
     HEADERVIEW((ELEMENT)=>{
 
-        LEFTICONVIEW(ELEMENT,WHITEBACKICON,BLACKBACKICON,(ELEMENT)=>{
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,BLACKBACKICON,(ELSE)=>{
 
-            CLICK(ELEMENT,()=>{
-
-                ROUTE("",MOBILEVIEW,"MOBILEVIEW");
-
-            });
-
-        });
-
-        RIGHTTEXTVIEW(ELEMENT,sessionStorage.getItem("Sector"),()=>{
-
-        });
-
-    },(ELEMENT)=>{
-
-        LOADERVIEW(ELEMENT,(LOAD)=>{
-
-            GETDATA(DOCTORMJOMBAALICONNECTIONLINK,sessionStorage.getItem("Names"),(Data)=>{
-
-                DISPLAYHIDDEN(LOAD);
-
-                CLEAR(ELEMENT);
-
-                REDUX(Data,(element)=>{
-
-                    BREAK(ELEMENT);
-
-                    DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
-
-                        IMAGE(ELEMENTS,"","",element.Image,TRANSPARENT,(ELEMENTS)=>{
-
-                            POSITIONABSOLUTE(ELEMENTS);
-                            LEFT(ELEMENTS);
-
-                        });
-
-                        BREAK(ELEMENTS);
-
-                        TEXTVIEW(ELEMENTS,element.Name,(ELEMENTSIS)=>{
-
-                            BACKGROUND(ELEMENTSIS,WHITE);
-                            PADDING(ELEMENTSIS,"2%");
-                            WIDTH(ELEMENTSIS,"90%");
-
-                        });
-
-                        BREAK(ELEMENTS);
-
-                        TEXTVIEW(ELEMENTS,element.Story,(ELEMENTSIS)=>{
-
-                            PADDING(ELEMENTSIS,"2%");
-                            WIDTH(ELEMENTSIS,"90%");
-
-                        });
-
-                        FOOTER(ELEMENTS,(ELEMENTSS)=>{
-
-                            ELEMENTEDBACKGROUND(ELEMENTSS);
-
-                            ICONVIEW(ELEMENTSS,WHITEPHONEICON,BLACKPHONEICON,(ELEMENTSS)=>{
-
-                                CLICK(ELEMENTSS,()=>{
-
-                                    CALL("+254794094414");
-
-                                });
-
-                            });
-
-                            ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,BLACKWHATSAPPICON,(ELEMENTSS)=>{
-
-                                CLICK(ELEMENTSS,()=>{
-
-                                    WHATSAPP("+254748352113");
-
-                                });
-
-                            });
-
-                        });
-
-                    });
-
-                    BREAK(ELEMENT);
-
-                });
-
-            });
-
-        });
-
-    });
-
-};
-
-const EMAILPAGES=()=>{
-
-    HEADERVIEW((ELEMENT)=>{
-
-        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENT)=>{
-
-            CLICK(ELEMENT,()=>{
-
-                ROUTE("",MOBILEVIEW,"MOBILEVIEW");
-
-            });
-
-        });
-
-        RIGHTTEXTVIEW(ELEMENT,"Email Us Page",()=>{
-
-        });
-
-    },(ELEMENT)=>{
-
-        TEXTVIEW(ELEMENT,"Under Development",()=>{
-
-        });
-
-    });
-
-};
-
-const POLICIESPAGES=()=>{
-
-    HEADERVIEW((ELEMENT)=>{
-
-        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENT)=>{
-
-            CLICK(ELEMENT,()=>{
-
-                ROUTE("",MOBILEVIEW,"MOBILEVIEW");
-
-            });
-
-        });
-
-        RIGHTTEXTVIEW(ELEMENT,"Terms and Conditions",()=>{
-
-        });
-
-    },(ELEMENT)=>{
-
-        TEXTVIEW(ELEMENT,"Under Development",()=>{
-
-        });
-
-    });
-
-};
-
-const VIDEOPAGES=()=>{
-
-    HEADERVIEW((ELEMENT)=>{
-
-        LEFTICONVIEW(ELEMENT,WHITEBACKICON,BLACKBACKICON,(ELEMENT)=>{
-
-            CLICK(ELEMENT,()=>{
-
-                ROUTE("",MOBILEVIEW,"MOBILEVIEW");
-
-            });
+            BACKNAV(ELSE,MOBILEVIEW);
 
         });
 
@@ -1498,13 +346,179 @@ const VIDEOPAGES=()=>{
 
     },(ELEMENT)=>{
 
-        SERVERCOMPONENTS("Videos/MjombaAli.mp4",(PATH)=>{
+        LOADERVIEW(ELEMENT,(LOAD)=>{
 
-            VIDEO(ELEMENT,PATH,()=>{
+            SERVERASSETS("Policies/Main/AboutUs.txt",(Data)=>{
+
+                DISPLAYHIDDEN(LOAD);
+
+                DISPLAY(ELEMENT,Data);
 
             });
 
         });
+
+    });
+
+};
+
+const MOBILECONTACTUS=()=>{
+
+    HEADERVIEW((ELEMENT)=>{
+
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,BLACKBACKICON,(ELEMENTSS)=>{
+
+            BACKNAV(ELEMENTSS,MOBILEVIEW);
+
+        });
+
+        RIGHTTEXTVIEW(ELEMENT,"Contact Us",()=>{
+
+        });
+
+    },(ELEMENT)=>{
+
+        BREAK(ELEMENT);
+
+        TEXTVIEW(ELEMENT,"Fill The Form Below",()=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        ROUNDINPUTVIEW(ELEMENT,"text","Enter Your Name","Name",()=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        ROUNDINPUTVIEW(ELEMENT,"email","Enter Your Email","Email",()=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        ROUNDINPUTVIEW(ELEMENT,"","Subject Of Message","Subject",()=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        ROUNDTEXTAREAVIEW(ELEMENT,"Enter Your Message","Message",()=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        BUTTON(ELEMENT,"Submit",FORESTGREEN,(ELSEE)=>{
+
+            CLICK(ELSEE,()=>{
+
+                TOASTCONDITION(sessionStorage.getItem("Name"),"Enter Your Name",()=>{
+
+                    TOASTCONDITION(sessionStorage.getItem("Email"),"Enter Your Email",()=>{
+
+                        TOASTCONDITION(sessionStorage.getItem("Subject"),"Enter Your Subject",()=>{
+
+                            TOASTCONDITION(sessionStorage.getItem("Message"),"Compose The Message",()=>{
+
+                                TOASTVIEW("Please Wait");
+
+                            });    
+    
+                        });    
+
+                    });
+
+                });
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        BREAK(ELEMENT);
+
+        BREAK(ELEMENT);
+
+    });
+
+};
+
+const MOBILEAPPS=()=>{
+
+    HEADERVIEW((ELEMENT)=>{
+
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,BLACKBACKICON,(ELSE)=>{
+
+            BACKNAV(ELSE,MOBILEVIEW);
+
+        });
+
+        RIGHTTEXTVIEW(ELEMENT,"Apps",()=>{
+
+        });
+
+    },(ELEMENT)=>{
+
+    });
+
+};
+
+const MOBILEPOLICY=()=>{
+
+    HEADERVIEW((ELEMENT)=>{
+
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,BLACKBACKICON,(ELSE)=>{
+
+            BACKNAV(ELSE,MOBILEVIEW);
+
+        });
+
+        RIGHTTEXTVIEW(ELEMENT,"Terms and Conditions",()=>{
+
+        });
+
+    },(ELEMENT)=>{
+
+        LOADERVIEW(ELEMENT,(LOAD)=>{
+
+            SERVERASSETS("Policies/Main/Main.txt",(Data)=>{
+
+                DISPLAYHIDDEN(LOAD);
+
+                DISPLAY(ELEMENT,Data);
+
+            });
+
+        });
+
+    });
+
+};
+
+const DESKTOPVIEW=()=>{
+
+    CLEARNAV();
+
+    HEADERVIEW((ELEMENT)=>{
+
+        LEFTTEXTVIEW(ELEMENT,"Erandix",()=>{
+
+        });
+
+        ICONVIEW(ELEMENT,WHITESUNICON,BLACKSUNICON,(ELS)=>{
+
+            CHANGEMODE(ELS);
+
+        });
+
+        RIGHTICONVIEW(ELEMENT,WHITEPHONEICON,BLACKPHONEICON,(ELS)=>{
+
+        });
+
+    },()=>{
 
     });
 
