@@ -1,1 +1,30 @@
-<h1>System Devt</h1>
+<section id="systems-erandix">
+  <div class="container">
+    <h1>🖥️ Systems Development That Transforms Industries</h1>
+    <p>
+      At <strong>Erandix</strong>, we don’t just build apps — we architect <strong>systems</strong> that power entire businesses. From enterprise resource planning to industry‑specific platforms, our systems are designed to be the backbone of your digital transformation.
+    </p>
+
+    <h2>⚙️ Features That Make a System Great</h2>
+    <ul>
+      <li><strong>Cloud‑Native Architecture:</strong> Scale effortlessly across regions and workloads.</li>
+      <li><strong>AI‑Driven Intelligence:</strong> Automate processes, predict trends, and unlock insights.</li>
+      <li><strong>OTA Updates:</strong> Continuous evolution without downtime or disruption.</li>
+      <li><strong>Security First:</strong> Enterprise‑grade encryption, compliance, and resilience.</li>
+      <li><strong>Integration Ready:</strong> Connect seamlessly with APIs, mobile apps, and desktop tools.</li>
+      <li><strong>Cross‑Platform Access:</strong> Web, mobile, and desktop interfaces unified in one system.</li>
+      <li><strong>Data Power:</strong> Real‑time analytics dashboards and reporting that drive decisions.</li>
+      <li><strong>User‑Centric Design:</strong> Interfaces that empower teams, not overwhelm them.</li>
+      <li><strong>Future‑Proof:</strong> Built to adapt as your business and technology evolve.</li>
+    </ul>
+
+    <h2>⚡ Why Businesses Choose Erandix for Systems</h2>
+    <p>
+      Our systems aren’t just software — they’re <strong>strategic assets</strong>. With Erandix, you get platforms that grow with your company, reduce operational friction, and unlock new opportunities. Whether you’re a startup scaling fast or an enterprise modernizing legacy infrastructure, we deliver systems that make complexity simple.
+    </p>
+
+    <p class="tagline">
+      <em>You imagine. We build. Systems that are cloud‑native, AI‑powered, secure, and always evolving. Invest today — let’s architect the backbone of your business future.</em>
+    </p>
+  </div>
+</section>

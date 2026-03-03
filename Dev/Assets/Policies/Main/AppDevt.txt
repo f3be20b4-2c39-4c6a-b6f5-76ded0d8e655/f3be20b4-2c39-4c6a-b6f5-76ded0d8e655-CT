@@ -1,1 +1,31 @@
-<h1>App Devt</h1>
+<section id="build-erandix">
+  <div class="container">
+    <h1>🚀 Build Beyond Imagination</h1>
+    <p>
+      At <strong>Erandix</strong>, we don’t just code apps — we engineer growth. From concept to launch, we fuse creativity with cutting‑edge tech to turn bold ideas into scalable realities. Your vision deserves more than a prototype; it deserves a future.
+    </p>
+
+    <h2>📱 Mobile Development Re‑imagined</h2>
+    <p>
+      We specialize in <strong>end‑to‑end mobile app development</strong> — from sleek UI/UX design to powerful backend systems. Every app is <strong>Play Store‑ready</strong>, optimized for performance, and built with <strong>cloud‑native architecture</strong> so it scales effortlessly. With <strong>AI built‑in</strong>, your app learns, adapts, and grows with your users, delivering smarter experiences over time.
+    </p>
+    <p>
+      Forget the hassle of constant manual updates — our <strong>OTA (Over‑the‑Air) technology</strong> ensures your app evolves instantly, keeping you ahead of the curve without disrupting your customers. Whether you’re launching a startup MVP or transforming enterprise workflows, Erandix makes mobile development seamless, future‑proof, and exciting.
+    </p>
+
+    <h2>⚡ Why Businesses Choose Erandix</h2>
+    <ul>
+      <li><strong>Speed + Precision:</strong> Rapid delivery without compromise.</li>
+      <li><strong>Future‑Proof Tech:</strong> Cloud‑native, AI‑driven, always ahead.</li>
+      <li><strong>Seamless Scaling:</strong> Apps that grow as your business grows.</li>
+      <li><strong>OTA Advantage:</strong> Continuous updates, zero interruptions.</li>
+      <li><strong>Play Store Ready:</strong> Launch with confidence, reach millions.</li>
+      <li><strong>Energy + Excitement:</strong> Building with us feels like momentum, not maintenance.</li>
+    </ul>
+
+    <p class="tagline">
+      <em>You imagine. We build. AI‑powered, cloud‑native, Play Store‑ready apps that evolve with you. Invest today — let’s build your dream app together.</em>
+    </p>
+
+  </div>
+</section>

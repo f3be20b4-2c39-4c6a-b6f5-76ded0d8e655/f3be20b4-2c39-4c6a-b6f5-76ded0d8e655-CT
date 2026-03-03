@@ -1,1 +1,27 @@
-<h1>Web Devt</h1>
+<section id="web-erandix">
+  <div class="container">
+    <h1>🌐 Website Development Without Limits</h1>
+    <p>
+      At <strong>Erandix</strong>, websites aren’t just digital brochures — they’re growth engines. We design and build <strong>web platforms</strong> that scale, engage, and convert. From sleek landing pages to enterprise‑grade systems, our websites are engineered to perform and evolve with your business.
+    </p>
+
+    <h2>⚙️ Cloud‑Native + AI‑Enhanced</h2>
+    <p>
+      Every site we build is powered by <strong>cloud‑native technology</strong>, ensuring speed, reliability, and scalability across the globe. With <strong>AI integration</strong>, your platform becomes smarter over time — personalizing user journeys, automating workflows, and unlocking insights that drive growth. And with <strong>OTA updates</strong>, your web solution evolves continuously, without downtime or disruption.
+    </p>
+
+    <h2>⚡ Why Businesses Choose Erandix for Web</h2>
+    <ul>
+      <li><strong>Performance First:</strong> Lightning‑fast, secure, and optimized for all devices.</li>
+      <li><strong>Cloud‑Native Scalability:</strong> Websites that grow as your audience grows.</li>
+      <li><strong>AI Advantage:</strong> Intelligent features that personalize and adapt.</li>
+      <li><strong>OTA Updates:</strong> Seamless improvements without interruptions.</li>
+      <li><strong>Conversion‑Focused Design:</strong> Built to engage users and drive results.</li>
+      <li><strong>Future‑Ready:</strong> From startups to enterprises, we deliver platforms that last.</li>
+    </ul>
+
+    <p class="tagline">
+      <em>You imagine. We build. Web platforms that are cloud‑native, AI‑powered, and always evolving. Invest today — let’s create the website that powers your business future.</em>
+    </p>
+  </div>
+</section>

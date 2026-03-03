@@ -1,1 +1,27 @@
-<h1>Desktop Devt</h1>
+<section id="desktop-erandix">
+  <div class="container">
+    <h1>💻 Desktop Development Reinvented</h1>
+    <p>
+      At <strong>Erandix</strong>, desktop software isn’t old school — it’s the powerhouse behind modern business. We design and build <strong>desktop applications</strong> that are sleek, secure, and engineered for performance. Whether it’s enterprise‑grade solutions, productivity tools, or industry‑transforming systems, we make desktop apps that feel future‑ready.
+    </p>
+
+    <h2>🌐 Cloud‑Native + AI‑Driven</h2>
+    <p>
+      Our desktop solutions are built with <strong>cloud‑native architecture</strong>, ensuring seamless integration with your digital ecosystem. With <strong>AI intelligence</strong> baked in, your apps adapt, automate, and evolve — delivering smarter workflows and personalized experiences. And thanks to <strong>OTA updates</strong>, your desktop software stays fresh without disruptive installs or downtime.
+    </p>
+
+    <h2>⚡ Why Businesses Choose Erandix for Desktop</h2>
+    <ul>
+      <li><strong>Enterprise‑Grade Performance:</strong> Fast, reliable, and secure.</li>
+      <li><strong>Cloud‑Native Scalability:</strong> Desktop apps that connect across platforms.</li>
+      <li><strong>AI Advantage:</strong> Intelligent features that grow with your business.</li>
+      <li><strong>OTA Updates:</strong> Continuous evolution without interruptions.</li>
+      <li><strong>Cross‑Platform Power:</strong> Windows, macOS, Linux — we build everywhere.</li>
+      <li><strong>Business‑Friendly Design:</strong> Tools that empower teams, not overwhelm them.</li>
+    </ul>
+
+    <p class="tagline">
+      <em>You imagine. We build. Desktop solutions that are cloud‑native, AI‑powered, and always up‑to‑date. Invest today — let’s create the software that drives your business forward.</em>
+    </p>
+  </div>
+</section>

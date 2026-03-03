@@ -1,5 +1,82 @@
-<h1>Introduction</h1>
-<p>Welcome to Erandix and We are Honoured to Have You on Our Platform.</p>
-<h3>Who?</h3>
-<p>Erandix is a Software Development Company that Develops Websites,Mobile Apps,Desktop Software and Company Systems for Both Whole Scale Use and Small Scale Use.</p>
-<p>We have Worked with many parthners around the globe to get there companies to the feet out of debt to seeing profits with our tested and trusted methods of service delivery that is not compared.</p>
+<h1>Privacy Policy</h1>
+<p>
+Welcome to <strong>Erandix</strong>. We are honored to have you on our platform and value the trust you place in us. Protecting your privacy while delivering world‑class technology is at the core of how we operate.
+</p>
+
+<h2>1. Definitions</h2>
+<ul>
+  <li><strong>“Personal Data”</strong> means any information that identifies or can reasonably identify an individual, such as name, email, or business details.</li>
+  <li><strong>“Cloud‑Native”</strong> refers to applications and systems built to run securely and efficiently in distributed cloud environments.</li>
+  <li><strong>“Eliton”</strong> is Erandix’s proprietary in‑house technology powering intelligence and scalability across our apps and platforms.</li>
+  <li><strong>“Erandix House Pay”</strong> is our secure payment solution, currently available only in our country of origin.</li>
+  <li><strong>“OTA Updates”</strong> means over‑the‑air updates that allow apps and systems to evolve without manual reinstallation.</li>
+</ul>
+
+<h2>2. About Erandix</h2>
+<p>
+Erandix is a <strong>cloud‑native software development company</strong> specializing in Websites, Mobile Apps, Desktop Software, and Enterprise Systems. We build platforms that scale globally and empower businesses of all sizes. Our in‑house technology, <strong>Eliton</strong>, powers the intelligence behind our apps, while <strong>Erandix House Pay</strong> provides secure payment handling.
+</p>
+
+<h2>3. Information We Collect</h2>
+<ul>
+  <li><strong>Account Information:</strong> Name, email, and business details provided during registration.</li>
+  <li><strong>Usage Data:</strong> Interactions with our apps, systems, and platforms to improve performance.</li>
+  <li><strong>Payment Data:</strong> Processed securely through <strong>Erandix House Pay</strong>.</li>
+  <li><strong>Technical Data:</strong> Device information, IP addresses, and system logs for security and optimization.</li>
+</ul>
+
+<h2>4. How We Use Your Information</h2>
+<ul>
+  <li>Provide and improve our cloud‑native apps, systems, and platforms.</li>
+  <li>Enable secure transactions through <strong>Erandix House Pay</strong>.</li>
+  <li>Enhance user experience with <strong>Eliton‑powered intelligence</strong>.</li>
+  <li>Maintain compliance with legal and regulatory requirements.</li>
+</ul>
+
+<h2>5. Data Sharing & Disclosure</h2>
+<p>
+We respect your privacy. <strong>We do not sell or share your information with third parties</strong>. Data may only be disclosed:
+</p>
+<ul>
+  <li>When required by law or government regulation.</li>
+  <li>To protect the rights, property, or safety of Erandix, our clients, or partners.</li>
+  <li>To trusted service providers who support our operations under strict confidentiality agreements.</li>
+</ul>
+
+<h2>6. Security Measures</h2>
+<p>
+We implement <strong>enterprise‑grade encryption</strong>, secure authentication, and compliance standards to safeguard your data. Our systems are cloud‑native, resilient, and continuously updated to protect against evolving threats.
+</p>
+
+<h2>7. User Rights</h2>
+<p>As a client, you have the right to:</p>
+<ul>
+  <li>Access the information we hold about you.</li>
+  <li>Request corrections to inaccurate or outdated data.</li>
+  <li>Request deletion of data where legally permissible.</li>
+  <li>Understand how your data is used and stored.</li>
+</ul>
+
+<h2>8. Payments & Financial Data</h2>
+<p>
+Payments are handled exclusively through <strong>Erandix House Pay</strong>, currently available only in our country of origin. All transactions are encrypted and processed securely. We do not store sensitive financial details beyond what is necessary for compliance and service delivery.
+</p>
+
+<h2>9. International Clients</h2>
+<p>
+While <strong>Erandix House Pay</strong> is limited to our country of origin, our cloud‑native platforms and <strong>Eliton technology</strong> are designed to serve clients worldwide. We comply with applicable international data protection standards where required.
+</p>
+
+<h2>10. Policy Updates</h2>
+<p>
+We may update this Privacy Policy from time to time to reflect changes in technology, regulations, or our business practices. Updates will be posted on this page, and continued use of our services indicates acceptance of the revised policy.
+</p>
+
+<h2>11. Contact Us</h2>
+<p>
+If you have questions about this Privacy Policy or how your data is handled, please contact our support team. We are committed to transparency and protecting your trust.
+</p>
+
+<p class="tagline">
+  <em>At Erandix, your vision powers our innovation — and your privacy powers our trust.</em>
+</p>
