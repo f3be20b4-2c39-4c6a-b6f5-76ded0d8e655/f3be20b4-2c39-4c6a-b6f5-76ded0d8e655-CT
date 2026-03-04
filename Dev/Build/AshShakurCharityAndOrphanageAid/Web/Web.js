@@ -771,7 +771,7 @@ const MOBILEVIEW=()=>{
 
                 RADIUS(ELEMENTIS,"5px");
 
-                TEXTVIEW(ELEMENTIS,"App",(ELEMENTSES)=>{
+                TEXTVIEW(ELEMENTIS,"Parthners",(ELEMENTSES)=>{
 
                     MARGINTOP(ELEMENTSES,"5%");
 
@@ -785,49 +785,7 @@ const MOBILEVIEW=()=>{
 
                 RADIUS(ELEMENTIS,"5px");
 
-                TEXTVIEW(ELEMENTIS,"Contact Us",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"5%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"Policies",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"2%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"20%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"App",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"5%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"Contact Us",(ELEMENTSES)=>{
+                TEXTVIEW(ELEMENTIS,"Lincenses",(ELEMENTSES)=>{
 
                     MARGINTOP(ELEMENTSES,"5%");
 
