@@ -1,4 +1,4 @@
-export const CONNECTIONS = () => {
+export const FUCKCONNECTION = () => {
 
     STYLESDOWNLOAD();
     ASSETSCONNECTION();
