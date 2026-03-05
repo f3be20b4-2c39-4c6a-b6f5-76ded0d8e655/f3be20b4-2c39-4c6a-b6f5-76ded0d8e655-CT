@@ -1,6 +1,10 @@
 const FRAMEWORKDOWNLOAD=()=>{
 
-    CHECKER(localStorage.getItem("Env") === "Android"||"Web"||"Desktop"||"System",()=>{
+    CHECKER(localStorage.getItem("Env") === "Dev",()=>{
+
+        sessionStorage.setItem("DevMode",true);
+ 
+    },()=>{
 
         GETDATA(FRAMEWORKDATABASELINK,"Erandix",(Data)=>{
     

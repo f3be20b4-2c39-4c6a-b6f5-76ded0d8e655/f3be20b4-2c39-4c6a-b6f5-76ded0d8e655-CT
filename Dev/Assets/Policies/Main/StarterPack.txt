@@ -1,0 +1,26 @@
+<h1>Introduction</h1>
+<p>Thank You For Taking Time to Find Out What Exactly Lives in the Starter Package and We are Ready to Clear Any Questions That Are Running In Your Head.</p>
+
+<h1>Who Qualifies For Starter</h1>
+
+<p>Starter Package is a Simple But Efficient Package Thats Designed For Business that have Small Infrastructure and Plan to Get Simple Website For There Business,Those Catergories Are As listed Below.</p>
+
+<h2>Qualifiers</h2>
+
+<p>Charity Organisation</p>
+<p>Fund Raising Organisations</p>
+<p>Business Potofolio</p>
+<p>Persional Profile Potofolio</p>
+
+<h1>Expectations</h1>
+
+<p>The Starter Package Comes With One Year Of Domain Name Attached to Your Website and One Year of Hosting By Erandix and The Business Gets a Free Admin Panel to Track There Website Performance,Free Email Direct Sender System and Full Admin Control Rights to Your Website.</p>
+
+<h1>Development Cycle</h1>
+
+<p>Any User Who pays is Subjected to recieve there Website in one Month Fully Working and Running On Our Company Advanced Cloud Native Infrastructure that is Safe and Secure and trusted By many.Our Systems are Always Online and Ready For Any User to Access World Wide and Easy to Intergrate into Your Daily life to Simplify Your Activities.</p>
+
+<h1 class="red">Note</h1>
+
+<p class="red">The Money Paid For Starter Package Doesnot Include Any Mobile App Either Android or IOS,Desktop Platform For Mac Computers,Linux Computers or Windows Computes,For Any Upgrades Please Choose a Tier that Fits Your Business Model.</p>
+
