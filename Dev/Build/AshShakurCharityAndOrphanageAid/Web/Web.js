@@ -41,6 +41,62 @@ const MOBILEVIEW=()=>{
 
         RIGHTICONVIEW(ELEMENT,WHITEMENUICON,BLACKMENUICON,(ELEMENTS)=>{
 
+            CLICK(ELEMENTS,()=>{
+
+                MENUNAV(""," ","Menu",(ELSE)=>{
+
+                    BREAK(ELSE);
+
+                    LEFTTEXTVIEW(ELSE,"About Us",()=>{
+
+                        TEXTALIGN(ELSE,"Left");
+
+                        LEFT(ELSE,"5%");
+
+                    });
+
+                    BREAK(ELSE);
+
+                    LEFTTEXTVIEW(ELSE,"Our Programs",()=>{
+
+                        TEXTALIGN(ELSE,"Left");
+
+                        LEFT(ELSE,"5%");
+
+                    });
+
+                    BREAK(ELSE);
+
+                    LEFTTEXTVIEW(ELSE,"Complaints",()=>{
+
+                        TEXTALIGN(ELSE,"Left");
+
+                        LEFT(ELSE,"5%");
+
+                    });
+
+                    BREAK(ELSE);
+
+                    LEFTTEXTVIEW(ELSE,"Tech Support",()=>{
+
+                        TEXTALIGN(ELSE,"Left");
+
+                        LEFT(ELSE,"5%");
+
+                    });
+
+                    BREAK(ELSE);
+
+                    TEXTVIEW(ELSE,COPYRIGHT+"ASCOA 2026",(ELS)=>{
+
+                        TEXTALIGN(ELS,"Center");
+
+                    });
+
+                });
+ 
+            });
+
         });
 
     },(ELEMENT)=>{
@@ -67,6 +123,8 @@ const MOBILEVIEW=()=>{
             LOADERVIEW(ELEMENTS,(LOAD)=>{
 
                 GETSAVEDINDEX("Catergory",(Data)=>{
+
+                    console.log(Data)
 
                     DISPLAYHIDDEN(LOAD);
 
@@ -119,6 +177,14 @@ const MOBILEVIEW=()=>{
                     IMAGE(ELEMENTIS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
 
                         POSITIONABSOLUTE(ELEMENTSES);
+
+                        CLICK(ELEMENTSES,()=>{
+
+                            DATASTORE("","BaseName",Data.DataBaseName);
+
+                            ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
+
+                        });
     
                     });
 
@@ -190,6 +256,14 @@ const MOBILEVIEW=()=>{
                     IMAGE(ELEMENTIS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
 
                         POSITIONABSOLUTE(ELEMENTSES);
+
+                        CLICK(ELEMENTSES,()=>{
+
+                            DATASTORE("","BaseName",Data.DataBaseName);
+
+                            ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
+
+                        });
     
                     });
 
@@ -261,6 +335,14 @@ const MOBILEVIEW=()=>{
                     IMAGE(ELEMENTIS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
 
                         POSITIONABSOLUTE(ELEMENTSES);
+
+                        CLICK(ELEMENTSES,()=>{
+
+                            DATASTORE("","BaseName",Data.DataBaseName);
+
+                            ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
+
+                        });
     
                     });
 
@@ -332,6 +414,14 @@ const MOBILEVIEW=()=>{
                     IMAGE(ELEMENTIS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
 
                         POSITIONABSOLUTE(ELEMENTSES);
+
+                        CLICK(ELEMENTSES,()=>{
+
+                            DATASTORE("","BaseName",Data.DataBaseName);
+
+                            ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
+
+                        });
     
                     });
 
@@ -440,6 +530,14 @@ const MOBILEVIEW=()=>{
 
                     POSITIONABSOLUTE(ELEMENTSES);
                     LEFT(ELEMENTSES,"");
+
+                    CLICK(ELEMENTSES,()=>{
+
+                        DATASTORE("","BaseName",Data.DataBaseName);
+
+                        ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
+
+                    });
     
                 });
 
@@ -511,6 +609,14 @@ const MOBILEVIEW=()=>{
 
                     POSITIONABSOLUTE(ELEMENTSES);
                     LEFT(ELEMENTSES,"");
+
+                    CLICK(ELEMENTSES,()=>{
+
+                        DATASTORE("","BaseName",Data.DataBaseName);
+
+                        ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
+
+                    });
     
                 });
 
@@ -582,6 +688,14 @@ const MOBILEVIEW=()=>{
 
                     POSITIONABSOLUTE(ELEMENTSES);
                     LEFT(ELEMENTSES,"");
+
+                    CLICK(ELEMENTSES,()=>{
+
+                        DATASTORE("","BaseName",Data.DataBaseName);
+
+                        ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
+
+                    });
     
                 });
 
@@ -735,6 +849,14 @@ const MOBILEVIEW=()=>{
 
                     FONTSIZE(ELEMENTSES,"15px");
 
+                    CLICK(ELEMENTSES,()=>{
+
+                        BOTTOMNAV("","App",()=>{
+
+                        });
+
+                    });
+
                 });
 
             });
@@ -748,6 +870,14 @@ const MOBILEVIEW=()=>{
                     MARGINTOP(ELEMENTSES,"5%");
 
                     FONTSIZE(ELEMENTSES,"15px");
+
+                    CLICK(ELEMENTSES,()=>{
+
+                        BOTTOMNAV("","Contact US",()=>{
+                            
+                        });
+
+                    });
 
                 });
 
@@ -763,6 +893,14 @@ const MOBILEVIEW=()=>{
 
                     FONTSIZE(ELEMENTSES,"15px");
 
+                    CLICK(ELEMENTSES,()=>{
+
+                        BOTTOMNAV("","Policies",()=>{
+                            
+                        });
+
+                    });
+
                 });
 
             });
@@ -777,6 +915,14 @@ const MOBILEVIEW=()=>{
 
                     FONTSIZE(ELEMENTSES,"15px");
 
+                    CLICK(ELEMENTSES,()=>{
+
+                        BOTTOMNAV("","Parthners",()=>{
+                            
+                        });
+
+                    });
+
                 });
 
             });
@@ -790,6 +936,14 @@ const MOBILEVIEW=()=>{
                     MARGINTOP(ELEMENTSES,"5%");
 
                     FONTSIZE(ELEMENTSES,"15px");
+
+                    CLICK(ELEMENTSES,()=>{
+
+                        BOTTOMNAV("","Lincenses",()=>{
+                            
+                        });
+
+                    });
 
                 });
 
@@ -836,7 +990,7 @@ const MOBILEVIEW=()=>{
         });
 
     });   
- 
+
 };
 
 const SUBJECTSECTION=()=>{
@@ -1167,3 +1321,4 @@ const SUBJECTSECTION=()=>{
 const DESKTOPVIEW=()=>{
 
 };
+

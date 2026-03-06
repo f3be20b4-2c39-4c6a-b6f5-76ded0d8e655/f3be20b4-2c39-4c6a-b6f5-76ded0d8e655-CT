@@ -343,6 +343,12 @@ const MOBILEVIEW=()=>{
 
         BREAK(ELEMENT);
 
+        TEXTVIEW(ELEMENT,"Our Parthners",()=>{
+
+        });
+
+        BREAK(ELEMENT);
+
         INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
 
             TEXTVIEW(ELEMENTS,"Policies",(ELEMENTSS)=>{
@@ -387,25 +393,23 @@ const MOBILEABOUTUSPAGE=()=>{
 
         BREAK(ELEMENT);
 
-        TEXTVIEW(ELEMENT,"WEB PACKAGE PRICING",()=>{
+        TEXTVIEW(ELEMENT,"PACKAGE PRICING",()=>{
 
         });
 
-        BREAK(ELEMENT);
-
-        INLINEVIEW(ELEMENT,"","400px",TRANSPARENT,"",(ELEMENTS)=>{
+        INLINEVIEW(ELEMENT,"","500px",TRANSPARENT,"",(ELEMENTS)=>{
 
             OVERFLOWHIDDEN(ELEMENTS);
 
             OVERFLOWX(ELEMENTS);
 
-            DIVVIEW(ELEMENTS,"50%","390px",BLUE+"50",(ELEMENTAS)=>{
+            DIVVIEW(ELEMENTS,"80%","495px",MEDIUMSLATEBLUE,(ELEMENTAS)=>{
 
                 FLEXSHRINK(ELEMENTAS);
 
                 RADIUS(ELEMENTAS,"10px");
 
-                MARGIN(ELEMENTAS,"2%");
+                MARGIN(ELEMENTAS,"1%");
 
                 BREAK(ELEMENTAS);
 
@@ -413,15 +417,13 @@ const MOBILEABOUTUSPAGE=()=>{
 
                 });
 
-                BREAK(ELEMENTAS);
-
                 TEXTVIEW(ELEMENTAS,"Package Features",()=>{
 
                 });
 
                 INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
 
-                    LEFTTEXTVIEW(ELS,"Website "+DOUBLEARROW,()=>{
+                    LEFTTEXTVIEW(ELS,"Website",()=>{
 
                     });
 
@@ -435,7 +437,43 @@ const MOBILEABOUTUSPAGE=()=>{
 
                 INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
 
-                    LEFTTEXTVIEW(ELS,"Hosting "+DOUBLEARROW,()=>{
+                    LEFTTEXTVIEW(ELS,"Android App",()=>{
+
+                    });
+
+                    RIGHTTEXTVIEW(ELS,"0",()=>{
+
+                    });
+
+                });
+
+                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
+
+                    LEFTTEXTVIEW(ELS,"IOS App",()=>{
+
+                    });
+
+                    RIGHTTEXTVIEW(ELS,"0",()=>{
+
+                    });
+
+                });
+
+                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
+
+                    LEFTTEXTVIEW(ELS,"Desktop Platform",()=>{
+
+                    });
+
+                    RIGHTTEXTVIEW(ELS,"0",()=>{
+
+                    });
+
+                });
+
+                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
+
+                    LEFTTEXTVIEW(ELS,"Domain Name",()=>{
 
                     });
 
@@ -445,7 +483,19 @@ const MOBILEABOUTUSPAGE=()=>{
 
                 });
 
-                CONDITION(localStorage.getItem("TIMEZONE") === '"Africa/Kampala"',()=>{
+                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
+
+                    LEFTTEXTVIEW(ELS,"Hosting",()=>{
+
+                    });
+
+                    RIGHTTEXTVIEW(ELS,"Annual",()=>{
+
+                    });
+
+                });
+
+                CONDITION(localStorage.getItem("TIMEZONE") ==='"Africa/Kampala"',()=>{
 
                     TEXTVIEW(ELEMENTAS,"UGX : 1,000,000",()=>{
 
@@ -474,225 +524,37 @@ const MOBILEABOUTUSPAGE=()=>{
 
                     FONTSIZE(ES,"16px");
 
+                    CLICK(ES,()=>{
+
+                        MOBILEDETAILSPRICINGPAGE("Starter Package","Policies/Main/StarterPack.txt");
+
+                    });
+
                 });
 
             });
 
-            DIVVIEW(ELEMENTS,"50%","390px",BLUE+"50",(ELEMENTAS)=>{
+            DIVVIEW(ELEMENTS,"80%","495px",MEDIUMSLATEBLUE,(ELEMENTAS)=>{
 
                 FLEXSHRINK(ELEMENTAS);
 
                 RADIUS(ELEMENTAS,"10px");
 
-                BREAK(ELEMENTAS);
+                MARGIN(ELEMENTAS,"1%");
 
-                MARGIN(ELEMENTAS,"2%");
+                BREAK(ELEMENTAS);
 
                 TEXTVIEW(ELEMENTAS,"Business",()=>{
 
                 });
 
-                BREAK(ELEMENTAS);
-
                 TEXTVIEW(ELEMENTAS,"Package Features",()=>{
 
                 });
 
                 INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
 
-                    LEFTTEXTVIEW(ELS,"Website "+DOUBLEARROW,()=>{
-
-                    });
-
-                    RIGHTTEXTVIEW(ELS,"3",()=>{
-
-                    });
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Hosting "+DOUBLEARROW,()=>{
-
-                    });
-
-                    RIGHTTEXTVIEW(ELS,"Annual",()=>{
-
-                    });
-
-                });
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Free Admin Panel ",()=>{
-
-                    });
-
-                });
-
-                CONDITION(localStorage.getItem("TIMEZONE") === '"Africa/Kampala"',()=>{
-
-                    TEXTVIEW(ELEMENTAS,"UGX : 3,000,000",()=>{
-
-                    });
-
-                },()=>{
-
-                    TEXTVIEW(ELEMENTAS,"USD : 280",()=>{
-
-                    });
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                BUTTON(ELEMENTAS,"PAY",GREEN,(EES)=>{
-
-                    RADIUS(EES,"5px");
-                    HEIGHT(EES,"30px");
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                TEXTVIEW(ELEMENTAS,"Details",(ES)=>{
-
-                    FONTSIZE(ES,"16px");
-
-                });
-
-            });
-
-            DIVVIEW(ELEMENTS,"50%","390px",BLUE+"50",(ELEMENTAS)=>{
-
-                FLEXSHRINK(ELEMENTAS);
-
-                RADIUS(ELEMENTAS,"10px");
-
-                BREAK(ELEMENTAS);
-
-                MARGIN(ELEMENTAS,"2%");
-
-                TEXTVIEW(ELEMENTAS,"Enterprise",()=>{
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                TEXTVIEW(ELEMENTAS,"Package Features",()=>{
-
-                });
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Website "+DOUBLEARROW,()=>{
-
-                    });
-
-                    RIGHTTEXTVIEW(ELS,"5",()=>{
-
-                    });
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Hosting "+DOUBLEARROW,()=>{
-
-                    });
-
-                    RIGHTTEXTVIEW(ELS,"Annual",()=>{
-
-                    });
-
-                });
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Free Maintence",()=>{
-
-                    });
-
-                });
-
-                CONDITION(localStorage.getItem("TIMEZONE") === '"Africa/Kampala"',()=>{
-
-                    TEXTVIEW(ELEMENTAS,"UGX : 7,500,000",()=>{
-
-                    });
-
-                },()=>{
-
-                    TEXTVIEW(ELEMENTAS,"USD : 280",()=>{
-
-                    });
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                BUTTON(ELEMENTAS,"PAY",GREEN,(EES)=>{
-
-                    RADIUS(EES,"5px");
-                    HEIGHT(EES,"30px");
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                TEXTVIEW(ELEMENTAS,"Details",(ES)=>{
-
-                    FONTSIZE(ES,"16px");
-
-                });
-
-            });
-            
-        });
-
-        BREAK(ELEMENT);
-
-        BREAK(ELEMENT);
-
-        TEXTVIEW(ELEMENT,"MOBILE PACKAGE PRICING",()=>{
-
-        });
-
-        BREAK(ELEMENT);
-
-        INLINEVIEW(ELEMENT,"","400px",TRANSPARENT,"",(ELEMENTS)=>{
-
-            OVERFLOWHIDDEN(ELEMENTS);
-
-            OVERFLOWX(ELEMENTS);
-
-            DIVVIEW(ELEMENTS,"50%","390px",BLUE+"50",(ELEMENTAS)=>{
-
-                FLEXSHRINK(ELEMENTAS);
-
-                RADIUS(ELEMENTAS,"10px");
-
-                MARGIN(ELEMENTAS,"2%");
-
-                BREAK(ELEMENTAS);
-
-                TEXTVIEW(ELEMENTAS,"Starter",()=>{
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                TEXTVIEW(ELEMENTAS,"Package Features",()=>{
-
-                });
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Apps "+DOUBLEARROW,()=>{
+                    LEFTTEXTVIEW(ELS,"Website",()=>{
 
                     });
 
@@ -706,7 +568,43 @@ const MOBILEABOUTUSPAGE=()=>{
 
                 INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
 
-                    LEFTTEXTVIEW(ELS,"Hosting "+DOUBLEARROW,()=>{
+                    LEFTTEXTVIEW(ELS,"Android App",()=>{
+
+                    });
+
+                    RIGHTTEXTVIEW(ELS,"1",()=>{
+
+                    });
+
+                });
+
+                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
+
+                    LEFTTEXTVIEW(ELS,"IOS App",()=>{
+
+                    });
+
+                    RIGHTTEXTVIEW(ELS,"0",()=>{
+
+                    });
+
+                });
+
+                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
+
+                    LEFTTEXTVIEW(ELS,"Desktop Platform",()=>{
+
+                    });
+
+                    RIGHTTEXTVIEW(ELS,"0",()=>{
+
+                    });
+
+                });
+
+                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
+
+                    LEFTTEXTVIEW(ELS,"Domain Name",()=>{
 
                     });
 
@@ -716,15 +614,27 @@ const MOBILEABOUTUSPAGE=()=>{
 
                 });
 
+                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
+
+                    LEFTTEXTVIEW(ELS,"Hosting",()=>{
+
+                    });
+
+                    RIGHTTEXTVIEW(ELS,"Two Years",()=>{
+
+                    });
+
+                });
+
                 CONDITION(localStorage.getItem("TIMEZONE") === '"Africa/Kampala"',()=>{
 
-                    TEXTVIEW(ELEMENTAS,"UGX : 3,000,000",()=>{
+                    TEXTVIEW(ELEMENTAS,"UGX : 9,150,000",()=>{
 
                     });
 
                 },()=>{
 
-                    TEXTVIEW(ELEMENTAS,"USD : 280",()=>{
+                    TEXTVIEW(ELEMENTAS,"USD : 2,550",()=>{
 
                     });
 
@@ -745,225 +655,37 @@ const MOBILEABOUTUSPAGE=()=>{
 
                     FONTSIZE(ES,"16px");
 
-                });
+                    CLICK(ES,()=>{
 
-            });
-
-            DIVVIEW(ELEMENTS,"50%","390px",BLUE+"50",(ELEMENTAS)=>{
-
-                FLEXSHRINK(ELEMENTAS);
-
-                RADIUS(ELEMENTAS,"10px");
-
-                BREAK(ELEMENTAS);
-
-                MARGIN(ELEMENTAS,"2%");
-
-                TEXTVIEW(ELEMENTAS,"Business",()=>{
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                TEXTVIEW(ELEMENTAS,"Package Features",()=>{
-
-                });
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Apps "+DOUBLEARROW,()=>{
+                        MOBILEDETAILSPRICINGPAGE("Business Package","Policies/Main/BusinessPackage.txt");
 
                     });
-
-                    RIGHTTEXTVIEW(ELS,"2",()=>{
-
-                    });
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Hosting "+DOUBLEARROW,()=>{
-
-                    });
-
-                    RIGHTTEXTVIEW(ELS,"Annual",()=>{
-
-                    });
-
-                });
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Free Admin Panel ",()=>{
-
-                    });
-
-                });
-
-                CONDITION(localStorage.getItem("TIMEZONE") === '"Africa/Kampala"',()=>{
-
-                    TEXTVIEW(ELEMENTAS,"UGX : 6,000,000",()=>{
-
-                    });
-
-                },()=>{
-
-                    TEXTVIEW(ELEMENTAS,"USD : 280",()=>{
-
-                    });
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                BUTTON(ELEMENTAS,"PAY",GREEN,(EES)=>{
-
-                    RADIUS(EES,"5px");
-                    HEIGHT(EES,"30px");
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                TEXTVIEW(ELEMENTAS,"Details",(ES)=>{
-
-                    FONTSIZE(ES,"16px");
 
                 });
 
             });
 
-            DIVVIEW(ELEMENTS,"50%","390px",BLUE+"50",(ELEMENTAS)=>{
+            DIVVIEW(ELEMENTS,"80%","495px",MEDIUMSLATEBLUE,(ELEMENTAS)=>{
 
                 FLEXSHRINK(ELEMENTAS);
 
                 RADIUS(ELEMENTAS,"10px");
 
-                BREAK(ELEMENTAS);
+                MARGIN(ELEMENTAS,"1%");
 
-                MARGIN(ELEMENTAS,"2%");
+                BREAK(ELEMENTAS);
 
                 TEXTVIEW(ELEMENTAS,"Enterprise",()=>{
 
                 });
 
-                BREAK(ELEMENTAS);
-
                 TEXTVIEW(ELEMENTAS,"Package Features",()=>{
 
                 });
 
                 INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
 
-                    LEFTTEXTVIEW(ELS,"App "+DOUBLEARROW,()=>{
-
-                    });
-
-                    RIGHTTEXTVIEW(ELS,"3",()=>{
-
-                    });
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Hosting "+DOUBLEARROW,()=>{
-
-                    });
-
-                    RIGHTTEXTVIEW(ELS,"Annual",()=>{
-
-                    });
-
-                });
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Free Maintence",()=>{
-
-                    });
-
-                });
-
-                CONDITION(localStorage.getItem("TIMEZONE") === '"Africa/Kampala"',()=>{
-
-                    TEXTVIEW(ELEMENTAS,"UGX : 15,700,000",()=>{
-
-                    });
-
-                },()=>{
-
-                    TEXTVIEW(ELEMENTAS,"USD : 280",()=>{
-
-                    });
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                BUTTON(ELEMENTAS,"PAY",GREEN,(EES)=>{
-
-                    RADIUS(EES,"5px");
-                    HEIGHT(EES,"30px");
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                TEXTVIEW(ELEMENTAS,"Details",(ES)=>{
-
-                    FONTSIZE(ES,"16px");
-
-                });
-
-            });
-            
-        });
-
-        BREAK(ELEMENT);
-
-        BREAK(ELEMENT);
-
-        TEXTVIEW(ELEMENT,"DESKTOP PACKAGE PRICING",()=>{
-
-        });
-
-        BREAK(ELEMENT);
-
-        INLINEVIEW(ELEMENT,"","400px",TRANSPARENT,"",(ELEMENTS)=>{
-
-            OVERFLOWHIDDEN(ELEMENTS);
-
-            OVERFLOWX(ELEMENTS);
-
-            DIVVIEW(ELEMENTS,"50%","390px",BLUE+"50",(ELEMENTAS)=>{
-
-                FLEXSHRINK(ELEMENTAS);
-
-                RADIUS(ELEMENTAS,"10px");
-
-                MARGIN(ELEMENTAS,"2%");
-
-                BREAK(ELEMENTAS);
-
-                TEXTVIEW(ELEMENTAS,"Starter",()=>{
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                TEXTVIEW(ELEMENTAS,"Package Features",()=>{
-
-                });
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Apps "+DOUBLEARROW,()=>{
+                    LEFTTEXTVIEW(ELS,"Website",()=>{
 
                     });
 
@@ -977,264 +699,7 @@ const MOBILEABOUTUSPAGE=()=>{
 
                 INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
 
-                    LEFTTEXTVIEW(ELS,"Hosting "+DOUBLEARROW,()=>{
-
-                    });
-
-                    RIGHTTEXTVIEW(ELS,"Annual",()=>{
-
-                    });
-
-                });
-
-                CONDITION(localStorage.getItem("TIMEZONE") === '"Africa/Kampala"',()=>{
-
-                    TEXTVIEW(ELEMENTAS,"UGX : 3,000,000",()=>{
-
-                    });
-
-                },()=>{
-
-                    TEXTVIEW(ELEMENTAS,"USD : 280",()=>{
-
-                    });
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                BUTTON(ELEMENTAS,"PAY",GREEN,(EES)=>{
-
-                    RADIUS(EES,"5px");
-                    HEIGHT(EES,"30px");
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                TEXTVIEW(ELEMENTAS,"Details",(ES)=>{
-
-                    FONTSIZE(ES,"16px");
-
-                });
-
-            });
-
-            DIVVIEW(ELEMENTS,"50%","390px",BLUE+"50",(ELEMENTAS)=>{
-
-                FLEXSHRINK(ELEMENTAS);
-
-                RADIUS(ELEMENTAS,"10px");
-
-                BREAK(ELEMENTAS);
-
-                MARGIN(ELEMENTAS,"2%");
-
-                TEXTVIEW(ELEMENTAS,"Business",()=>{
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                TEXTVIEW(ELEMENTAS,"Package Features",()=>{
-
-                });
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Apps "+DOUBLEARROW,()=>{
-
-                    });
-
-                    RIGHTTEXTVIEW(ELS,"2",()=>{
-
-                    });
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Hosting "+DOUBLEARROW,()=>{
-
-                    });
-
-                    RIGHTTEXTVIEW(ELS,"Annual",()=>{
-
-                    });
-
-                });
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Free Admin Panel ",()=>{
-
-                    });
-
-                });
-
-                CONDITION(localStorage.getItem("TIMEZONE") === '"Africa/Kampala"',()=>{
-
-                    TEXTVIEW(ELEMENTAS,"UGX : 6,000,000",()=>{
-
-                    });
-
-                },()=>{
-
-                    TEXTVIEW(ELEMENTAS,"USD : 280",()=>{
-
-                    });
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                BUTTON(ELEMENTAS,"PAY",GREEN,(EES)=>{
-
-                    RADIUS(EES,"5px");
-                    HEIGHT(EES,"30px");
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                TEXTVIEW(ELEMENTAS,"Details",(ES)=>{
-
-                    FONTSIZE(ES,"16px");
-
-                });
-
-            });
-
-            DIVVIEW(ELEMENTS,"50%","390px",BLUE+"50",(ELEMENTAS)=>{
-
-                FLEXSHRINK(ELEMENTAS);
-
-                RADIUS(ELEMENTAS,"10px");
-
-                BREAK(ELEMENTAS);
-
-                MARGIN(ELEMENTAS,"2%");
-
-                TEXTVIEW(ELEMENTAS,"Enterprise",()=>{
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                TEXTVIEW(ELEMENTAS,"Package Features",()=>{
-
-                });
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"App "+DOUBLEARROW,()=>{
-
-                    });
-
-                    RIGHTTEXTVIEW(ELS,"3",()=>{
-
-                    });
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Hosting "+DOUBLEARROW,()=>{
-
-                    });
-
-                    RIGHTTEXTVIEW(ELS,"Annual",()=>{
-
-                    });
-
-                });
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Free Maintence",()=>{
-
-                    });
-
-                });
-
-                CONDITION(localStorage.getItem("TIMEZONE") === '"Africa/Kampala"',()=>{
-
-                    TEXTVIEW(ELEMENTAS,"UGX : 15,700,000",()=>{
-
-                    });
-
-                },()=>{
-
-                    TEXTVIEW(ELEMENTAS,"USD : 280",()=>{
-
-                    });
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                BUTTON(ELEMENTAS,"PAY",GREEN,(EES)=>{
-
-                    RADIUS(EES,"5px");
-                    HEIGHT(EES,"30px");
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                TEXTVIEW(ELEMENTAS,"Details",(ES)=>{
-
-                    FONTSIZE(ES,"16px");
-
-                });
-
-            });
-            
-        });
-
-        BREAK(ELEMENT);
-
-        BREAK(ELEMENT);
-
-        TEXTVIEW(ELEMENT,"SYSTEM PACKAGE PRICING",()=>{
-
-        });
-
-        BREAK(ELEMENT);
-
-        INLINEVIEW(ELEMENT,"","400px",TRANSPARENT,"",(ELEMENTS)=>{
-
-            OVERFLOWHIDDEN(ELEMENTS);
-
-            OVERFLOWX(ELEMENTS);
-
-            DIVVIEW(ELEMENTS,"50%","390px",BLUE+"50",(ELEMENTAS)=>{
-
-                FLEXSHRINK(ELEMENTAS);
-
-                RADIUS(ELEMENTAS,"10px");
-
-                MARGIN(ELEMENTAS,"2%");
-
-                BREAK(ELEMENTAS);
-
-                TEXTVIEW(ELEMENTAS,"Starter",()=>{
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                TEXTVIEW(ELEMENTAS,"Package Features",()=>{
-
-                });
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Apps "+DOUBLEARROW,()=>{
+                    LEFTTEXTVIEW(ELS,"Android App",()=>{
 
                     });
 
@@ -1244,29 +709,63 @@ const MOBILEABOUTUSPAGE=()=>{
 
                 });
 
-                BREAK(ELEMENTAS);
-
                 INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
 
-                    LEFTTEXTVIEW(ELS,"Hosting "+DOUBLEARROW,()=>{
+                    LEFTTEXTVIEW(ELS,"IOS App",()=>{
 
                     });
 
-                    RIGHTTEXTVIEW(ELS,"Annual",()=>{
+                    RIGHTTEXTVIEW(ELS,"1",()=>{
 
                     });
 
                 });
 
-                CONDITION(localStorage.getItem("TIMEZONE") === '"Africa/Kampala"',()=>{
+                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
 
-                    TEXTVIEW(ELEMENTAS,"UGX : 5,000,000",()=>{
+                    LEFTTEXTVIEW(ELS,"Desktop Platform",()=>{
+
+                    });
+
+                    RIGHTTEXTVIEW(ELS,"1",()=>{
+
+                    });
+
+                });
+
+                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
+
+                    LEFTTEXTVIEW(ELS,"Domain Name",()=>{
+
+                    });
+
+                    RIGHTTEXTVIEW(ELS,"Two Years",()=>{
+
+                    });
+
+                });
+
+                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
+
+                    LEFTTEXTVIEW(ELS,"Hosting",()=>{
+
+                    });
+
+                    RIGHTTEXTVIEW(ELS,"Five Years",()=>{
+
+                    });
+
+                });
+
+                CONDITION(localStorage.getItem("TIMEZONE") ==='"Africa/Kampala"',()=>{
+
+                    TEXTVIEW(ELEMENTAS,"UGX : 21,713,000",()=>{
 
                     });
 
                 },()=>{
 
-                    TEXTVIEW(ELEMENTAS,"USD : 280",()=>{
+                    TEXTVIEW(ELEMENTAS,"USD : 6,100",()=>{
 
                     });
 
@@ -1287,188 +786,43 @@ const MOBILEABOUTUSPAGE=()=>{
 
                     FONTSIZE(ES,"16px");
 
-                });
+                    CLICK(ES,()=>{
 
-            });
-
-            DIVVIEW(ELEMENTS,"50%","390px",BLUE+"50",(ELEMENTAS)=>{
-
-                FLEXSHRINK(ELEMENTAS);
-
-                RADIUS(ELEMENTAS,"10px");
-
-                BREAK(ELEMENTAS);
-
-                MARGIN(ELEMENTAS,"2%");
-
-                TEXTVIEW(ELEMENTAS,"Business",()=>{
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                TEXTVIEW(ELEMENTAS,"Package Features",()=>{
-
-                });
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Apps "+DOUBLEARROW,()=>{
+                        MOBILEDETAILSPRICINGPAGE("Enterprise Package","Policies/Main/EnterprisePackage.txt");
 
                     });
-
-                    RIGHTTEXTVIEW(ELS,"2",()=>{
-
-                    });
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Hosting "+DOUBLEARROW,()=>{
-
-                    });
-
-                    RIGHTTEXTVIEW(ELS,"Annual",()=>{
-
-                    });
-
-                });
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Free Admin Panel ",()=>{
-
-                    });
-
-                });
-
-                CONDITION(localStorage.getItem("TIMEZONE") === '"Africa/Kampala"',()=>{
-
-                    TEXTVIEW(ELEMENTAS,"UGX : 17,000,000",()=>{
-
-                    });
-
-                },()=>{
-
-                    TEXTVIEW(ELEMENTAS,"USD : 280",()=>{
-
-                    });
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                BUTTON(ELEMENTAS,"PAY",GREEN,(EES)=>{
-
-                    RADIUS(EES,"5px");
-                    HEIGHT(EES,"30px");
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                TEXTVIEW(ELEMENTAS,"Details",(ES)=>{
-
-                    FONTSIZE(ES,"16px");
-
-                });
-
-            });
-
-            DIVVIEW(ELEMENTS,"50%","390px",BLUE+"50",(ELEMENTAS)=>{
-
-                FLEXSHRINK(ELEMENTAS);
-
-                RADIUS(ELEMENTAS,"10px");
-
-                BREAK(ELEMENTAS);
-
-                MARGIN(ELEMENTAS,"2%");
-
-                TEXTVIEW(ELEMENTAS,"Enterprise",()=>{
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                TEXTVIEW(ELEMENTAS,"Package Features",()=>{
-
-                });
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"App "+DOUBLEARROW,()=>{
-
-                    });
-
-                    RIGHTTEXTVIEW(ELS,"3",()=>{
-
-                    });
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Hosting "+DOUBLEARROW,()=>{
-
-                    });
-
-                    RIGHTTEXTVIEW(ELS,"Annual",()=>{
-
-                    });
-
-                });
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Free Maintence",()=>{
-
-                    });
-
-                });
-
-                CONDITION(localStorage.getItem("TIMEZONE") === '"Africa/Kampala"',()=>{
-
-                    TEXTVIEW(ELEMENTAS,"UGX : 30,000,000",()=>{
-
-                    });
-
-                },()=>{
-
-                    TEXTVIEW(ELEMENTAS,"USD : 280",()=>{
-
-                    });
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                BUTTON(ELEMENTAS,"PAY",GREEN,(EES)=>{
-
-                    RADIUS(EES,"5px");
-                    HEIGHT(EES,"30px");
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                TEXTVIEW(ELEMENTAS,"Details",(ES)=>{
-
-                    FONTSIZE(ES,"16px");
 
                 });
 
             });
             
         });
+
+        BREAK(ELEMENT);
 
     });
 
+};
+
+const MOBILEDETAILSPRICINGPAGE=(NAME,PATH)=>{
+
+    BOTTOMNAV("",NAME,(ELEMENT)=>{
+
+        LOADERVIEW(ELEMENT,(LOAD)=>{
+
+            TOP(LOAD,"50%");
+
+            SERVERASSETS(PATH,(Data)=>{
+
+                DISPLAYHIDDEN(LOAD);
+
+                DISPLAY(ELEMENT,Data);
+
+            });
+
+        });
+
+    });
 };
 
 const MOBILECONTACTUS=()=>{

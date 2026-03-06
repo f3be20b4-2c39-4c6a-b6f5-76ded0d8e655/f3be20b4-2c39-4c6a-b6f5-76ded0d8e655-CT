@@ -1,6 +1,14 @@
 const ERANDES=()=>{
 
-    VIEWCONTROLLER();
+    DOWNLOADSAVEINDEX(ASCODATABASELINK,"Catergory",()=>{
+
+    },()=>{
+
+        VIEWCONTROLLER();  
+
+    });
+
+    VIEWCONTROLLER();  
 
 };
 
@@ -8,384 +16,86 @@ const MOBILEVIEW=()=>{
 
     HEADERVIEW((ELEMENT)=>{
 
-        LEFTTEXTVIEW(ELEMENT,"Erandix",()=>{
+        LEFTICONVIEW(ELEMENT,ASCOLOGO,ASCOLOGO,(ELEMENTS)=>{
+
+            WIDTH(ELEMENTS,"50px");
+            HEIGHT(ELEMENTS,"45px");
 
         });
 
-        ICONVIEW(ELEMENT,WHITESUNICON,BLACKMOONICON,(ELEMENTSS)=>{
+        LEFTTEXTVIEW(ELEMENT,"ASCOA",(ELEMENTS)=>{
 
-            CHANGEMODE(ELEMENTSS);
-
-        });
-
-        RIGHTTEXTVIEW(ELEMENT,"Book Now",(ELEMENTSS)=>{
-
-            COLOR(ELEMENTSS,WHITE);
-
-            BACKGROUND(ELEMENTSS,ORANGE);
-
-            RADIUS(ELEMENTSS,"5px");
-
-            PADDING(ELEMENTSS,"2%");
-
-            FORWARDNAV(ELEMENTSS,MOBILEABOUTUSPAGE,MOBILEVIEW);
+            COLOR(ELEMENTS,GREEN);
 
         });
 
-    },(ELEMENT)=>{
+        BUTTON(ELEMENT,"Donate",GREEN,(ELEMENTS)=>{
 
-        BREAK(ELEMENT)
+            WIDTH(ELEMENTS,"70px");
+            HEIGHT(ELEMENTS,"40px");
+            RADIUS(ELEMENTS,"5px");
 
-        TEXTVIEW(ELEMENT,"WHO WE ARE?",()=>{
-
-        });
-
-        BREAK(ELEMENT);
-
-        LEFTTEXTVIEW(ELEMENT,"Erandix empowers businesses to turn challenges into opportunities. As a B2B software development partner, we leverage advanced cloud‑native technology to streamline operations, unlock efficiency, and accelerate growth. Our solutions aren’t just about innovation — they’re about impact. By aligning technology with your business goals, we help you reduce costs, maximize returns, and drive profitability. With Erandix, you gain a partner committed to measurable results and long‑term success",(ELS)=>{
-
-            FONTSIZE(ELS,"18px");
-            TEXTALIGN(ELS,"Left");
-            WIDTH(ELS,"90%");
-            MARGINLEFT(ELS,"2%");
+            COLOR(ELEMENTS,WHITE);
 
         });
 
-        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
-
-            TEXTVIEW(ELEMENTS,"Imagine",(ELSEE)=>{
-
-                CLICK(ELSEE,()=>{
-
-                    BOTTOMNAV("","Imagine",(ELSE)=>{
-
-                        LOADERVIEW(ELEMENT,(LOAD)=>{
-
-                            TOP(LOAD,"50%");
-
-                            SERVERASSETS("Policies/Main/Imagine.txt",(Data)=>{
-
-                                DISPLAYHIDDEN(LOAD);
-
-                                DISPLAY(ELSE,Data);
-
-                            });
-
-                        });
-
-                    });
-
-                });
-
-            });
-
-            TEXTVIEW(ELEMENTS,"Build",(ELSEE)=>{
-
-                CLICK(ELSEE,()=>{
-
-                    BOTTOMNAV("","Build",(ELSE)=>{
-
-                        LOADERVIEW(ELEMENT,(LOAD)=>{
-
-                            TOP(LOAD,"50%");
-
-                            SERVERASSETS("Policies/Main/Build.txt",(Data)=>{
-
-                                DISPLAYHIDDEN(LOAD);
-
-                                DISPLAY(ELSE,Data);
-
-                            });
-
-                        });
-
-                    });
-
-                });
-
-            });
-
-            TEXTVIEW(ELEMENTS,"Inspire",(ELSEE)=>{
-
-                CLICK(ELSEE,()=>{
-
-                    BOTTOMNAV("","Inspire",(ELSE)=>{
-
-                        LOADERVIEW(ELEMENT,(LOAD)=>{
-
-                            TOP(LOAD,"50%");
-
-                            SERVERASSETS("Policies/Main/Inspire.txt",(Data)=>{
-
-                                DISPLAYHIDDEN(LOAD);
-
-                                DISPLAY(ELSE,Data);
-
-                            });
-
-                        });
-
-                    });
-
-                });
-
-            });
-
-        });
-
-        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
-
-            OVERFLOWHIDDEN(ELEMENTS);
-
-            RADIUS(ELEMENTS,"0");
-
-            SERVERCOMPONENTS("Images/AppDevelopment.webp",(DATA)=>{
-
-                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELIS)=>{
-    
-                });
-
-            });
-
-            FOOTER(ELEMENTS,(ELEMENTSI)=>{
-
-                ELEMENTEDBACKGROUND(ELEMENTSI);
-
-                LEFTTEXTVIEW(ELEMENTSI,"App Development",()=>{
-
-                });
-
-                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,BLACKNEXTICON,()=>{
-
-                });
-
-            });
+        RIGHTICONVIEW(ELEMENT,WHITEMENUICON,BLACKMENUICON,(ELEMENTS)=>{
 
             CLICK(ELEMENTS,()=>{
 
-                BOTTOMNAV("","App Development",(ELSE)=>{
+                MENUNAV(""," ","Menu",(ELSE)=>{
 
-                    LOADERVIEW(ELEMENT,(LOAD)=>{
+                    BREAK(ELSE);
 
-                        TOP(LOAD,"50%");
+                    LEFTTEXTVIEW(ELSE,"About Us",()=>{
 
-                        SERVERASSETS("Policies/Main/AppDevt.txt",(Data)=>{
+                        TEXTALIGN(ELSE,"Left");
 
-                            DISPLAYHIDDEN(LOAD);
+                        LEFT(ELSE,"5%");
 
-                            DISPLAY(ELSE,Data);
+                    });
 
-                        });
+                    BREAK(ELSE);
+
+                    LEFTTEXTVIEW(ELSE,"Our Programs",()=>{
+
+                        TEXTALIGN(ELSE,"Left");
+
+                        LEFT(ELSE,"5%");
+
+                    });
+
+                    BREAK(ELSE);
+
+                    LEFTTEXTVIEW(ELSE,"Complaints",()=>{
+
+                        TEXTALIGN(ELSE,"Left");
+
+                        LEFT(ELSE,"5%");
+
+                    });
+
+                    BREAK(ELSE);
+
+                    LEFTTEXTVIEW(ELSE,"Tech Support",()=>{
+
+                        TEXTALIGN(ELSE,"Left");
+
+                        LEFT(ELSE,"5%");
+
+                    });
+
+                    BREAK(ELSE);
+
+                    TEXTVIEW(ELSE,COPYRIGHT+"ASCOA 2026",(ELS)=>{
+
+                        TEXTALIGN(ELS,"Center");
 
                     });
 
                 });
-
+ 
             });
-
-        });
-
-        BREAK(ELEMENT);
-
-        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
-
-            OVERFLOWHIDDEN(ELEMENTS);
-
-            SERVERCOMPONENTS("Images/DesktopDevelopment.png",(DATA)=>{
-
-                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,()=>{
-    
-                });
-
-            });
-
-            FOOTER(ELEMENTS,(ELEMENTSI)=>{
-
-                ELEMENTEDBACKGROUND(ELEMENTSI);
-
-                LEFTTEXTVIEW(ELEMENTSI,"Desktop Development",()=>{
-
-                });
-
-                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,BLACKNEXTICON,()=>{
-
-                });
-
-            });
-
-            CLICK(ELEMENTS,()=>{
-
-                BOTTOMNAV("","Desktop Development",(ELSE)=>{
-
-                    LOADERVIEW(ELEMENT,(LOAD)=>{
-
-                        TOP(LOAD,"50%");
-
-                        SERVERASSETS("Policies/Main/DesktopDevt.txt",(Data)=>{
-
-                            DISPLAYHIDDEN(LOAD);
-
-                            DISPLAY(ELSE,Data);
-
-                        });
-
-                    });
-
-                });
-
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
-
-            OVERFLOWHIDDEN(ELEMENTS);
-
-            SERVERCOMPONENTS("Images/WebDevelopment.webp",(DATA)=>{
-
-                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,()=>{
-    
-                });
-
-            });
-
-            FOOTER(ELEMENTS,(ELEMENTSI)=>{
-
-                ELEMENTEDBACKGROUND(ELEMENTSI);
-
-                LEFTTEXTVIEW(ELEMENTSI,"WebSite Development",()=>{
-
-                });
-
-                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,BLACKNEXTICON,()=>{
-
-                });
-
-            });
-
-            CLICK(ELEMENTS,()=>{
-
-                BOTTOMNAV("","WebSite Development",(ELSE)=>{
-
-                    LOADERVIEW(ELEMENT,(LOAD)=>{
-
-                        TOP(LOAD,"50%");
-
-                        SERVERASSETS("Policies/Main/WebDevt.txt",(Data)=>{
-
-                            DISPLAYHIDDEN(LOAD);
-
-                            DISPLAY(ELSE,Data);
-
-                        });
-
-                    });
-
-                });
-
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
-
-            OVERFLOWHIDDEN(ELEMENTS);
-
-            SERVERCOMPONENTS("Images/SystemDevelopment.webp",(DATA)=>{
-
-                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,()=>{
-    
-                });
-
-            });
-
-            FOOTER(ELEMENTS,(ELEMENTSI)=>{
-
-                ELEMENTEDBACKGROUND(ELEMENTSI);
-
-                LEFTTEXTVIEW(ELEMENTSI,"System Development",()=>{
-
-                });
-
-                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,BLACKNEXTICON,()=>{
-
-                });
-
-            });
-
-            CLICK(ELEMENTS,()=>{
-
-                BOTTOMNAV("","System Development",(ELSE)=>{
-
-                    LOADERVIEW(ELEMENT,(LOAD)=>{
-
-                        TOP(LOAD,"50%");
-
-                        SERVERASSETS("Policies/Main/SystemDevt.txt",(Data)=>{
-
-                            DISPLAYHIDDEN(LOAD);
-
-                            DISPLAY(ELSE,Data);
-
-                        });
-
-                    });
-
-                });
-
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        TEXTVIEW(ELEMENT,"Our Parthners",()=>{
-
-        });
-
-        BREAK(ELEMENT);
-
-        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
-
-            TEXTVIEW(ELEMENTS,"Policies",(ELEMENTSS)=>{
-
-                FORWARDNAV(ELEMENTSS,MOBILEPOLICY,MOBILEVIEW);
-
-            });
-
-            TEXTVIEW(ELEMENTS,"Apps",(ELEMENTSS)=>{
-
-                FORWARDNAV(ELEMENTSS,MOBILEAPPS,MOBILEVIEW);
-
-            });
-
-            TEXTVIEW(ELEMENTS,"Contact Us",(ELEMENTSS)=>{
-
-                FORWARDNAV(ELEMENTSS,MOBILECONTACTUS,MOBILEVIEW);
-
-            });
-
-        });
-
-    });
-
-};
-
-const MOBILEABOUTUSPAGE=()=>{
-
-    HEADERVIEW((ELEMENT)=>{
-
-        LEFTICONVIEW(ELEMENT,WHITEBACKICON,BLACKBACKICON,(ELSE)=>{
-
-            BACKNAV(ELSE,MOBILEVIEW);
-
-        });
-
-        RIGHTTEXTVIEW(ELEMENT,"Listing",()=>{
 
         });
 
@@ -393,140 +103,50 @@ const MOBILEABOUTUSPAGE=()=>{
 
         BREAK(ELEMENT);
 
-        TEXTVIEW(ELEMENT,"PACKAGE PRICING",()=>{
+        TEXTVIEW(ELEMENT,"ASH SHAKUR CHARITY AND ORPHANAGE AID",(ELEMENTS)=>{
+
+            FONTSIZE(ELEMENTS,"15px");
+            COLOR(ELEMENTS,GREEN);
 
         });
 
-        INLINEVIEW(ELEMENT,"","500px",TRANSPARENT,"",(ELEMENTS)=>{
+        TEXTVIEW(ELEMENT,'"Helping The Poor Orphans and  the Needy People"',(ELEMENTS)=>{
 
-            OVERFLOWHIDDEN(ELEMENTS);
+            FONTSIZE(ELEMENTS,"13px");
+
+        });
+
+        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
 
             OVERFLOWX(ELEMENTS);
 
-            DIVVIEW(ELEMENTS,"80%","495px",MEDIUMSLATEBLUE,(ELEMENTAS)=>{
+            LOADERVIEW(ELEMENTS,(LOAD)=>{
 
-                FLEXSHRINK(ELEMENTAS);
+                GETSAVEDINDEX("Catergory",(Data)=>{
 
-                RADIUS(ELEMENTAS,"10px");
+                    console.log(Data)
 
-                MARGIN(ELEMENTAS,"1%");
+                    DISPLAYHIDDEN(LOAD);
 
-                BREAK(ELEMENTAS);
+                    BUTTON(ELEMENTS,Data.Name,TEAL,(ELEMENTS)=>{
 
-                TEXTVIEW(ELEMENTAS,"Starter",()=>{
+                        WIDTH(ELEMENTS,"auto");
+                        HEIGHT(ELEMENTS,"40px");
+                        RADIUS(ELEMENTS,"5px");
 
-                });
+                        COLOR(ELEMENTS,WHITE);
 
-                TEXTVIEW(ELEMENTAS,"Package Features",()=>{
+                        MARGINLEFT(ELEMENTS,"2%");
 
-                });
+                        FLEXSHRINK(ELEMENTS);
 
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
+                        CLICK(ELEMENTS,()=>{
 
-                    LEFTTEXTVIEW(ELS,"Website",()=>{
+                            DATASTORE("","BaseName",Data.DataBaseName);
 
-                    });
+                            ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
 
-                    RIGHTTEXTVIEW(ELS,"1",()=>{
-
-                    });
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Android App",()=>{
-
-                    });
-
-                    RIGHTTEXTVIEW(ELS,"0",()=>{
-
-                    });
-
-                });
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"IOS App",()=>{
-
-                    });
-
-                    RIGHTTEXTVIEW(ELS,"0",()=>{
-
-                    });
-
-                });
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Desktop Platform",()=>{
-
-                    });
-
-                    RIGHTTEXTVIEW(ELS,"0",()=>{
-
-                    });
-
-                });
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Domain Name",()=>{
-
-                    });
-
-                    RIGHTTEXTVIEW(ELS,"Annual",()=>{
-
-                    });
-
-                });
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Hosting",()=>{
-
-                    });
-
-                    RIGHTTEXTVIEW(ELS,"Annual",()=>{
-
-                    });
-
-                });
-
-                CONDITION(localStorage.getItem("TIMEZONE") ==='"Africa/Kampala"',()=>{
-
-                    TEXTVIEW(ELEMENTAS,"UGX : 1,000,000",()=>{
-
-                    });
-
-                },()=>{
-
-                    TEXTVIEW(ELEMENTAS,"USD : 280",()=>{
-
-                    });
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                BUTTON(ELEMENTAS,"PAY",GREEN,(EES)=>{
-
-                    RADIUS(EES,"5px");
-                    HEIGHT(EES,"30px");
-
-                });
-
-                BREAK(ELEMENTAS);
-
-                TEXTVIEW(ELEMENTAS,"Details",(ES)=>{
-
-                    FONTSIZE(ES,"16px");
-
-                    CLICK(ES,()=>{
-
-                        MOBILEDETAILSPRICINGPAGE("Starter Package","Policies/Main/StarterPack.txt");
+                        });
 
                     });
 
@@ -534,130 +154,666 @@ const MOBILEABOUTUSPAGE=()=>{
 
             });
 
-            DIVVIEW(ELEMENTS,"80%","495px",MEDIUMSLATEBLUE,(ELEMENTAS)=>{
+        });
 
-                FLEXSHRINK(ELEMENTAS);
+        BREAK(ELEMENT);
 
-                RADIUS(ELEMENTAS,"10px");
+        INLINEVIEW(ELEMENT,"95%","400px",TRANSPARENT,"2%",(ELEMENTS)=>{
 
-                MARGIN(ELEMENTAS,"1%");
+            OVERFLOWX(ELEMENTS);
 
-                BREAK(ELEMENTAS);
+            INLINEVIEW(ELEMENTS,"80%","95%",TRANSPARENT,"2%",(ELEMENTIS)=>{
 
-                TEXTVIEW(ELEMENTAS,"Business",()=>{
+                OVERFLOWX(ELEMENTIS);
 
-                });
+                MARGIN(ELEMENTIS,"2%");
 
-                TEXTVIEW(ELEMENTAS,"Package Features",()=>{
+                FLEXSHRINK(ELEMENTIS);
 
-                });
+                RADIUS(ELEMENTIS,"10px");
 
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
+                SERVERCOMPONENTS("Images/Asco/QurbanImageChild.jpeg",(DATA)=>{
 
-                    LEFTTEXTVIEW(ELS,"Website",()=>{
+                    IMAGE(ELEMENTIS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
 
-                    });
+                        POSITIONABSOLUTE(ELEMENTSES);
 
-                    RIGHTTEXTVIEW(ELS,"1",()=>{
+                        CLICK(ELEMENTSES,()=>{
 
-                    });
+                            DATASTORE("","BaseName",Data.DataBaseName);
 
-                });
+                            ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
 
-                BREAK(ELEMENTAS);
-
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Android App",()=>{
-
-                    });
-
-                    RIGHTTEXTVIEW(ELS,"1",()=>{
-
+                        });
+    
                     });
 
                 });
 
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
+                TEXTVIEW(ELEMENTIS,"RAMADAN IFTAR 2026/1447H",(ELEMENTSES)=>{
 
-                    LEFTTEXTVIEW(ELS,"IOS App",()=>{
+                    PADDING(ELEMENTSES,"5%");
 
-                    });
+                    HEIGHT(ELEMENTSES,"50px");
 
-                    RIGHTTEXTVIEW(ELS,"0",()=>{
+                    BACKGROUND(ELEMENTSES,WHITE);
 
-                    });
+                    POSITIONABSOLUTE(ELEMENTSES);
 
-                });
+                    COLOR(ELEMENTSES,BLACK);
 
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
-
-                    LEFTTEXTVIEW(ELS,"Desktop Platform",()=>{
-
-                    });
-
-                    RIGHTTEXTVIEW(ELS,"0",()=>{
-
-                    });
+                    TOP(ELEMENTSES,"0");
 
                 });
 
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
+                DIVVIEW(ELEMENTIS,"95%","200px","#00000060",(ELIS)=>{
 
-                    LEFTTEXTVIEW(ELS,"Domain Name",()=>{
+                    BOTTOM(ELIS,"20px");
 
-                    });
+                    LEFT(ELIS,"2%");
 
-                    RIGHTTEXTVIEW(ELS,"Annual",()=>{
+                    POSITIONABSOLUTE(ELIS);
+
+                    TEXTVIEW(ELIS,"This year, we will once again come together to share the blessings of Ramadan with millions of people in need who await it with hope.",(ELEMENTSES)=>{
+
+                        MARGIN(ELEMENTSES,"5%");
+
+                        FONTSIZE(ELEMENTSES,"17px");
+
+                        COLOR(ELEMENTSES,WHITE);
 
                     });
 
                 });
 
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
+                BUTTON(ELEMENTIS,"Donate",GREEN,(ELEMENTS)=>{
 
-                    LEFTTEXTVIEW(ELS,"Hosting",()=>{
+                    POSITIONABSOLUTE(ELEMENTS);
+                    WIDTH(ELEMENTS,"30%");
+                    LEFT(ELEMENTS,"40%");
+                    HEIGHT(ELEMENTS,"40px");
+                    RADIUS(ELEMENTS,"5px");
+                    BOTTOM(ELEMENTS,"50px");
 
+                    COLOR(ELEMENTS,WHITE);
+
+                });
+
+            });
+
+            INLINEVIEW(ELEMENTS,"80%","95%",TRANSPARENT,"2%",(ELEMENTIS)=>{
+
+                OVERFLOWX(ELEMENTIS);
+
+                MARGIN(ELEMENTIS,"2%");
+
+                FLEXSHRINK(ELEMENTIS);
+
+                RADIUS(ELEMENTIS,"10px");
+
+                SERVERCOMPONENTS("Images/Asco/FoodPackDistribution.jpeg",(DATA)=>{
+
+                    IMAGE(ELEMENTIS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
+
+                        POSITIONABSOLUTE(ELEMENTSES);
+
+                        CLICK(ELEMENTSES,()=>{
+
+                            DATASTORE("","BaseName",Data.DataBaseName);
+
+                            ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
+
+                        });
+    
                     });
 
-                    RIGHTTEXTVIEW(ELS,"Two Years",()=>{
+                });
+
+                TEXTVIEW(ELEMENTIS,"RAMADAN FOOD PACK 2026/1447H",(ELEMENTSES)=>{
+
+                    PADDING(ELEMENTSES,"5%");
+
+                    HEIGHT(ELEMENTSES,"50px");
+
+                    COLOR(ELEMENTSES,BLACK);
+
+                    BACKGROUND(ELEMENTSES,WHITE);
+
+                    POSITIONABSOLUTE(ELEMENTSES);
+
+                    TOP(ELEMENTSES,"0");
+
+                });
+
+                DIVVIEW(ELEMENTIS,"95%","200px","#00000060",(ELIS)=>{
+
+                    BOTTOM(ELIS,"20px");
+
+                    LEFT(ELIS,"2%");
+
+                    POSITIONABSOLUTE(ELIS);
+
+                    TEXTVIEW(ELIS,"We are preparing food packages to turn into cheerful Ramadan tables for the families in need during Ramadan.",(ELEMENTSES)=>{
+
+                        MARGIN(ELEMENTSES,"5%");
+
+                        COLOR(ELEMENTSES,WHITE);
+
+                        FONTSIZE(ELEMENTSES,"17px");
 
                     });
 
                 });
 
-                CONDITION(localStorage.getItem("TIMEZONE") === '"Africa/Kampala"',()=>{
+                BUTTON(ELEMENTIS,"Donate",GREEN,(ELEMENTS)=>{
 
-                    TEXTVIEW(ELEMENTAS,"UGX : 9,150,000",()=>{
+                    POSITIONABSOLUTE(ELEMENTS);
+                    WIDTH(ELEMENTS,"30%");
+                    LEFT(ELEMENTS,"40%");
+                    HEIGHT(ELEMENTS,"40px");
+                    RADIUS(ELEMENTS,"5px");
+                    BOTTOM(ELEMENTS,"50px");
 
+                    COLOR(ELEMENTS,WHITE);
+
+                });
+
+            });
+
+            INLINEVIEW(ELEMENTS,"80%","95%",TRANSPARENT,"2%",(ELEMENTIS)=>{
+
+                OVERFLOWX(ELEMENTIS);
+
+                (ELEMENTIS,"2%");
+
+                FLEXSHRINK(ELEMENTIS);
+
+                RADIUS(ELEMENTIS,"10px");
+
+                SERVERCOMPONENTS("Images/Asco/Zakat.jpeg",(DATA)=>{
+
+                    IMAGE(ELEMENTIS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
+
+                        POSITIONABSOLUTE(ELEMENTSES);
+
+                        CLICK(ELEMENTSES,()=>{
+
+                            DATASTORE("","BaseName",Data.DataBaseName);
+
+                            ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
+
+                        });
+    
                     });
 
-                },()=>{
+                });
 
-                    TEXTVIEW(ELEMENTAS,"USD : 2,550",()=>{
+                TEXTVIEW(ELEMENTIS,"ZAKAT AL-FITIR 2026/1447H",(ELEMENTSES)=>{
+
+                    PADDING(ELEMENTSES,"5%");
+
+                    HEIGHT(ELEMENTSES,"50px");
+
+                    COLOR(ELEMENTSES,BLACK);
+
+                    BACKGROUND(ELEMENTSES,"#FFFFFF70");
+
+                    POSITIONABSOLUTE(ELEMENTSES);
+
+                    TOP(ELEMENTSES,"0");
+
+                });
+
+                DIVVIEW(ELEMENTIS,"95%","200px","#00000060",(ELIS)=>{
+
+                    BOTTOM(ELIS,"20px");
+
+                    LEFT(ELIS,"2%");
+
+                    POSITIONABSOLUTE(ELIS);
+
+                    TEXTVIEW(ELIS,"Zakat involves giving of 2.5% of our annual wealth to charity. It is one of the five pillars of Islam and compulsory for all eligible Muslims.",(ELEMENTSES)=>{
+
+                        MARGIN(ELEMENTSES,"5%");
+
+                        FONTSIZE(ELEMENTSES,"17px");
+
+                        COLOR(ELEMENTSES,WHITE);
 
                     });
 
                 });
 
-                BREAK(ELEMENTAS);
+                BUTTON(ELEMENTIS,"Donate",GREEN,(ELEMENTS)=>{
 
-                BUTTON(ELEMENTAS,"PAY",GREEN,(EES)=>{
+                    POSITIONABSOLUTE(ELEMENTS);
+                    WIDTH(ELEMENTS,"30%");
+                    LEFT(ELEMENTS,"40%");
+                    HEIGHT(ELEMENTS,"40px");
+                    RADIUS(ELEMENTS,"5px");
+                    BOTTOM(ELEMENTS,"50px");
 
-                    RADIUS(EES,"5px");
-                    HEIGHT(EES,"30px");
+                    COLOR(ELEMENTS,WHITE);
 
                 });
 
-                BREAK(ELEMENTAS);
+            });
 
-                TEXTVIEW(ELEMENTAS,"Details",(ES)=>{
+            INLINEVIEW(ELEMENTS,"80%","95%",TRANSPARENT,"2%",(ELEMENTIS)=>{
 
-                    FONTSIZE(ES,"16px");
+                OVERFLOWX(ELEMENTIS);
 
-                    CLICK(ES,()=>{
+                MARGIN(ELEMENTIS,"2%");
 
-                        MOBILEDETAILSPRICINGPAGE("Business Package","Policies/Main/BusinessPackage.txt");
+                FLEXSHRINK(ELEMENTIS);
+
+                RADIUS(ELEMENTIS,"10px");
+
+                SERVERCOMPONENTS("Images/Asco/FoodPack.jpeg",(DATA)=>{
+
+                    IMAGE(ELEMENTIS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
+
+                        POSITIONABSOLUTE(ELEMENTSES);
+
+                        CLICK(ELEMENTSES,()=>{
+
+                            DATASTORE("","BaseName",Data.DataBaseName);
+
+                            ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
+
+                        });
+    
+                    });
+
+                });
+
+                TEXTVIEW(ELEMENTIS,"SHARE HOPE 2026/1447H",(ELEMENTSES)=>{
+
+                    PADDING(ELEMENTSES,"5%");
+
+                    HEIGHT(ELEMENTSES,"50px");
+
+                    COLOR(ELEMENTSES,BLACK);
+
+                    BACKGROUND(ELEMENTSES,WHITE);
+
+                    POSITIONABSOLUTE(ELEMENTSES);
+
+                    TOP(ELEMENTSES,"0");
+
+                });
+
+                DIVVIEW(ELEMENTIS,"95%","200px","#00000060",(ELIS)=>{
+
+                    BOTTOM(ELIS,"20px");
+
+                    LEFT(ELIS,"2%");
+
+                    POSITIONABSOLUTE(ELIS);
+
+                    TEXTVIEW(ELIS,"Randam A month to share and repent your wrong doings to Allah.",(ELEMENTSES)=>{
+
+                        MARGIN(ELEMENTSES,"5%");
+
+                        FONTSIZE(ELEMENTSES,"17px");
+
+                        COLOR(ELEMENTSES,WHITE);
+
+                    });
+
+                });
+
+                BUTTON(ELEMENTIS,"Donate",GREEN,(ELEMENTS)=>{
+
+                    POSITIONABSOLUTE(ELEMENTS);
+                    WIDTH(ELEMENTS,"30%");
+                    LEFT(ELEMENTS,"40%");
+                    HEIGHT(ELEMENTS,"40px");
+                    RADIUS(ELEMENTS,"5px");
+                    BOTTOM(ELEMENTS,"50px");
+
+                    COLOR(ELEMENTS,WHITE);
+
+                });
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"95%","auto",TRANSPARENT,(ELEMENTS)=>{
+
+            TEXTVIEW(ELEMENTS,"FEED THE FASTING THIS RAMADAN",(ELEMENTSES)=>{
+
+                MARGIN(ELEMENTSES,"5%");
+
+                FONTSIZE(ELEMENTSES,"17px");
+
+                COLOR(ELEMENTSES,TEAL);
+
+            });
+
+            LEFTTEXTVIEW(ELEMENTS,"Whoever helps break the fast of a fasting person will have the same reward as the one [who fasted] without decreasing anything from the reward of the fasting person.",(ELEMENTSES)=>{
+
+                FONTSIZE(ELEMENTSES,"17px");
+
+            });
+
+        });
+        
+        BREAK(ELEMENT);
+
+        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
+
+            OVERFLOWX(ELEMENTS);
+
+            BUTTON(ELEMENTS,"Water Well Construction",TEAL,(ELEMENTS)=>{
+
+                WIDTH(ELEMENTS,"200px");
+                HEIGHT(ELEMENTS,"40px");
+                RADIUS(ELEMENTS,"5px");
+
+                COLOR(ELEMENTS,WHITE);
+
+            });       
+           
+        });
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
+
+            SERVERCOMPONENTS("Images/Asco/waterwell.jpeg",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
+
+                    POSITIONABSOLUTE(ELEMENTSES);
+                    LEFT(ELEMENTSES,"");
+
+                    CLICK(ELEMENTSES,()=>{
+
+                        DATASTORE("","BaseName",Data.DataBaseName);
+
+                        ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
+
+                    });
+    
+                });
+
+            });
+
+            RADIUS(ELEMENTS,"10px");
+
+            FOOTER(ELEMENTS,(ELS)=>{
+
+                BACKGROUND(ELS,GREEN);
+
+                TEXTVIEW(ELS,"Donate",(ELSSS)=>{
+
+                    COLOR(ELSSS,WHITE);
+
+                });
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"95%","auto",TRANSPARENT,(ELEMENTS)=>{
+
+            TEXTVIEW(ELEMENTS,"BLESSINGS OF PROVIDING WATER",(ELEMENTSES)=>{
+
+                MARGIN(ELEMENTSES,"5%");
+
+                FONTSIZE(ELEMENTSES,"17px");
+
+                COLOR(ELEMENTSES,TEAL);
+
+            });
+
+            LEFTTEXTVIEW(ELEMENTS,"The Prophet Muhammad (peace be upon him) said, \"The best charity is providing water.\" (Ibn Majah) Your contribution will not only bring physical relief but also spiritual rewards",(ELEMENTSES)=>{
+
+                FONTSIZE(ELEMENTSES,"17px");
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
+
+            OVERFLOWX(ELEMENTS);
+
+            BUTTON(ELEMENTS,"Qurban",TEAL,(ELEMENTS)=>{
+
+                WIDTH(ELEMENTS,"150px");
+                HEIGHT(ELEMENTS,"40px");
+                RADIUS(ELEMENTS,"5px");
+
+                COLOR(ELEMENTS,WHITE);
+
+            });       
+           
+        });
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
+
+            SERVERCOMPONENTS("Images/Asco/qurban.jpeg",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
+
+                    POSITIONABSOLUTE(ELEMENTSES);
+                    LEFT(ELEMENTSES,"");
+
+                    CLICK(ELEMENTSES,()=>{
+
+                        DATASTORE("","BaseName",Data.DataBaseName);
+
+                        ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
+
+                    });
+    
+                });
+
+            });
+
+            RADIUS(ELEMENTS,"10px");
+
+            FOOTER(ELEMENTS,(ELS)=>{
+
+                BACKGROUND(ELS,GREEN);
+
+                TEXTVIEW(ELS,"Donate",(ELSSS)=>{
+
+                    COLOR(ELSSS,WHITE);
+
+                });
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"95%","auto",TRANSPARENT,(ELEMENTS)=>{
+
+            TEXTVIEW(ELEMENTS,"QURABAN SACRIFICE 2026/1447H PRE-ORDER NOW!",(ELEMENTSES)=>{
+
+                MARGIN(ELEMENTSES,"5%");
+
+                FONTSIZE(ELEMENTSES,"17px");
+
+                COLOR(ELEMENTSES,TEAL);
+
+            });
+
+            LEFTTEXTVIEW(ELEMENTS,"It is neither their meat nor their bread that reaches Allah, but it is piety from you that reaches Him",(ELEMENTSES)=>{
+
+                FONTSIZE(ELEMENTSES,"17px");
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
+
+            OVERFLOWX(ELEMENTS);
+
+            BUTTON(ELEMENTS,"Mosque Construction",TEAL,(ELEMENTS)=>{
+
+                WIDTH(ELEMENTS,"150px");
+                HEIGHT(ELEMENTS,"40px");
+                RADIUS(ELEMENTS,"5px");
+
+                COLOR(ELEMENTS,WHITE);
+
+            });       
+           
+        });
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
+
+            SERVERCOMPONENTS("Images/Asco/mosque.jpeg",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
+
+                    POSITIONABSOLUTE(ELEMENTSES);
+                    LEFT(ELEMENTSES,"");
+
+                    CLICK(ELEMENTSES,()=>{
+
+                        DATASTORE("","BaseName",Data.DataBaseName);
+
+                        ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
+
+                    });
+    
+                });
+
+            });
+
+            RADIUS(ELEMENTS,"10px");
+
+            FOOTER(ELEMENTS,(ELS)=>{
+
+                BACKGROUND(ELS,GREEN);
+
+                TEXTVIEW(ELS,"Donate",(ELSSS)=>{
+
+                    COLOR(ELSSS,WHITE);
+
+                });
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"95%","auto",TRANSPARENT,(ELEMENTS)=>{
+
+            TEXTVIEW(ELEMENTS,"WHOEVER BUILDS A MOSQUE,ALLAH BUILDS FOR HIM/HER A HOUSE IN PARADISE",(ELEMENTSES)=>{
+
+                MARGIN(ELEMENTSES,"5%");
+
+                FONTSIZE(ELEMENTSES,"17px");
+
+                COLOR(ELEMENTSES,TEAL);
+
+            });
+
+            LEFTTEXTVIEW(ELEMENTS,"Join us in building a beacon of faith. Help us construct a comfortable and serene space for our brothers and sisters in villages to perform their daily prayers. Your support is crucial in providing a safe haven for this community.",(ELEMENTSES)=>{
+
+                FONTSIZE(ELEMENTSES,"17px");
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
+
+            RADIUS(ELEMENTS,"10px");
+
+            TABLEVIEW(ELEMENTS,"50%","30px",TRANSPARENT,"2%",(ELEMENTIS)=>{
+
+                RADIUS(ELEMENTIS,"5px");
+
+                TEXTVIEW(ELEMENTIS,"Social Media",(ELEMENTSES)=>{
+
+                    MARGIN(ELEMENTSES,"5%");
+
+                });
+
+            });
+
+            BREAK(ELEMENT);
+
+            INLINEVIEW(ELEMENTS,"95%","100px",TRANSPARENT,"2%",(ELEMENTS)=>{
+
+                OVERFLOWX(ELEMENTS);
+
+                ICONVIEW(ELEMENTS,COLOREDFACEBOOKICON,COLOREDFACEBOOKICON,(ELEMENTS)=>{
+
+                    WIDTH(ELEMENTS,"50px");
+
+                    HEIGHT(ELEMENTS,"50px");
+
+                    CLICK(ELEMENTS,()=>{
+
+                        WEBSITE("https://www.facebook.com/share/188Uyj5rGJ/");
+
+                    });
+
+                });
+
+                ICONVIEW(ELEMENTS,COLOREDINSTAGRAM,COLOREDINSTAGRAM,(ELEMENTS)=>{
+
+                    WIDTH(ELEMENTS,"50px");
+
+                    HEIGHT(ELEMENTS,"50px");
+
+                    CLICK(ELEMENTS,()=>{
+
+                        INSTAGRAM("ash_shakur_charity_");
+
+                    });
+
+                });
+
+                ICONVIEW(ELEMENTS,COLOREDTIKTOKICON,COLOREDTIKTOKICON,(ELEMENTS)=>{
+
+                    WIDTH(ELEMENTS,"50px");
+
+                    HEIGHT(ELEMENTS,"50px");
+
+                    CLICK(ELEMENTS,()=>{
+
+                        TIKTOK("ashshakurcharity1");
+
+                    });
+
+                });
+
+                ICONVIEW(ELEMENTS,WHITEXICON,BLACKXICON,(ELEMENTS)=>{
+
+                    WIDTH(ELEMENTS,"50px");
+
+                    HEIGHT(ELEMENTS,"50px");
+
+                    CLICK(ELEMENTS,()=>{
+
+                        X("AshShakur41402");
 
                     });
 
@@ -665,177 +821,212 @@ const MOBILEABOUTUSPAGE=()=>{
 
             });
 
-            DIVVIEW(ELEMENTS,"80%","495px",MEDIUMSLATEBLUE,(ELEMENTAS)=>{
+            BREAK(ELEMENT);
 
-                FLEXSHRINK(ELEMENTAS);
+            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
 
-                RADIUS(ELEMENTAS,"10px");
+                RADIUS(ELEMENTIS,"5px");
 
-                MARGIN(ELEMENTAS,"1%");
+                TEXTVIEW(ELEMENTIS,"App Mode",(ELEMENTSES)=>{
 
-                BREAK(ELEMENTAS);
+                    MARGINTOP(ELEMENTSES,"2%");
 
-                TEXTVIEW(ELEMENTAS,"Enterprise",()=>{
+                    FONTSIZE(ELEMENTSES,"15px");
 
-                });
-
-                TEXTVIEW(ELEMENTAS,"Package Features",()=>{
+                    CHANGEMODE(ELEMENTSES);
 
                 });
 
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
+            });
 
-                    LEFTTEXTVIEW(ELS,"Website",()=>{
+            TABLEVIEW(ELEMENTS,"20%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
 
-                    });
+                RADIUS(ELEMENTIS,"5px");
 
-                    RIGHTTEXTVIEW(ELS,"1",()=>{
+                TEXTVIEW(ELEMENTIS,"App",(ELEMENTSES)=>{
 
-                    });
+                    MARGINTOP(ELEMENTSES,"5%");
 
-                });
+                    FONTSIZE(ELEMENTSES,"15px");
 
-                BREAK(ELEMENTAS);
+                    CLICK(ELEMENTSES,()=>{
 
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
+                        BOTTOMNAV("","App",()=>{
 
-                    LEFTTEXTVIEW(ELS,"Android App",()=>{
-
-                    });
-
-                    RIGHTTEXTVIEW(ELS,"1",()=>{
+                        });
 
                     });
 
                 });
 
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
+            });
 
-                    LEFTTEXTVIEW(ELS,"IOS App",()=>{
+            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
 
-                    });
+                RADIUS(ELEMENTIS,"5px");
 
-                    RIGHTTEXTVIEW(ELS,"1",()=>{
+                TEXTVIEW(ELEMENTIS,"Contact Us",(ELEMENTSES)=>{
 
-                    });
+                    MARGINTOP(ELEMENTSES,"5%");
 
-                });
+                    FONTSIZE(ELEMENTSES,"15px");
 
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
+                    CLICK(ELEMENTSES,()=>{
 
-                    LEFTTEXTVIEW(ELS,"Desktop Platform",()=>{
-
-                    });
-
-                    RIGHTTEXTVIEW(ELS,"1",()=>{
+                        BOTTOMNAV("","Contact US",()=>{
+                            
+                        });
 
                     });
 
                 });
 
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
+            });
 
-                    LEFTTEXTVIEW(ELS,"Domain Name",()=>{
+            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
 
-                    });
+                RADIUS(ELEMENTIS,"5px");
 
-                    RIGHTTEXTVIEW(ELS,"Two Years",()=>{
+                TEXTVIEW(ELEMENTIS,"Policies",(ELEMENTSES)=>{
 
-                    });
+                    MARGINTOP(ELEMENTSES,"2%");
 
-                });
+                    FONTSIZE(ELEMENTSES,"15px");
 
-                INLINEVIEW(ELEMENTAS,"","50px",TRANSPARENT,"",(ELS)=>{
+                    CLICK(ELEMENTSES,()=>{
 
-                    LEFTTEXTVIEW(ELS,"Hosting",()=>{
-
-                    });
-
-                    RIGHTTEXTVIEW(ELS,"Five Years",()=>{
+                        BOTTOMNAV("","Policies",()=>{
+                            
+                        });
 
                     });
 
                 });
 
-                CONDITION(localStorage.getItem("TIMEZONE") ==='"Africa/Kampala"',()=>{
+            });
 
-                    TEXTVIEW(ELEMENTAS,"UGX : 21,713,000",()=>{
+            TABLEVIEW(ELEMENTS,"20%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
+
+                RADIUS(ELEMENTIS,"5px");
+
+                TEXTVIEW(ELEMENTIS,"Parthners",(ELEMENTSES)=>{
+
+                    MARGINTOP(ELEMENTSES,"5%");
+
+                    FONTSIZE(ELEMENTSES,"15px");
+
+                    CLICK(ELEMENTSES,()=>{
+
+                        BOTTOMNAV("","Parthners",()=>{
+                            
+                        });
 
                     });
 
-                },()=>{
+                });
 
-                    TEXTVIEW(ELEMENTAS,"USD : 6,100",()=>{
+            });
+
+            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
+
+                RADIUS(ELEMENTIS,"5px");
+
+                TEXTVIEW(ELEMENTIS,"Lincenses",(ELEMENTSES)=>{
+
+                    MARGINTOP(ELEMENTSES,"5%");
+
+                    FONTSIZE(ELEMENTSES,"15px");
+
+                    CLICK(ELEMENTSES,()=>{
+
+                        BOTTOMNAV("","Lincenses",()=>{
+                            
+                        });
 
                     });
 
                 });
 
-                BREAK(ELEMENTAS);
+            });
 
-                BUTTON(ELEMENTAS,"PAY",GREEN,(EES)=>{
+            BREAK(ELEMENTS);
 
-                    RADIUS(EES,"5px");
-                    HEIGHT(EES,"30px");
+            BREAK(ELEMENTS);
 
-                });
-
-                BREAK(ELEMENTAS);
-
-                TEXTVIEW(ELEMENTAS,"Details",(ES)=>{
-
-                    FONTSIZE(ES,"16px");
-
-                    CLICK(ES,()=>{
-
-                        MOBILEDETAILSPRICINGPAGE("Enterprise Package","Policies/Main/EnterprisePackage.txt");
-
-                    });
-
-                });
+            TEXTVIEW(ELEMENTS,COPYRIGHT+"ASCOA 2026",()=>{
 
             });
             
-        });
-
-        BREAK(ELEMENT);
-
-    });
-
-};
-
-const MOBILEDETAILSPRICINGPAGE=(NAME,PATH)=>{
-
-    BOTTOMNAV("",NAME,(ELEMENT)=>{
-
-        LOADERVIEW(ELEMENT,(LOAD)=>{
-
-            TOP(LOAD,"50%");
-
-            SERVERASSETS(PATH,(Data)=>{
-
-                DISPLAYHIDDEN(LOAD);
-
-                DISPLAY(ELEMENT,Data);
-
-            });
+            BREAK(ELEMENTS);
 
         });
 
     });
+
+    BUTTON(""," ",FORESTGREEN,(ELEMENTS)=>{
+
+        POSITIONFIXED(ELEMENTS);
+        RIGHT(ELEMENTS,"2%");
+        BOTTOM(ELEMENTS,"5px");
+        
+        WIDTH(ELEMENTS,"70px");
+        HEIGHT(ELEMENTS,"70px");
+        RADIUS(ELEMENTS,"100%");
+
+        COLOR(ELEMENTS,WHITE);
+
+        ICONVIEW(ELEMENTS,WHITEWHATSAPPICON,WHITEWHATSAPPICON,(ELEMENTS)=>{
+
+            WIDTH(ELEMENTS,"30px");
+
+            HEIGHT(ELEMENTS,"30px");
+
+        });
+
+        CLICK(ELEMENTS,()=>{
+
+            WHATSAPP("+256789467876");
+
+        });
+
+    });   
+
 };
 
-const MOBILECONTACTUS=()=>{
+const SUBJECTSECTION=()=>{
 
     HEADERVIEW((ELEMENT)=>{
 
-        LEFTICONVIEW(ELEMENT,WHITEBACKICON,BLACKBACKICON,(ELEMENTSS)=>{
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,BLACKBACKICON,(ELEMENTS)=>{
 
-            BACKNAV(ELEMENTSS,MOBILEVIEW);
+            CLICK(ELEMENTS,()=>{
+
+                ROUTE("",MOBILEVIEW,"MOBILEVIEW");
+
+            });
+
+        });;
+
+        LEFTICONVIEW(ELEMENT,ASCOLOGO,ASCOLOGO,(ELEMENTS)=>{
+
+            WIDTH(ELEMENTS,"50px");
+            HEIGHT(ELEMENTS,"45px");
 
         });
 
-        RIGHTTEXTVIEW(ELEMENT,"Contact Us",()=>{
+        LEFTTEXTVIEW(ELEMENT,"ASCOA",(ELEMENTS)=>{
+
+            COLOR(ELEMENTS,GREEN);
+
+        });
+
+        BUTTON(ELEMENT,"Donate",GREEN,(ELEMENTS)=>{
+
+            WIDTH(ELEMENTS,"70px");
+            HEIGHT(ELEMENTS,"40px");
+            RADIUS(ELEMENTS,"5px");
+
+            COLOR(ELEMENTS,WHITE);
 
         });
 
@@ -843,53 +1034,167 @@ const MOBILECONTACTUS=()=>{
 
         BREAK(ELEMENT);
 
-        TEXTVIEW(ELEMENT,"Fill The Form Below",()=>{
+        DIVVIEW(ELEMENT,"95%","auto",TRANSPARENT,(ELEMENTS)=>{
 
-        });
+            LOADERVIEW(ELEMENTS,(LOAD)=>{
 
-        BREAK(ELEMENT);
+                GETSAVEDINDEX("Catergory",(Data)=>{
 
-        ROUNDINPUTVIEW(ELEMENT,"text","Enter Your Name","Name",()=>{
+                    DISPLAYHIDDEN(LOAD);
 
-        });
+                    CHECKER(Data.DataBaseName === sessionStorage.getItem("BaseName"),()=>{
 
-        BREAK(ELEMENT);
+                        BREAK(ELEMENTS);
 
-        ROUNDINPUTVIEW(ELEMENT,"email","Enter Your Email","Email",()=>{
+                        DIVVIEW(ELEMENTS,"95%","300px",TRANSPARENT,(ELIS)=>{
 
-        });
+                            OVERFLOWHIDDEN(ELIS);
 
-        BREAK(ELEMENT);
+                            IMAGE(ELIS,"","",Data.Image||ASCOLOGO,TRANSPARENT,()=>{
 
-        ROUNDINPUTVIEW(ELEMENT,"","Subject Of Message","Subject",()=>{
+                            });
 
-        });
+                        });
 
-        BREAK(ELEMENT);
+                        BREAK(ELEMENTS);
 
-        ROUNDTEXTAREAVIEW(ELEMENT,"Enter Your Message","Message",()=>{
+                        TEXTVIEW(ELEMENTS,Data.Header,(ELEMENTSI)=>{
 
-        });
+                            COLOR(ELEMENTSI,GREEN);
 
-        BREAK(ELEMENT);
+                            FONTSIZE(ELEMENTSI,"23px");
 
-        BUTTON(ELEMENT,"Submit",FORESTGREEN,(ELSEE)=>{
+                        });
 
-            CLICK(ELSEE,()=>{
+                        BREAK(ELEMENTS);
 
-                TOASTCONDITION(sessionStorage.getItem("Name"),"Enter Your Name",()=>{
+                        LEFTTEXTVIEW(ELEMENTS,Data.Story,(ELEMENTSS)=>{
 
-                    TOASTCONDITION(sessionStorage.getItem("Email"),"Enter Your Email",()=>{
+                            TYPE(ELEMENTSS,"p");
 
-                        TOASTCONDITION(sessionStorage.getItem("Subject"),"Enter Your Subject",()=>{
+                        });
 
-                            TOASTCONDITION(sessionStorage.getItem("Message"),"Compose The Message",()=>{
+                        BREAK(ELEMENTS);
 
-                                TOASTVIEW("Please Wait");
+                        TEXTVIEW(ELEMENTS,Data.HeaderOne,(ELEMENTSI)=>{
 
-                            });    
-    
-                        });    
+                            COLOR(ELEMENTSI,GREEN);
+
+                            FONTSIZE(ELEMENTSI,"23px");
+
+                        });
+
+                        BREAK(ELEMENTS);
+
+                        DIVVIEW(ELEMENTS,"95%","300px",TRANSPARENT,(ELIS)=>{
+
+                            OVERFLOWHIDDEN(ELIS);
+
+                            IMAGE(ELIS,"","",Data.ImageOne||ASCOLOGO,TRANSPARENT,()=>{
+
+                            });
+
+                        });
+
+                        BREAK(ELEMENTS);
+
+                        LEFTTEXTVIEW(ELEMENTS,Data.StoryOne,(ELEMENTSS)=>{
+
+                            TYPE(ELEMENTSS,"p");
+
+                        });
+
+                        BREAK(ELEMENTS);
+
+                        TEXTVIEW(ELEMENTS,Data.HeaderTwo,(ELEMENTSI)=>{
+
+                            COLOR(ELEMENTSI,GREEN);
+
+                            FONTSIZE(ELEMENTSI,"23px");
+
+                        });
+
+                        BREAK(ELEMENTS);
+
+                        DIVVIEW(ELEMENTS,"95%","300px",TRANSPARENT,(ELIS)=>{
+
+                            OVERFLOWHIDDEN(ELIS);
+
+                            IMAGE(ELIS,"","",Data.ImageThree||ASCOLOGO,TRANSPARENT,()=>{
+
+                            });
+
+                        });
+
+                        BREAK(ELEMENTS);
+
+                        LEFTTEXTVIEW(ELEMENTS,Data.StoryThree,(ELEMENTSS)=>{
+
+                            TYPE(ELEMENTSS,"p");
+
+                        });
+
+                        BREAK(ELEMENTS);
+
+                        TEXTVIEW(ELEMENTS,Data.HeaderFour,(ELEMENTSI)=>{
+
+                            COLOR(ELEMENTSI,GREEN);
+
+                            FONTSIZE(ELEMENTSI,"23px");
+
+                        });
+
+                        BREAK(ELEMENTS);
+
+                        DIVVIEW(ELEMENTS,"95%","300px",TRANSPARENT,(ELIS)=>{
+
+                            OVERFLOWHIDDEN(ELIS);
+
+                            IMAGE(ELIS,"","",Data.ImageFour||ASCOLOGO,TRANSPARENT,()=>{
+
+                            });
+
+                        });
+
+                        BREAK(ELEMENTS);
+
+                        LEFTTEXTVIEW(ELEMENTS,Data.StoryFour,(ELEMENTSS)=>{
+
+                            TYPE(ELEMENTSS,"p");
+
+                        });
+
+                        BREAK(ELEMENTS);
+
+                        TEXTVIEW(ELEMENTS,Data.HeaderFive,(ELEMENTSI)=>{
+
+                            COLOR(ELEMENTSI,GREEN);
+
+                            FONTSIZE(ELEMENTSI,"23px");
+
+                        });
+
+                        BREAK(ELEMENTS);
+
+                        DIVVIEW(ELEMENTS,"95%","300px",TRANSPARENT,(ELIS)=>{
+
+                            OVERFLOWHIDDEN(ELIS);
+
+                            IMAGE(ELIS,"","",Data.ImageFive||ASCOLOGO,TRANSPARENT,()=>{
+
+                            });
+
+                        });
+
+                        BREAK(ELEMENTS);
+
+                        LEFTTEXTVIEW(ELEMENTS,Data.StoryFive,(ELEMENTSS)=>{
+
+                            TYPE(ELEMENTSS,"p");
+
+                        });
+
+                        BREAK(ELEMENTS);
 
                     });
 
@@ -899,118 +1204,85 @@ const MOBILECONTACTUS=()=>{
 
         });
 
-        BREAK(ELEMENT);
+        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
 
-        BREAK(ELEMENT);
+            RADIUS(ELEMENTS,"10px");
 
-        BREAK(ELEMENT);
+            TABLEVIEW(ELEMENTS,"50%","30px",TRANSPARENT,"2%",(ELEMENTIS)=>{
 
-        LINE(ELEMENT);
+                RADIUS(ELEMENTIS,"5px");
 
-        BREAK(ELEMENT);
+                TEXTVIEW(ELEMENTIS,"Social Media",(ELEMENTSES)=>{
 
-        TEXTVIEW(ELEMENT,"OR",()=>{
+                    MARGIN(ELEMENTSES,"5%");
 
-        });
-
-        BREAK(ELEMENT);
-
-        LINE(ELEMENT);
-
-        BREAK(ELEMENT);
-
-        INLINEVIEW(ELEMENT,"","100px",TRANSPARENT,"",(ELSE)=>{
-
-            ICONVIEW(ELSE,COLOREDINSTAGRAM,COLOREDINSTAGRAM,(ELEMENTSS)=>{
-
-                WIDTH(ELEMENTSS,"100xp");
-                HEIGHT(ELEMENTSS,"100xp");
+                });
 
             });
 
-            ICONVIEW(ELSE,WHITEGMAILICON,WHITEGMAILICON,(ELEMENTSS)=>{
+            INLINEVIEW(ELEMENTS,"95%","100px",TRANSPARENT,"2%",(ELEMENTS)=>{
 
-                WIDTH(ELEMENTSS,"100xp");
-                HEIGHT(ELEMENTSS,"100xp");
+                OVERFLOWX(ELEMENTS);
+
+                ICONVIEW(ELEMENTS,COLOREDFACEBOOKICON,COLOREDFACEBOOKICON,(ELEMENTS)=>{
+
+                    WIDTH(ELEMENTS,"50px");
+
+                    HEIGHT(ELEMENTS,"50px");
+
+                    CLICK(ELEMENTS,()=>{
+
+                        WEBSITE("https://www.facebook.com/share/188Uyj5rGJ/");
+
+                    });
+
+                });
+
+                ICONVIEW(ELEMENTS,COLOREDINSTAGRAM,COLOREDINSTAGRAM,(ELEMENTS)=>{
+
+                    WIDTH(ELEMENTS,"50px");
+
+                    HEIGHT(ELEMENTS,"50px");
+
+                    CLICK(ELEMENTS,()=>{
+
+                        INSTAGRAM("ash_shakur_charity_");
+
+                    });
+
+                });
+
+                ICONVIEW(ELEMENTS,COLOREDTIKTOKICON,COLOREDTIKTOKICON,(ELEMENTS)=>{
+
+                    WIDTH(ELEMENTS,"50px");
+
+                    HEIGHT(ELEMENTS,"50px");
+
+                    CLICK(ELEMENTS,()=>{
+
+                        TIKTOK("ashshakurcharity1");
+
+                    });
+
+                });
+
+                ICONVIEW(ELEMENTS,WHITEXICON,BLACKXICON,(ELEMENTS)=>{
+
+                    WIDTH(ELEMENTS,"50px");
+
+                    HEIGHT(ELEMENTS,"50px");
+
+                    CLICK(ELEMENTS,()=>{
+
+                        X("AshShakur41402");
+
+                    });
+
+                });
 
             });
 
-            ICONVIEW(ELSE,WHITEWHATSAPPICON,BLACKWHATSAPPICON,(ELEMENTSS)=>{
-
-                WIDTH(ELEMENTSS,"100xp");
-                HEIGHT(ELEMENTSS,"100xp");
-
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        BREAK(ELEMENT);
-
-        TEXTVIEW(ELEMENT,COPYRIGHT+"ERANDIX 2026",()=>{
-
-        });
-
-        BREAK(ELEMENT);
-
-        BREAK(ELEMENT);
-
-    });
-
-};
-
-const MOBILEAPPS=()=>{
-
-    HEADERVIEW((ELEMENT)=>{
-
-        LEFTICONVIEW(ELEMENT,WHITEBACKICON,BLACKBACKICON,(ELSE)=>{
-
-            BACKNAV(ELSE,MOBILEVIEW);
-
-        });
-
-        RIGHTTEXTVIEW(ELEMENT,"Apps",()=>{
-
-        });
-
-    },(ELEMENT)=>{
-
-        LOADERVIEW(ELEMENT,(LOAD)=>{
-
-            TOP(LOAD,"50%");
-
-        });
-
-    });
-
-};
-
-const MOBILEPOLICY=()=>{
-
-    HEADERVIEW((ELEMENT)=>{
-
-        LEFTICONVIEW(ELEMENT,WHITEBACKICON,BLACKBACKICON,(ELSE)=>{
-
-            BACKNAV(ELSE,MOBILEVIEW);
-
-        });
-
-        RIGHTTEXTVIEW(ELEMENT,"Terms and Conditions",()=>{
-
-        });
-
-    },(ELEMENT)=>{
-
-        LOADERVIEW(ELEMENT,(LOAD)=>{
-
-            TOP(LOAD,"50%");
-
-            SERVERASSETS("Policies/Main/Main.txt",(Data)=>{
-
-                DISPLAYHIDDEN(LOAD);
-
-                DISPLAY(ELEMENT,Data);
+            TEXTVIEW(ELEMENTS,COPYRIGHT+"ASCOA 2026",()=>{
 
             });
 
@@ -1018,282 +1290,35 @@ const MOBILEPOLICY=()=>{
 
     });
 
+    BUTTON(""," ",FORESTGREEN,(ELEMENTS)=>{
+
+        POSITIONFIXED(ELEMENTS);
+        RIGHT(ELEMENTS,"2%");
+        BOTTOM(ELEMENTS,"5px");
+        
+        WIDTH(ELEMENTS,"70px");
+        HEIGHT(ELEMENTS,"70px");
+        RADIUS(ELEMENTS,"100%");
+
+        ICONVIEW(ELEMENTS,WHITEWHATSAPPICON,WHITEWHATSAPPICON,(ELEMENTS)=>{
+
+            WIDTH(ELEMENTS,"30px");
+
+            HEIGHT(ELEMENTS,"30px");
+
+        });
+
+        CLICK(ELEMENTS,()=>{
+
+            WHATSAPP("+256789467876");
+
+        });
+
+    });  
+   
 };
 
 const DESKTOPVIEW=()=>{
 
-    CLEARNAV();
-
-    HEADERVIEW((ELEMENT)=>{
-
-        LEFTTEXTVIEW(ELEMENT,"Erandix",()=>{
-
-        });
-
-        DIVVIEW(ELEMENT,"70%","",TRANSPARENT,(ELEMENTS)=>{
-
-            POSITIONABSOLUTE(ELEMENTS);
-            RIGHT(ELEMENTS,"");
-            DISPLAYFLEX(ELEMENTS);
-
-            LEFTICONVIEW(ELEMENTS,WHITESUNICON,BLACKSUNICON,(ELS)=>{
-
-                CHANGEMODE(ELS);
-
-            });
-
-            TEXTVIEW(ELEMENTS,"Apps",(ELS)=>{
-
-                FORWARDNAV(ELS,DESKTOPAPPSPAGE,DESKTOPVIEW);
-
-            });
-
-            TEXTVIEW(ELEMENTS,"About Us",(ELS)=>{
-
-                FORWARDNAV(ELS,DESKTOPABOUTUSPAGE,DESKTOPVIEW);
-
-            });
-
-            TEXTVIEW(ELEMENTS,"Contact Us",(ELS)=>{
-
-                FORWARDNAV(ELS,DESKTOPCONTACTUS,DESKTOPVIEW);
-
-            });
-
-        });
-
-    },(ELEMENTS)=>{
-
-        BREAK(ELEMENTS);
-
-        DIVVIEW(ELEMENTS,"85%","auto",TRANSPARENT,(ELEMENT)=>{
-
-            BREAK(ELEMENT);
-
-            DIVVIEW(ELEMENT,"40%","30%",TRANSPARENT,(ELEMENTS)=>{
-    
-                OVERFLOWHIDDEN(ELEMENTS);
-    
-                IMAGE(ELEMENTS,"","",ERANDIXLOGO,TRANSPARENT,(ELSS)=>{
-    
-                    RADIUS(ELSS,"20px");
-    
-                });
-    
-            });
-    
-            BREAK(ELEMENT);
-    
-            TEXTVIEW(ELEMENT,"ERANDIX",()=>{
-    
-            });
-    
-            BREAK(ELEMENT);
-    
-            TEXTVIEW(ELEMENT,"Erandix is a Software Development Company that Ventures in Website Development,Mobile App Development,Desktop Software Development and System Development.",(ELEMENTAS)=>{
-    
-                TEXTALIGN(ELEMENTAS,"Left");
-                MARGINLEFT(ELEMENTAS,"2%");
-    
-            });
-
-            BREAK(ELEMENT);
-
-            TEXTVIEW(ELEMENT,COPYRIGHT+" ERANDIX 2026",()=>{
-
-            });
-
-        });
-
-    });
-
 };
 
-const DESKTOPABOUTUSPAGE=()=>{
-
-    HEADERVIEW((ELEMENT)=>{
-
-        LEFTICONVIEW(ELEMENT,WHITEBACKICON,BLACKBACKICON,(ELSE)=>{
-
-            BACKNAV(ELSE,DESKTOPVIEW);
-
-        });
-
-        RIGHTTEXTVIEW(ELEMENT,"About Us",()=>{
-
-        });
-
-    },(ELEMENT)=>{
-
-        LOADERVIEW(ELEMENT,(LOAD)=>{
-
-            TOP(LOAD,"50%");
-
-        });
-
-    });
-
-};
-
-const DESKTOPAPPSPAGE=()=>{
-
-    HEADERVIEW((ELEMENT)=>{
-
-        LEFTICONVIEW(ELEMENT,WHITEBACKICON,BLACKBACKICON,(ELSE)=>{
-
-            BACKNAV(ELSE,DESKTOPVIEW);
-
-        });
-
-        RIGHTTEXTVIEW(ELEMENT,"Apps",()=>{
-
-        });
-
-    },(ELEMENT)=>{
-
-        LOADERVIEW(ELEMENT,(LOAD)=>{
-
-            TOP(LOAD,"50%");
-
-        });
-
-    });
-
-};
-
-const DESKTOPCONTACTUS=()=>{
-
-    HEADERVIEW((ELEMENT)=>{
-
-        LEFTICONVIEW(ELEMENT,WHITEBACKICON,BLACKBACKICON,(ELEMENTSS)=>{
-
-            BACKNAV(ELEMENTSS,DESKTOPVIEW);
-
-        });
-
-        RIGHTTEXTVIEW(ELEMENT,"Contact Us",()=>{
-
-        });
-
-    },(ELEMENTAS)=>{
-
-        DIVVIEW(ELEMENTAS,"80%","auto",TRANSPARENT,(ELEMENT)=>{
-
-            MARGIN(ELEMENT,"5% 10%");
-
-            BREAK(ELEMENT);
-
-            TEXTVIEW(ELEMENT,"Fill The Form Below",()=>{
-
-            });
-
-            BREAK(ELEMENT);
-
-            ROUNDINPUTVIEW(ELEMENT,"text","Enter Your Name","Name",()=>{
-
-            });
-
-            BREAK(ELEMENT);
-
-            ROUNDINPUTVIEW(ELEMENT,"email","Enter Your Email","Email",()=>{
-
-            });
-
-            BREAK(ELEMENT);
-
-            ROUNDINPUTVIEW(ELEMENT,"","Subject Of Message","Subject",()=>{
-
-            });
-
-            BREAK(ELEMENT);
-
-            ROUNDTEXTAREAVIEW(ELEMENT,"Enter Your Message","Message",()=>{
-
-            });
-
-            BREAK(ELEMENT);
-
-            BUTTON(ELEMENT,"Submit",FORESTGREEN,(ELSEE)=>{
-
-                CLICK(ELSEE,()=>{
-
-                    TOASTCONDITION(sessionStorage.getItem("Name"),"Enter Your Name",()=>{
-
-                        TOASTCONDITION(sessionStorage.getItem("Email"),"Enter Your Email",()=>{
-
-                            TOASTCONDITION(sessionStorage.getItem("Subject"),"Enter Your Subject",()=>{
-
-                                TOASTCONDITION(sessionStorage.getItem("Message"),"Compose The Message",()=>{
-
-                                    TOASTVIEW("Please Wait");
-
-                                });    
-        
-                            });    
-
-                        });
-
-                    });
-
-                });
-
-            });
-
-            BREAK(ELEMENT);
-
-            BREAK(ELEMENT);
-
-            BREAK(ELEMENT);
-
-            LINE(ELEMENT);
-
-            BREAK(ELEMENT);
-
-            TEXTVIEW(ELEMENT,"OR",()=>{
-
-            });
-
-            BREAK(ELEMENT);
-
-            LINE(ELEMENT);
-
-            BREAK(ELEMENT);
-
-            INLINEVIEW(ELEMENT,"","100px",TRANSPARENT,"",(ELSE)=>{
-
-                ICONVIEW(ELSE,COLOREDINSTAGRAM,COLOREDINSTAGRAM,(ELEMENTSS)=>{
-
-                    WIDTH(ELEMENTSS,"100xp");
-                    HEIGHT(ELEMENTSS,"100xp");
-
-                });
-
-                ICONVIEW(ELSE,WHITEGMAILICON,WHITEGMAILICON,(ELEMENTSS)=>{
-
-                    WIDTH(ELEMENTSS,"100xp");
-                    HEIGHT(ELEMENTSS,"100xp");
-
-                });
-
-                ICONVIEW(ELSE,WHITEWHATSAPPICON,BLACKWHATSAPPICON,(ELEMENTSS)=>{
-
-                    WIDTH(ELEMENTSS,"100xp");
-                    HEIGHT(ELEMENTSS,"100xp");
-
-                });
-
-            });
-
-            BREAK(ELEMENT);
-
-            BREAK(ELEMENT);
-
-            TEXTVIEW(ELEMENT,COPYRIGHT+"ERANDIX 2026",()=>{
-
-            });
-            
-        });
-
-    });
-
-};
