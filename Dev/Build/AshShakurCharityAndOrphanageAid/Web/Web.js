@@ -874,6 +874,8 @@ const MOBILEVIEW=()=>{
                     CLICK(ELEMENTSES,()=>{
 
                         BOTTOMNAV("","Contact US",()=>{
+
+                            
                             
                         });
 
@@ -1321,4 +1323,3 @@ const SUBJECTSECTION=()=>{
 const DESKTOPVIEW=()=>{
 
 };
-
