@@ -8,7 +8,7 @@ const MOBILEVIEW=()=>{
 
     BOTTOMNAV("","Hello",(ES)=>{
 
-        CCNTACTUSVIEW(ES);
+        CCNTACTUSVIEW(ES);;;
 
     });
     
