@@ -1,28 +1,5 @@
 ERANDES=()=>{
 
-    CONTACTUSVIEW("","",(ELSE)=>{
-
-        ICONVIEW(ELSE,COLOREDINSTAGRAM,COLOREDINSTAGRAM,(ELEMENTSS)=>{
-
-            WIDTH(ELEMENTSS,"100xp");
-            HEIGHT(ELEMENTSS,"100xp");
-
-        });
-
-        ICONVIEW(ELSE,WHITEGMAILICON,WHITEGMAILICON,(ELEMENTSS)=>{
-
-            WIDTH(ELEMENTSS,"100xp");
-            HEIGHT(ELEMENTSS,"100xp");
-
-        });
-
-        ICONVIEW(ELSE,WHITEWHATSAPPICON,BLACKWHATSAPPICON,(ELEMENTSS)=>{
-
-            WIDTH(ELEMENTSS,"100xp");
-            HEIGHT(ELEMENTSS,"100xp");
-
-        });
-
-    });
 
 };
+

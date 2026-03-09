@@ -1,4 +1,4 @@
-const CONTACTUSVIEW = (ELEMENT,LINK)=>{
+const CONTACTUSVIEW = (ELEMENT,LINK,CALLBACK)=>{
 
     SWITCHER("800px",()=>{
 
@@ -87,6 +87,10 @@ const CONTACTUSVIEW = (ELEMENT,LINK)=>{
             BREAK(ELEMENTS);
 
             INLINEVIEW(ELEMENTS,"","100px",TRANSPARENT,"",(ELSE)=>{
+
+                OVERFLOWHIDDEN(ELSE);
+
+                OVERFLOWX(ELSE);
 
                 CALLBACK(ELSE);
 
@@ -190,26 +194,11 @@ const CONTACTUSVIEW = (ELEMENT,LINK)=>{
 
         INLINEVIEW(ELEMENT,"","100px",TRANSPARENT,"",(ELSE)=>{
 
-            ICONVIEW(ELSE,COLOREDINSTAGRAM,COLOREDINSTAGRAM,(ELEMENTSS)=>{
+            OVERFLOWHIDDEN(ELSE);
 
-                WIDTH(ELEMENTSS,"100xp");
-                HEIGHT(ELEMENTSS,"100xp");
+            OVERFLOWX(ELSE);
 
-            });
-
-            ICONVIEW(ELSE,WHITEGMAILICON,WHITEGMAILICON,(ELEMENTSS)=>{
-
-                WIDTH(ELEMENTSS,"100xp");
-                HEIGHT(ELEMENTSS,"100xp");
-
-            });
-
-            ICONVIEW(ELSE,WHITEWHATSAPPICON,BLACKWHATSAPPICON,(ELEMENTSS)=>{
-
-                WIDTH(ELEMENTSS,"100xp");
-                HEIGHT(ELEMENTSS,"100xp");
-
-            });
+            CALLBACK(ELSE);
 
         });
 
