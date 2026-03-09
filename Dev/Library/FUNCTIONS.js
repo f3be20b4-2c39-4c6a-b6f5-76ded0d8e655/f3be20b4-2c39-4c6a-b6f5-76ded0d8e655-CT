@@ -37,7 +37,7 @@ const CALL=(NUMBER)=>{window.location.href = "tel:"+NUMBER;};
 const HOVER=(ELEMENT, onEnter, onLeave) => {ELEMENT.addEventListener("mouseenter",()=>onEnter(ELEMENT));ELEMENT.addEventListener("mouseleave",()=>onLeave(ELEMENT));};
 const DOMAINNAMECHANGE=()=>{const currentUrl = window.location.href;const storedUrl = localStorage.getItem('storedUrl');if (!storedUrl){localStorage.setItem('storedUrl', currentUrl);} else if (storedUrl !== currentUrl) {localStorage.clear();sessionStorage.clear();localStorage.setItem('storedUrl', currentUrl);RELOAD();};};
 const DATENOW=(callback) => {callback(Date.now());};
-const DATETODAY=(callback)=>{const now = new Date();console.log(`Date: ${now.toLocaleDateString()}`);console.log(`Day: ${now.toLocaleDateString('en-US', { weekday: 'long' })}`);console.log(`Time: ${now.toLocaleTimeString()}`);const futureDate = new Date(now);futureDate.setDate(now.getDate());const result = {date: futureDate.toLocaleDateString(),day: futureDate.toLocaleDateString('en-US', { weekday: 'long' }),time: futureDate.toLocaleTimeString()};callback(result);};
+const DATETODAY = (callback) => {const now = new Date();const futureDate = new Date(now);futureDate.setDate(now.getDate());const result = {date: futureDate.toLocaleDateString(),day: futureDate.toLocaleDateString("en-US", { weekday: "long" }),time: futureDate.toLocaleTimeString()};callback(result);};
 const SMS=(NUMBER) => {const phoneNumber = NUMBER;window.location.href = "sms:" + phoneNumber;};
 const WEBSITE=(LINK)=>{OFFLINECHECKER(()=>{location.href=LINK;})};
 const SCROLL=(ELEMENT, callback) => {ELEMENT.addEventListener("scroll", () => {callback();});};
