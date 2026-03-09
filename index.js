@@ -3,10 +3,10 @@ import { DEVPAGE } from "./LoaderPages/Dev.js";
 
 export const FUCKCONNECTION = () => {
 
+    ASSETSCONNECTION();
+
     STYLESDOWNLOAD();
 
-    ASSETSCONNECTION();
-    
     PRODUCTIONMODE();
 
     if (!localStorage.getItem("Packaged")) {
