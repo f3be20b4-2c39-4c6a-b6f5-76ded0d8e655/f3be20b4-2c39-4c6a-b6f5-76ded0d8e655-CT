@@ -132,8 +132,6 @@ const MOBILEVIEW=()=>{
 
                 GETSAVEDINDEX("Catergory",(Data)=>{
 
-                    console.log(Data)
-
                     DISPLAYHIDDEN(LOAD);
 
                     BUTTON(ELEMENTS,Data.Name,TEAL,(ELEMENTS)=>{
@@ -938,10 +936,10 @@ const MOBILEVIEW=()=>{
 
                     CLICK(ELEMENTSES,()=>{
 
-                        BOTTOMNAV("","Contact US",()=>{
+                        BOTTOMNAV("","Contact US",(ELSA)=>{
 
-                            
-                            
+                            CCNTACTUSVIEW(ELSA,ASCODATABASELINK);
+   
                         });
 
                     });

@@ -1,4 +1,4 @@
-const CCNTACTUSVIEW=(ELEMENT)=>{
+const CCNTACTUSVIEW = (ELEMENT,LINK)=>{
 
     SWITCHER("800px",()=>{
 
@@ -51,6 +51,8 @@ const CCNTACTUSVIEW=(ELEMENT)=>{
                                 TOASTCONDITION(sessionStorage.getItem("Message"),"Compose The Message",()=>{
 
                                     TOASTVIEW("Please Wait");
+
+                                    CONTACTUSSERVER(LINK);
 
                                 });    
         
@@ -171,6 +173,8 @@ const CCNTACTUSVIEW=(ELEMENT)=>{
 
                                 TOASTVIEW("Please Wait");
 
+                                CONTACTUSSERVER(LINK);
+
                             });    
     
                         });    
@@ -242,4 +246,8 @@ const CCNTACTUSVIEW=(ELEMENT)=>{
 
     });
     
+};
+
+const CONTACTUSSERVER=(LINK)=>{
+
 };

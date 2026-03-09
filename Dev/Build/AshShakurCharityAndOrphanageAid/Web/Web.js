@@ -1,1275 +1,183 @@
-const ERANDES=()=>{
+const CCNTACTUSVIEW = (ELEMENT,LINK)=>{
 
-    DOWNLOADSAVEINDEX(ASCODATABASELINK,"Catergory",()=>{
+    SWITCHER("800px",()=>{
 
-    },()=>{
-
-        VIEWCONTROLLER();  
-
-    });
-
-    VIEWCONTROLLER();  
-
-};
-
-const MOBILEVIEW=()=>{
-
-    HEADERVIEW((ELEMENT)=>{
-
-        LEFTICONVIEW(ELEMENT,ASCOLOGO,ASCOLOGO,(ELEMENTS)=>{
-
-            WIDTH(ELEMENTS,"50px");
-            HEIGHT(ELEMENTS,"45px");
-
-        });
-
-        LEFTTEXTVIEW(ELEMENT,"ASCOA",(ELEMENTS)=>{
-
-            COLOR(ELEMENTS,GREEN);
-
-        });
-
-        BUTTON(ELEMENT,"Donate",GREEN,(ELEMENTS)=>{
-
-            WIDTH(ELEMENTS,"70px");
-            HEIGHT(ELEMENTS,"40px");
-            RADIUS(ELEMENTS,"5px");
-
-            COLOR(ELEMENTS,WHITE);
-
-            CLICK(ELEMENTS,()=>{
-
-                BOTTOMNAV("","Donation",()=>{
-                            
-                });
-
-            });
-
-        });
-
-        RIGHTICONVIEW(ELEMENT,WHITEMENUICON,BLACKMENUICON,(ELEMENTS)=>{
-
-            CLICK(ELEMENTS,()=>{
-
-                MENUNAV(""," ","Menu",(ELSE)=>{
-
-                    BREAK(ELSE);
-
-                    LEFTTEXTVIEW(ELSE,"About Us",()=>{
-
-                        TEXTALIGN(ELSE,"Left");
-
-                        LEFT(ELSE,"5%");
-
-                    });
-
-                    BREAK(ELSE);
-
-                    LEFTTEXTVIEW(ELSE,"Our Programs",()=>{
-
-                        TEXTALIGN(ELSE,"Left");
-
-                        LEFT(ELSE,"5%");
-
-                    });
-
-                    BREAK(ELSE);
-
-                    LEFTTEXTVIEW(ELSE,"Complaints",()=>{
-
-                        TEXTALIGN(ELSE,"Left");
-
-                        LEFT(ELSE,"5%");
-
-                    });
-
-                    BREAK(ELSE);
-
-                    LEFTTEXTVIEW(ELSE,"Tech Support",()=>{
-
-                        TEXTALIGN(ELSE,"Left");
-
-                        LEFT(ELSE,"5%");
-
-                    });
-
-                    BREAK(ELSE);
-
-                    TEXTVIEW(ELSE,COPYRIGHT+"ASCOA 2026",(ELS)=>{
-
-                        TEXTALIGN(ELS,"Center");
-
-                    });
-
-                });
- 
-            });
-
-        });
-
-    },(ELEMENT)=>{
-
-        BREAK(ELEMENT);
-
-        TEXTVIEW(ELEMENT,"ASH SHAKUR CHARITY AND ORPHANAGE AID",(ELEMENTS)=>{
-
-            FONTSIZE(ELEMENTS,"15px");
-            COLOR(ELEMENTS,GREEN);
-
-        });
-
-        TEXTVIEW(ELEMENT,'"Helping The Poor Orphans and  the Needy People"',(ELEMENTS)=>{
-
-            FONTSIZE(ELEMENTS,"13px");
-
-        });
-
-        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
-
-            OVERFLOWX(ELEMENTS);
-
-            LOADERVIEW(ELEMENTS,(LOAD)=>{
-
-                GETSAVEDINDEX("Catergory",(Data)=>{
-
-                    console.log(Data)
-
-                    DISPLAYHIDDEN(LOAD);
-
-                    BUTTON(ELEMENTS,Data.Name,TEAL,(ELEMENTS)=>{
-
-                        WIDTH(ELEMENTS,"auto");
-                        HEIGHT(ELEMENTS,"40px");
-                        RADIUS(ELEMENTS,"5px");
-
-                        COLOR(ELEMENTS,WHITE);
-
-                        MARGINLEFT(ELEMENTS,"2%");
-
-                        FLEXSHRINK(ELEMENTS);
-
-                        CLICK(ELEMENTS,()=>{
-
-                            DATASTORE("","BaseName",Data.DataBaseName);
-
-                            ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
-
-                        });
-
-                    });
-
-                });
-
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        INLINEVIEW(ELEMENT,"95%","400px",TRANSPARENT,"2%",(ELEMENTS)=>{
-
-            OVERFLOWX(ELEMENTS);
-
-            INLINEVIEW(ELEMENTS,"80%","95%",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                OVERFLOWX(ELEMENTIS);
-
-                MARGIN(ELEMENTIS,"2%");
-
-                FLEXSHRINK(ELEMENTIS);
-
-                RADIUS(ELEMENTIS,"10px");
-
-                SERVERCOMPONENTS("Images/Asco/QurbanImageChild.jpeg",(DATA)=>{
-
-                    IMAGE(ELEMENTIS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
-
-                        POSITIONABSOLUTE(ELEMENTSES);
-
-                        CLICK(ELEMENTSES,()=>{
-
-                            DATASTORE("","BaseName","Ramadan");
-
-                            ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
-
-                        });
-    
-                    });
-
-                });
-
-                TEXTVIEW(ELEMENTIS,"RAMADAN IFTAR 2026/1447H",(ELEMENTSES)=>{
-
-                    PADDING(ELEMENTSES,"5%");
-
-                    HEIGHT(ELEMENTSES,"50px");
-
-                    BACKGROUND(ELEMENTSES,WHITE);
-
-                    POSITIONABSOLUTE(ELEMENTSES);
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                    TOP(ELEMENTSES,"0");
-
-                });
-
-                DIVVIEW(ELEMENTIS,"95%","200px","#00000060",(ELIS)=>{
-
-                    BOTTOM(ELIS,"20px");
-
-                    LEFT(ELIS,"2%");
-
-                    POSITIONABSOLUTE(ELIS);
-
-                    TEXTVIEW(ELIS,"This year, we will once again come together to share the blessings of Ramadan with millions of people in need who await it with hope.",(ELEMENTSES)=>{
-
-                        MARGIN(ELEMENTSES,"5%");
-
-                        FONTSIZE(ELEMENTSES,"17px");
-
-                        COLOR(ELEMENTSES,WHITE);
-
-                    });
-
-                });
-
-                BUTTON(ELEMENTIS,"Donate",GREEN,(ELEMENTS)=>{
-
-                    POSITIONABSOLUTE(ELEMENTS);
-                    WIDTH(ELEMENTS,"30%");
-                    LEFT(ELEMENTS,"40%");
-                    HEIGHT(ELEMENTS,"40px");
-                    RADIUS(ELEMENTS,"5px");
-                    BOTTOM(ELEMENTS,"50px");
-
-                    COLOR(ELEMENTS,WHITE);
-
-                    CLICK(ELEMENTS,()=>{
-
-                        BOTTOMNAV("","Donation",()=>{
-                            
-                        });
-
-                    });
-
-                });
-
-            });
-
-            INLINEVIEW(ELEMENTS,"80%","95%",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                OVERFLOWX(ELEMENTIS);
-
-                MARGIN(ELEMENTIS,"2%");
-
-                FLEXSHRINK(ELEMENTIS);
-
-                RADIUS(ELEMENTIS,"10px");
-
-                SERVERCOMPONENTS("Images/Asco/FoodPackDistribution.jpeg",(DATA)=>{
-
-                    IMAGE(ELEMENTIS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
-
-                        POSITIONABSOLUTE(ELEMENTSES);
-
-                        CLICK(ELEMENTSES,()=>{
-
-                            DATASTORE("","BaseName","FoodPack");
-
-                            ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
-
-                        });
-    
-                    });
-
-                });
-
-                TEXTVIEW(ELEMENTIS,"RAMADAN FOOD PACK 2026/1447H",(ELEMENTSES)=>{
-
-                    PADDING(ELEMENTSES,"5%");
-
-                    HEIGHT(ELEMENTSES,"50px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                    BACKGROUND(ELEMENTSES,WHITE);
-
-                    POSITIONABSOLUTE(ELEMENTSES);
-
-                    TOP(ELEMENTSES,"0");
-
-                });
-
-                DIVVIEW(ELEMENTIS,"95%","200px","#00000060",(ELIS)=>{
-
-                    BOTTOM(ELIS,"20px");
-
-                    LEFT(ELIS,"2%");
-
-                    POSITIONABSOLUTE(ELIS);
-
-                    TEXTVIEW(ELIS,"We are preparing food packages to turn into cheerful Ramadan tables for the families in need during Ramadan.",(ELEMENTSES)=>{
-
-                        MARGIN(ELEMENTSES,"5%");
-
-                        COLOR(ELEMENTSES,WHITE);
-
-                        FONTSIZE(ELEMENTSES,"17px");
-
-                    });
-
-                });
-
-                BUTTON(ELEMENTIS,"Donate",GREEN,(ELEMENTS)=>{
-
-                    POSITIONABSOLUTE(ELEMENTS);
-                    WIDTH(ELEMENTS,"30%");
-                    LEFT(ELEMENTS,"40%");
-                    HEIGHT(ELEMENTS,"40px");
-                    RADIUS(ELEMENTS,"5px");
-                    BOTTOM(ELEMENTS,"50px");
-
-                    COLOR(ELEMENTS,WHITE);
-
-                    CLICK(ELEMENTS,()=>{
-
-                        BOTTOMNAV("","Donation",()=>{
-                            
-                        });
-
-                    });
-
-                });
-
-            });
-
-            INLINEVIEW(ELEMENTS,"80%","95%",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                OVERFLOWX(ELEMENTIS);
-
-                (ELEMENTIS,"2%");
-
-                FLEXSHRINK(ELEMENTIS);
-
-                RADIUS(ELEMENTIS,"10px");
-
-                SERVERCOMPONENTS("Images/Asco/Zakat.jpeg",(DATA)=>{
-
-                    IMAGE(ELEMENTIS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
-
-                        POSITIONABSOLUTE(ELEMENTSES);
-
-                        CLICK(ELEMENTSES,()=>{
-
-                            DATASTORE("","BaseName","Zakat");
-
-                            ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
-
-                        });
-    
-                    });
-
-                });
-
-                TEXTVIEW(ELEMENTIS,"ZAKAT AL-FITIR 2026/1447H",(ELEMENTSES)=>{
-
-                    PADDING(ELEMENTSES,"5%");
-
-                    HEIGHT(ELEMENTSES,"50px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                    BACKGROUND(ELEMENTSES,"#FFFFFF70");
-
-                    POSITIONABSOLUTE(ELEMENTSES);
-
-                    TOP(ELEMENTSES,"0");
-
-                });
-
-                DIVVIEW(ELEMENTIS,"95%","200px","#00000060",(ELIS)=>{
-
-                    BOTTOM(ELIS,"20px");
-
-                    LEFT(ELIS,"2%");
-
-                    POSITIONABSOLUTE(ELIS);
-
-                    TEXTVIEW(ELIS,"Zakat involves giving of 2.5% of our annual wealth to charity. It is one of the five pillars of Islam and compulsory for all eligible Muslims.",(ELEMENTSES)=>{
-
-                        MARGIN(ELEMENTSES,"5%");
-
-                        FONTSIZE(ELEMENTSES,"17px");
-
-                        COLOR(ELEMENTSES,WHITE);
-
-                    });
-
-                });
-
-                BUTTON(ELEMENTIS,"Donate",GREEN,(ELEMENTS)=>{
-
-                    POSITIONABSOLUTE(ELEMENTS);
-                    WIDTH(ELEMENTS,"30%");
-                    LEFT(ELEMENTS,"40%");
-                    HEIGHT(ELEMENTS,"40px");
-                    RADIUS(ELEMENTS,"5px");
-                    BOTTOM(ELEMENTS,"50px");
-
-                    COLOR(ELEMENTS,WHITE);
-
-                    CLICK(ELEMENTS,()=>{
-
-                        BOTTOMNAV("","Donation",()=>{
-                            
-                        });
-
-                    });
-
-                });
-
-            });
-
-            INLINEVIEW(ELEMENTS,"80%","95%",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                OVERFLOWX(ELEMENTIS);
-
-                MARGIN(ELEMENTIS,"2%");
-
-                FLEXSHRINK(ELEMENTIS);
-
-                RADIUS(ELEMENTIS,"10px");
-
-                SERVERCOMPONENTS("Images/Asco/FoodPack.jpeg",(DATA)=>{
-
-                    IMAGE(ELEMENTIS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
-
-                        POSITIONABSOLUTE(ELEMENTSES);
-
-                        CLICK(ELEMENTSES,()=>{
-
-                            DATASTORE("","BaseName","Ramadan");
-
-                            ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
-
-                        });
-    
-                    });
-
-                });
-
-                TEXTVIEW(ELEMENTIS,"SHARE HOPE 2026/1447H",(ELEMENTSES)=>{
-
-                    PADDING(ELEMENTSES,"5%");
-
-                    HEIGHT(ELEMENTSES,"50px");
-
-                    COLOR(ELEMENTSES,BLACK);
-
-                    BACKGROUND(ELEMENTSES,WHITE);
-
-                    POSITIONABSOLUTE(ELEMENTSES);
-
-                    TOP(ELEMENTSES,"0");
-
-                });
-
-                DIVVIEW(ELEMENTIS,"95%","200px","#00000060",(ELIS)=>{
-
-                    BOTTOM(ELIS,"20px");
-
-                    LEFT(ELIS,"2%");
-
-                    POSITIONABSOLUTE(ELIS);
-
-                    TEXTVIEW(ELIS,"Randam A month to share and repent your wrong doings to Allah.",(ELEMENTSES)=>{
-
-                        MARGIN(ELEMENTSES,"5%");
-
-                        FONTSIZE(ELEMENTSES,"17px");
-
-                        COLOR(ELEMENTSES,WHITE);
-
-                    });
-
-                });
-
-                BUTTON(ELEMENTIS,"Donate",GREEN,(ELEMENTS)=>{
-
-                    POSITIONABSOLUTE(ELEMENTS);
-                    WIDTH(ELEMENTS,"30%");
-                    LEFT(ELEMENTS,"40%");
-                    HEIGHT(ELEMENTS,"40px");
-                    RADIUS(ELEMENTS,"5px");
-                    BOTTOM(ELEMENTS,"50px");
-
-                    COLOR(ELEMENTS,WHITE);
-
-                    CLICK(ELEMENTS,()=>{
-
-                        BOTTOMNAV("","Donation",()=>{
-                            
-                        });
-
-                    });
-
-                });
-
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        DIVVIEW(ELEMENT,"95%","auto",TRANSPARENT,(ELEMENTS)=>{
-
-            TEXTVIEW(ELEMENTS,"FEED THE FASTING THIS RAMADAN",(ELEMENTSES)=>{
-
-                MARGIN(ELEMENTSES,"5%");
-
-                FONTSIZE(ELEMENTSES,"17px");
-
-                COLOR(ELEMENTSES,TEAL);
-
-            });
-
-            LEFTTEXTVIEW(ELEMENTS,"Whoever helps break the fast of a fasting person will have the same reward as the one [who fasted] without decreasing anything from the reward of the fasting person.",(ELEMENTSES)=>{
-
-                FONTSIZE(ELEMENTSES,"17px");
-
-            });
-
-        });
-        
-        BREAK(ELEMENT);
-
-        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
-
-            OVERFLOWX(ELEMENTS);
-
-            BUTTON(ELEMENTS,"Water Well Construction",TEAL,(ELEMENTS)=>{
-
-                WIDTH(ELEMENTS,"200px");
-                HEIGHT(ELEMENTS,"40px");
-                RADIUS(ELEMENTS,"5px");
-
-                COLOR(ELEMENTS,WHITE);
-
-            });       
-           
-        });
-
-        BREAK(ELEMENT);
-
-        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
-
-            SERVERCOMPONENTS("Images/Asco/waterwell.jpeg",(DATA)=>{
-
-                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
-
-                    POSITIONABSOLUTE(ELEMENTSES);
-                    LEFT(ELEMENTSES,"");
-
-                    CLICK(ELEMENTSES,()=>{
-
-                        DATASTORE("","BaseName","WaterWell");
-
-                        ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
-
-                    });
-    
-                });
-
-            });
-
-            RADIUS(ELEMENTS,"10px");
-
-            FOOTER(ELEMENTS,(ELS)=>{
-
-                BACKGROUND(ELS,GREEN);
-
-                TEXTVIEW(ELS,"Donate",(ELSSS)=>{
-
-                    COLOR(ELSSS,WHITE);
-
-                    CLICK(ELSSS,()=>{
-
-                        BOTTOMNAV("","Donation",()=>{
-                            
-                        });
-
-                    });
-
-                });
-
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        DIVVIEW(ELEMENT,"95%","auto",TRANSPARENT,(ELEMENTS)=>{
-
-            TEXTVIEW(ELEMENTS,"BLESSINGS OF PROVIDING WATER",(ELEMENTSES)=>{
-
-                MARGIN(ELEMENTSES,"5%");
-
-                FONTSIZE(ELEMENTSES,"17px");
-
-                COLOR(ELEMENTSES,TEAL);
-
-            });
-
-            LEFTTEXTVIEW(ELEMENTS,"The Prophet Muhammad (peace be upon him) said, \"The best charity is providing water.\" (Ibn Majah) Your contribution will not only bring physical relief but also spiritual rewards",(ELEMENTSES)=>{
-
-                FONTSIZE(ELEMENTSES,"17px");
-
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
-
-            OVERFLOWX(ELEMENTS);
-
-            BUTTON(ELEMENTS,"Qurban",TEAL,(ELEMENTS)=>{
-
-                WIDTH(ELEMENTS,"150px");
-                HEIGHT(ELEMENTS,"40px");
-                RADIUS(ELEMENTS,"5px");
-
-                COLOR(ELEMENTS,WHITE);
-
-            });       
-           
-        });
-
-        BREAK(ELEMENT);
-
-        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
-
-            SERVERCOMPONENTS("Images/Asco/qurban.jpeg",(DATA)=>{
-
-                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
-
-                    POSITIONABSOLUTE(ELEMENTSES);
-                    LEFT(ELEMENTSES,"");
-
-                    CLICK(ELEMENTSES,()=>{
-
-                        DATASTORE("","BaseName","Qurban");
-
-                        ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
-
-                    });
-    
-                });
-
-            });
-
-            RADIUS(ELEMENTS,"10px");
-
-            FOOTER(ELEMENTS,(ELS)=>{
-
-                BACKGROUND(ELS,GREEN);
-
-                TEXTVIEW(ELS,"Donate",(ELSSS)=>{
-
-                    COLOR(ELSSS,WHITE);
-
-                    CLICK(ELSSS,()=>{
-
-                        BOTTOMNAV("","Donation",()=>{
-                            
-                        });
-
-                    });
-
-
-                });
-
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        DIVVIEW(ELEMENT,"95%","auto",TRANSPARENT,(ELEMENTS)=>{
-
-            TEXTVIEW(ELEMENTS,"QURABAN SACRIFICE 2026/1447H PRE-ORDER NOW!",(ELEMENTSES)=>{
-
-                MARGIN(ELEMENTSES,"5%");
-
-                FONTSIZE(ELEMENTSES,"17px");
-
-                COLOR(ELEMENTSES,TEAL);
-
-            });
-
-            LEFTTEXTVIEW(ELEMENTS,"It is neither their meat nor their bread that reaches Allah, but it is piety from you that reaches Him",(ELEMENTSES)=>{
-
-                FONTSIZE(ELEMENTSES,"17px");
-
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
-
-            OVERFLOWX(ELEMENTS);
-
-            BUTTON(ELEMENTS,"Mosque Construction",TEAL,(ELEMENTS)=>{
-
-                WIDTH(ELEMENTS,"150px");
-                HEIGHT(ELEMENTS,"40px");
-                RADIUS(ELEMENTS,"5px");
-
-                COLOR(ELEMENTS,WHITE);
-
-            });       
-           
-        });
-
-        BREAK(ELEMENT);
-
-        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
-
-            SERVERCOMPONENTS("Images/Asco/mosque.jpeg",(DATA)=>{
-
-                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
-
-                    POSITIONABSOLUTE(ELEMENTSES);
-                    LEFT(ELEMENTSES,"");
-
-                    CLICK(ELEMENTSES,()=>{
-
-                        DATASTORE("","BaseName","Masjid");
-
-                        ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
-
-                    });
-    
-                });
-
-            });
-
-            RADIUS(ELEMENTS,"10px");
-
-            FOOTER(ELEMENTS,(ELS)=>{
-
-                BACKGROUND(ELS,GREEN);
-
-                TEXTVIEW(ELS,"Donate",(ELSSS)=>{
-
-                    COLOR(ELSSS,WHITE);
-
-                    CLICK(ELSSS,()=>{
-
-                        BOTTOMNAV("","Donation",()=>{
-                            
-                        });
-
-                    });
-
-                });
-
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        DIVVIEW(ELEMENT,"95%","auto",TRANSPARENT,(ELEMENTS)=>{
-
-            TEXTVIEW(ELEMENTS,"WHOEVER BUILDS A MOSQUE,ALLAH BUILDS FOR HIM/HER A HOUSE IN PARADISE",(ELEMENTSES)=>{
-
-                MARGIN(ELEMENTSES,"5%");
-
-                FONTSIZE(ELEMENTSES,"17px");
-
-                COLOR(ELEMENTSES,TEAL);
-
-            });
-
-            LEFTTEXTVIEW(ELEMENTS,"Join us in building a beacon of faith. Help us construct a comfortable and serene space for our brothers and sisters in villages to perform their daily prayers. Your support is crucial in providing a safe haven for this community.",(ELEMENTSES)=>{
-
-                FONTSIZE(ELEMENTSES,"17px");
-
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
-
-            RADIUS(ELEMENTS,"10px");
-
-            TABLEVIEW(ELEMENTS,"50%","30px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"Social Media",(ELEMENTSES)=>{
-
-                    MARGIN(ELEMENTSES,"5%");
-
-                });
-
-            });
-
-            BREAK(ELEMENT);
-
-            INLINEVIEW(ELEMENTS,"95%","100px",TRANSPARENT,"2%",(ELEMENTS)=>{
-
-                OVERFLOWX(ELEMENTS);
-
-                ICONVIEW(ELEMENTS,COLOREDFACEBOOKICON,COLOREDFACEBOOKICON,(ELEMENTS)=>{
-
-                    WIDTH(ELEMENTS,"50px");
-
-                    HEIGHT(ELEMENTS,"50px");
-
-                    CLICK(ELEMENTS,()=>{
-
-                        WEBSITE("https://www.facebook.com/share/188Uyj5rGJ/");
-
-                    });
-
-                });
-
-                ICONVIEW(ELEMENTS,COLOREDINSTAGRAM,COLOREDINSTAGRAM,(ELEMENTS)=>{
-
-                    WIDTH(ELEMENTS,"50px");
-
-                    HEIGHT(ELEMENTS,"50px");
-
-                    CLICK(ELEMENTS,()=>{
-
-                        INSTAGRAM("ash_shakur_charity_");
-
-                    });
-
-                });
-
-                ICONVIEW(ELEMENTS,COLOREDTIKTOKICON,COLOREDTIKTOKICON,(ELEMENTS)=>{
-
-                    WIDTH(ELEMENTS,"50px");
-
-                    HEIGHT(ELEMENTS,"50px");
-
-                    CLICK(ELEMENTS,()=>{
-
-                        TIKTOK("ashshakurcharity1");
-
-                    });
-
-                });
-
-                ICONVIEW(ELEMENTS,WHITEXICON,BLACKXICON,(ELEMENTS)=>{
-
-                    WIDTH(ELEMENTS,"50px");
-
-                    HEIGHT(ELEMENTS,"50px");
-
-                    CLICK(ELEMENTS,()=>{
-
-                        X("AshShakur41402");
-
-                    });
-
-                });
-
-            });
-
-            BREAK(ELEMENT);
-
-            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"App Mode",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"2%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    CHANGEMODE(ELEMENTSES);
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"20%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"App",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"5%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    CLICK(ELEMENTSES,()=>{
-
-                        BOTTOMNAV("","App",()=>{
-
-                        });
-
-                    });
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"Contact Us",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"5%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    CLICK(ELEMENTSES,()=>{
-
-                        BOTTOMNAV("","Contact US",()=>{
-
-                            
-                            
-                        });
-
-                    });
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"Policies",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"2%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    CLICK(ELEMENTSES,()=>{
-
-                        BOTTOMNAV("","Policies",()=>{
-                            
-                        });
-
-                    });
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"20%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"Parthners",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"5%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    CLICK(ELEMENTSES,()=>{
-
-                        BOTTOMNAV("","Parthners",()=>{
-                            
-                        });
-
-                    });
-
-                });
-
-            });
-
-            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
-
-                RADIUS(ELEMENTIS,"5px");
-
-                TEXTVIEW(ELEMENTIS,"Lincenses",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"5%");
-
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    CLICK(ELEMENTSES,()=>{
-
-                        BOTTOMNAV("","Lincenses",()=>{
-                            
-                        });
-
-                    });
-
-                });
-
-            });
+        DIVVIEW(ELEMENT,"80%","auto",TRANSPARENT,(ELEMENTS)=>{
 
             BREAK(ELEMENTS);
-
-            BREAK(ELEMENTS);
-
-            TEXTVIEW(ELEMENTS,COPYRIGHT+"ASCOA 2026",()=>{
-
-            });
             
             BREAK(ELEMENTS);
 
-        });
-
-    });
-
-    BUTTON(""," ",FORESTGREEN,(ELEMENTS)=>{
-
-        POSITIONFIXED(ELEMENTS);
-        RIGHT(ELEMENTS,"2%");
-        BOTTOM(ELEMENTS,"5px");
-        
-        WIDTH(ELEMENTS,"70px");
-        HEIGHT(ELEMENTS,"70px");
-        RADIUS(ELEMENTS,"100%");
-
-        COLOR(ELEMENTS,WHITE);
-
-        ICONVIEW(ELEMENTS,WHITEWHATSAPPICON,WHITEWHATSAPPICON,(ELEMENTS)=>{
-
-            WIDTH(ELEMENTS,"30px");
-
-            HEIGHT(ELEMENTS,"30px");
-
-        });
-
-        CLICK(ELEMENTS,()=>{
-
-            WHATSAPP("+256789467876");
-
-        });
-
-    });   
-
-};
-
-const SUBJECTSECTION=()=>{
-
-    HEADERVIEW((ELEMENT)=>{
-
-        LEFTICONVIEW(ELEMENT,WHITEBACKICON,BLACKBACKICON,(ELEMENTS)=>{
-
-            CLICK(ELEMENTS,()=>{
-
-                ROUTE("",MOBILEVIEW,"MOBILEVIEW");
+            TEXTVIEW(ELEMENTS,"Fill The Form Below",()=>{
 
             });
 
-        });;
+            BREAK(ELEMENTS);
 
-        LEFTICONVIEW(ELEMENT,ASCOLOGO,ASCOLOGO,(ELEMENTS)=>{
+            ROUNDINPUTVIEW(ELEMENTS,"text","Enter Your Name","Name",()=>{
 
-            WIDTH(ELEMENTS,"50px");
-            HEIGHT(ELEMENTS,"45px");
+            });
 
-        });
+            BREAK(ELEMENTS);
 
-        LEFTTEXTVIEW(ELEMENT,"ASCOA",(ELEMENTS)=>{
+            ROUNDINPUTVIEW(ELEMENTS,"email","Enter Your Email","Email",()=>{
 
-            COLOR(ELEMENTS,GREEN);
+            });
 
-        });
+            BREAK(ELEMENTS);
 
-        BUTTON(ELEMENT,"Donate",GREEN,(ELEMENTS)=>{
+            ROUNDINPUTVIEW(ELEMENTS,"","Subject Of Message","Subject",()=>{
 
-            WIDTH(ELEMENTS,"70px");
-            HEIGHT(ELEMENTS,"40px");
-            RADIUS(ELEMENTS,"5px");
+            });
 
-            COLOR(ELEMENTS,WHITE);
+            BREAK(ELEMENTS);
 
-            CLICK(ELEMENTS,()=>{
+            ROUNDTEXTAREAVIEW(ELEMENTS,"Enter Your Message","Message",()=>{
 
-                BOTTOMNAV("","Donation",()=>{
-                            
+            });
+
+            BREAK(ELEMENTS);
+
+            BUTTON(ELEMENTS,"Submit",FORESTGREEN,(ELSEE)=>{
+
+                CLICK(ELSEE,()=>{
+
+                    TOASTCONDITION(sessionStorage.getItem("Name"),"Enter Your Name",()=>{
+
+                        TOASTCONDITION(sessionStorage.getItem("Email"),"Enter Your Email",()=>{
+
+                            TOASTCONDITION(sessionStorage.getItem("Subject"),"Enter Your Subject",()=>{
+
+                                TOASTCONDITION(sessionStorage.getItem("Message"),"Compose The Message",()=>{
+
+                                    TOASTVIEW("Please Wait");
+
+                                    CONTACTUSSERVER(LINK);
+
+                                });    
+        
+                            });    
+
+                        });
+
+                    });
+
                 });
 
             });
 
+            BREAK(ELEMENTS);
+
+            BREAK(ELEMENTS);
+
+            BREAK(ELEMENTS);
+
+            LINE(ELEMENTS);
+
+            BREAK(ELEMENTS);
+
+            TEXTVIEW(ELEMENTS,"OR",()=>{
+
+            });
+
+            BREAK(ELEMENTS);
+
+            LINE(ELEMENTS);
+
+            BREAK(ELEMENTS);
+
+            INLINEVIEW(ELEMENTS,"","100px",TRANSPARENT,"",(ELSE)=>{
+
+                ICONVIEW(ELSE,COLOREDINSTAGRAM,COLOREDINSTAGRAM,(ELEMENTSS)=>{
+
+                    WIDTH(ELEMENTSS,"100xp");
+                    HEIGHT(ELEMENTSS,"100xp");
+
+                });
+
+                ICONVIEW(ELSE,WHITEGMAILICON,WHITEGMAILICON,(ELEMENTSS)=>{
+
+                    WIDTH(ELEMENTSS,"100xp");
+                    HEIGHT(ELEMENTSS,"100xp");
+
+                });
+
+                ICONVIEW(ELSE,WHITEWHATSAPPICON,BLACKWHATSAPPICON,(ELEMENTSS)=>{
+
+                    WIDTH(ELEMENTSS,"100xp");
+                    HEIGHT(ELEMENTSS,"100xp");
+
+                });
+
+            });
+
+            BREAK(ELEMENTS);
+
+            BREAK(ELEMENTS);
+
+            TEXTVIEW(ELEMENTS,COPYRIGHT+"ERANDIX 2026",()=>{
+
+            });
+
+            BREAK(ELEMENTS);
+
+            BREAK(ELEMENTS);
+
         });
 
-    },(ELEMENT)=>{
+    },()=>{
 
         BREAK(ELEMENT);
 
-        DIVVIEW(ELEMENT,"95%","auto",TRANSPARENT,(ELEMENTS)=>{
+        TEXTVIEW(ELEMENT,"Fill The Form Below",()=>{
 
-            LOADERVIEW(ELEMENTS,(LOAD)=>{
+        });
 
-                GETSAVEDINDEX("Catergory",(Data)=>{
+        BREAK(ELEMENT);
 
-                    DISPLAYHIDDEN(LOAD);
+        ROUNDINPUTVIEW(ELEMENT,"text","Enter Your Name","Name",()=>{
 
-                    CHECKER(Data.DataBaseName === sessionStorage.getItem("BaseName"),()=>{
+        });
 
-                        BREAK(ELEMENTS);
+        BREAK(ELEMENT);
 
-                        DIVVIEW(ELEMENTS,"95%","300px",TRANSPARENT,(ELIS)=>{
+        ROUNDINPUTVIEW(ELEMENT,"email","Enter Your Email","Email",()=>{
 
-                            OVERFLOWHIDDEN(ELIS);
+        });
 
-                            IMAGE(ELIS,"","",Data.Image||ASCOLOGO,TRANSPARENT,()=>{
+        BREAK(ELEMENT);
 
-                            });
+        ROUNDINPUTVIEW(ELEMENT,"","Subject Of Message","Subject",()=>{
 
-                        });
+        });
 
-                        BREAK(ELEMENTS);
+        BREAK(ELEMENT);
 
-                        TEXTVIEW(ELEMENTS,Data.Header,(ELEMENTSI)=>{
+        ROUNDTEXTAREAVIEW(ELEMENT,"Enter Your Message","Message",()=>{
 
-                            COLOR(ELEMENTSI,GREEN);
+        });
 
-                            FONTSIZE(ELEMENTSI,"23px");
+        BREAK(ELEMENT);
 
-                        });
+        BUTTON(ELEMENT,"Submit",FORESTGREEN,(ELSEE)=>{
 
-                        BREAK(ELEMENTS);
+            CLICK(ELSEE,()=>{
 
-                        LEFTTEXTVIEW(ELEMENTS,Data.Story,(ELEMENTSS)=>{
+                TOASTCONDITION(sessionStorage.getItem("Name"),"Enter Your Name",()=>{
 
-                            TYPE(ELEMENTSS,"p");
+                    TOASTCONDITION(sessionStorage.getItem("Email"),"Enter Your Email",()=>{
 
-                        });
+                        TOASTCONDITION(sessionStorage.getItem("Subject"),"Enter Your Subject",()=>{
 
-                        BREAK(ELEMENTS);
+                            TOASTCONDITION(sessionStorage.getItem("Message"),"Compose The Message",()=>{
 
-                        TEXTVIEW(ELEMENTS,Data.HeaderOne,(ELEMENTSI)=>{
+                                TOASTVIEW("Please Wait");
 
-                            COLOR(ELEMENTSI,GREEN);
+                                CONTACTUSSERVER(LINK);
 
-                            FONTSIZE(ELEMENTSI,"23px");
-
-                        });
-
-                        BREAK(ELEMENTS);
-
-                        DIVVIEW(ELEMENTS,"95%","300px",TRANSPARENT,(ELIS)=>{
-
-                            OVERFLOWHIDDEN(ELIS);
-
-                            IMAGE(ELIS,"","",Data.ImageOne||ASCOLOGO,TRANSPARENT,()=>{
-
-                            });
-
-                        });
-
-                        BREAK(ELEMENTS);
-
-                        LEFTTEXTVIEW(ELEMENTS,Data.StoryOne,(ELEMENTSS)=>{
-
-                            TYPE(ELEMENTSS,"p");
-
-                        });
-
-                        BREAK(ELEMENTS);
-
-                        TEXTVIEW(ELEMENTS,Data.HeaderTwo,(ELEMENTSI)=>{
-
-                            COLOR(ELEMENTSI,GREEN);
-
-                            FONTSIZE(ELEMENTSI,"23px");
-
-                        });
-
-                        BREAK(ELEMENTS);
-
-                        DIVVIEW(ELEMENTS,"95%","300px",TRANSPARENT,(ELIS)=>{
-
-                            OVERFLOWHIDDEN(ELIS);
-
-                            IMAGE(ELIS,"","",Data.ImageThree||ASCOLOGO,TRANSPARENT,()=>{
-
-                            });
-
-                        });
-
-                        BREAK(ELEMENTS);
-
-                        LEFTTEXTVIEW(ELEMENTS,Data.StoryThree,(ELEMENTSS)=>{
-
-                            TYPE(ELEMENTSS,"p");
-
-                        });
-
-                        BREAK(ELEMENTS);
-
-                        TEXTVIEW(ELEMENTS,Data.HeaderFour,(ELEMENTSI)=>{
-
-                            COLOR(ELEMENTSI,GREEN);
-
-                            FONTSIZE(ELEMENTSI,"23px");
-
-                        });
-
-                        BREAK(ELEMENTS);
-
-                        DIVVIEW(ELEMENTS,"95%","300px",TRANSPARENT,(ELIS)=>{
-
-                            OVERFLOWHIDDEN(ELIS);
-
-                            IMAGE(ELIS,"","",Data.ImageFour||ASCOLOGO,TRANSPARENT,()=>{
-
-                            });
-
-                        });
-
-                        BREAK(ELEMENTS);
-
-                        LEFTTEXTVIEW(ELEMENTS,Data.StoryFour,(ELEMENTSS)=>{
-
-                            TYPE(ELEMENTSS,"p");
-
-                        });
-
-                        BREAK(ELEMENTS);
-
-                        TEXTVIEW(ELEMENTS,Data.HeaderFive,(ELEMENTSI)=>{
-
-                            COLOR(ELEMENTSI,GREEN);
-
-                            FONTSIZE(ELEMENTSI,"23px");
-
-                        });
-
-                        BREAK(ELEMENTS);
-
-                        DIVVIEW(ELEMENTS,"95%","300px",TRANSPARENT,(ELIS)=>{
-
-                            OVERFLOWHIDDEN(ELIS);
-
-                            IMAGE(ELIS,"","",Data.ImageFive||ASCOLOGO,TRANSPARENT,()=>{
-
-                            });
-
-                        });
-
-                        BREAK(ELEMENTS);
-
-                        LEFTTEXTVIEW(ELEMENTS,Data.StoryFive,(ELEMENTSS)=>{
-
-                            TYPE(ELEMENTSS,"p");
-
-                        });
-
-                        BREAK(ELEMENTS);
+                            });    
+    
+                        });    
 
                     });
 
@@ -1279,120 +187,67 @@ const SUBJECTSECTION=()=>{
 
         });
 
-        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
+        BREAK(ELEMENT);
 
-            RADIUS(ELEMENTS,"10px");
+        BREAK(ELEMENT);
 
-            TABLEVIEW(ELEMENTS,"50%","30px",TRANSPARENT,"2%",(ELEMENTIS)=>{
+        BREAK(ELEMENT);
 
-                RADIUS(ELEMENTIS,"5px");
+        LINE(ELEMENT);
 
-                TEXTVIEW(ELEMENTIS,"Social Media",(ELEMENTSES)=>{
+        BREAK(ELEMENT);
 
-                    MARGIN(ELEMENTSES,"5%");
+        TEXTVIEW(ELEMENT,"OR",()=>{
 
-                });
+        });
 
-            });
+        BREAK(ELEMENT);
 
-            INLINEVIEW(ELEMENTS,"95%","100px",TRANSPARENT,"2%",(ELEMENTS)=>{
+        LINE(ELEMENT);
 
-                OVERFLOWX(ELEMENTS);
+        BREAK(ELEMENT);
 
-                ICONVIEW(ELEMENTS,COLOREDFACEBOOKICON,COLOREDFACEBOOKICON,(ELEMENTS)=>{
+        INLINEVIEW(ELEMENT,"","100px",TRANSPARENT,"",(ELSE)=>{
 
-                    WIDTH(ELEMENTS,"50px");
+            ICONVIEW(ELSE,COLOREDINSTAGRAM,COLOREDINSTAGRAM,(ELEMENTSS)=>{
 
-                    HEIGHT(ELEMENTS,"50px");
-
-                    CLICK(ELEMENTS,()=>{
-
-                        WEBSITE("https://www.facebook.com/share/188Uyj5rGJ/");
-
-                    });
-
-                });
-
-                ICONVIEW(ELEMENTS,COLOREDINSTAGRAM,COLOREDINSTAGRAM,(ELEMENTS)=>{
-
-                    WIDTH(ELEMENTS,"50px");
-
-                    HEIGHT(ELEMENTS,"50px");
-
-                    CLICK(ELEMENTS,()=>{
-
-                        INSTAGRAM("ash_shakur_charity_");
-
-                    });
-
-                });
-
-                ICONVIEW(ELEMENTS,COLOREDTIKTOKICON,COLOREDTIKTOKICON,(ELEMENTS)=>{
-
-                    WIDTH(ELEMENTS,"50px");
-
-                    HEIGHT(ELEMENTS,"50px");
-
-                    CLICK(ELEMENTS,()=>{
-
-                        TIKTOK("ashshakurcharity1");
-
-                    });
-
-                });
-
-                ICONVIEW(ELEMENTS,WHITEXICON,BLACKXICON,(ELEMENTS)=>{
-
-                    WIDTH(ELEMENTS,"50px");
-
-                    HEIGHT(ELEMENTS,"50px");
-
-                    CLICK(ELEMENTS,()=>{
-
-                        X("AshShakur41402");
-
-                    });
-
-                });
+                WIDTH(ELEMENTSS,"100xp");
+                HEIGHT(ELEMENTSS,"100xp");
 
             });
 
-            TEXTVIEW(ELEMENTS,COPYRIGHT+"ASCOA 2026",()=>{
+            ICONVIEW(ELSE,WHITEGMAILICON,WHITEGMAILICON,(ELEMENTSS)=>{
+
+                WIDTH(ELEMENTSS,"100xp");
+                HEIGHT(ELEMENTSS,"100xp");
+
+            });
+
+            ICONVIEW(ELSE,WHITEWHATSAPPICON,BLACKWHATSAPPICON,(ELEMENTSS)=>{
+
+                WIDTH(ELEMENTSS,"100xp");
+                HEIGHT(ELEMENTSS,"100xp");
 
             });
 
         });
+
+        BREAK(ELEMENT);
+
+        BREAK(ELEMENT);
+
+        TEXTVIEW(ELEMENT,COPYRIGHT+"ERANDIX 2026",()=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        BREAK(ELEMENT);
 
     });
-
-    BUTTON(""," ",FORESTGREEN,(ELEMENTS)=>{
-
-        POSITIONFIXED(ELEMENTS);
-        RIGHT(ELEMENTS,"2%");
-        BOTTOM(ELEMENTS,"5px");
-        
-        WIDTH(ELEMENTS,"70px");
-        HEIGHT(ELEMENTS,"70px");
-        RADIUS(ELEMENTS,"100%");
-
-        ICONVIEW(ELEMENTS,WHITEWHATSAPPICON,WHITEWHATSAPPICON,(ELEMENTS)=>{
-
-            WIDTH(ELEMENTS,"30px");
-
-            HEIGHT(ELEMENTS,"30px");
-
-        });
-
-        CLICK(ELEMENTS,()=>{
-
-            WHATSAPP("+256789467876");
-
-        });
-
-    });  
-   
+    
 };
 
-const DESKTOPVIEW=()=>{
+const CONTACTUSSERVER=(LINK)=>{
 
 };
