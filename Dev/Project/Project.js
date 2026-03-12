@@ -1059,7 +1059,13 @@ const MOBILEVIEW=()=>{
 
                     CLICK(ELEMENTSES,()=>{
 
-                        BOTTOMNAV("","Lincenses",()=>{
+                        BOTTOMNAV("","Lincenses",(ELIMS)=>{
+
+                             SERVERASSETS("Policies/Ascoa/Lincenses.txt",(data)=>{
+
+                                DISPLAY(ELIMS,data);
+
+                            });
                             
                         });
 

@@ -1009,7 +1009,13 @@ const MOBILEVIEW=()=>{
 
                     CLICK(ELEMENTSES,()=>{
 
-                        BOTTOMNAV("","Policies",()=>{
+                        BOTTOMNAV("","Policies",(ELIMS)=>{
+
+                            SERVERASSETS("Policies/Ascoa/Policy.txt",(data)=>{
+
+                                DISPLAY(ELIMS,data);
+
+                            });
                             
                         });
 
@@ -1053,7 +1059,13 @@ const MOBILEVIEW=()=>{
 
                     CLICK(ELEMENTSES,()=>{
 
-                        BOTTOMNAV("","Lincenses",()=>{
+                        BOTTOMNAV("","Lincenses",(ELIMS)=>{
+
+                             SERVERASSETS("Policies/Ascoa/Lincenses.txt",(data)=>{
+
+                                DISPLAY(ELIMS,data);
+
+                            });
                             
                         });
 
@@ -1069,7 +1081,7 @@ const MOBILEVIEW=()=>{
 
             YEAR((Time)=>{
 
-                TEXTVIEW(ELEMENTS,COPYRIGHT+"ASCOA "+Time,()=>{
+                TEXTVIEW(ELEMENTS,COPYRIGHT+"ASCOA"+Time,()=>{
 
                 });
 
