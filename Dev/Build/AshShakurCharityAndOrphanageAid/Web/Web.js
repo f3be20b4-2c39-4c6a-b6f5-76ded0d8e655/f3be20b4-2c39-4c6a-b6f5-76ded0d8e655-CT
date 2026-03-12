@@ -100,41 +100,97 @@ const MOBILEVIEW=()=>{
 
                     BREAK(ELSE);
 
-                    LEFTTEXTVIEW(ELSE,"About Us",()=>{
+                    LEFTTEXTVIEW(ELSE,"About Us",(ELIS)=>{
 
                         TEXTALIGN(ELSE,"Left");
 
                         LEFT(ELSE,"5%");
+
+                        CLICK(ELIS,()=>{
+
+                            BOTTOMNAV("","About Us",(ELIMS)=>{
+
+                                SERVERASSETS("Policies/Ascoa/About.txt",(data)=>{
+
+                                    DISPLAY(ELIMS,data);
+
+                                });
+                            
+                            });
+
+                        });
 
                     });
 
                     BREAK(ELSE);
 
-                    LEFTTEXTVIEW(ELSE,"Our Programs",()=>{
+                    LEFTTEXTVIEW(ELSE,"Our Programs",(ELIS)=>{
 
                         TEXTALIGN(ELSE,"Left");
 
                         LEFT(ELSE,"5%");
+
+                        CLICK(ELIS,()=>{
+
+                            BOTTOMNAV("","Programs",(ELIMS)=>{
+
+                                SERVERASSETS("Policies/Ascoa/Program.txt",(data)=>{
+
+                                    DISPLAY(ELIMS,data);
+
+                                });
+                            
+                            });
+
+                        });
 
                     });
 
                     BREAK(ELSE);
 
-                    LEFTTEXTVIEW(ELSE,"Complaints",()=>{
+                    LEFTTEXTVIEW(ELSE,"Complaints",(ELIS)=>{
 
                         TEXTALIGN(ELSE,"Left");
 
                         LEFT(ELSE,"5%");
+
+                        CLICK(ELIS,()=>{
+
+                            BOTTOMNAV("","Complaints",(ELIMS)=>{
+
+                                SERVERASSETS("Policies/Ascoa/Complain.txt",(data)=>{
+
+                                    DISPLAY(ELIMS,data);
+
+                                });
+                            
+                            });
+
+                        });
 
                     });
 
                     BREAK(ELSE);
 
-                    LEFTTEXTVIEW(ELSE,"Tech Support",()=>{
+                    LEFTTEXTVIEW(ELSE,"Tech Support",(ELIS)=>{
 
                         TEXTALIGN(ELSE,"Left");
 
                         LEFT(ELSE,"5%");
+
+                        CLICK(ELIS,()=>{
+
+                            BOTTOMNAV("","Tech Support",(ELIMS)=>{
+
+                                SERVERASSETS("Policies/Ascoa/Tech.txt",(data)=>{
+
+                                    DISPLAY(ELIMS,data);
+
+                                });
+                            
+                            });
+
+                        });
 
                     });
 
