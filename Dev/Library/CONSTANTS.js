@@ -11,9 +11,9 @@ const GETDATALINK="https://script.google.com/macros/s/AKfycbxgaFqwexOOBXA5tn1n2M
 const EMAILLINK="https://script.google.com/macros/s/AKfycbzyfkM3s5iMsX6_Xib2szoe50TEn55lsNV71wXvS6WBbiFjde7DyAG5oE8NXEPFfCxe/exec";
 const ERANDIXAPILINK="https://docs.google.com/spreadsheets/d/1PP-bsio02iir_lpUjfUFf481Ctir1I3vAUK5jtxeClE/edit?usp=sharing";
 const ERANDIXMANAGERLINK="https://docs.google.com/spreadsheets/d/1V_m4KRo--FQkD0fNKfRZ1EWDRCSqTvwGkM7lEFGWldA/edit?usp=sharing";
-const TOKENIZATIONLINK="https://script.google.com/macros/s/AKfycbyOAu0o81D-Jcn-OBKUqckH78eq9qEsrTgC1nX2YjH7pLmVbnNx5h_uFtg3uT_ASO63/exec";
-const IPNIZATIONLINK="https://script.google.com/macros/s/AKfycbwoLarWG5g2gtx-sehv8INXyuSizx4lT7VFP7ZkgXRtwGOpIsCfFdT_Jpzi5zDy93v7/exec";
-const SUBMIZATIONLINK="https://script.google.com/macros/s/AKfycbwqX3IqPY0C2wH_DHE4Y9wO010tiKvsjetijTtMA-cBIXfvJ8Y35xgmpu1a2EpmWojv/exec";
+const TOKENIZATIONLINK="https://script.google.com/macros/s/AKfycbwr6993Ejn-CSYGm5Zxa2qNsB-tYda2jER9m3AhgNyUws7rGibmA1yOzxxZTOR9IyKA/exec";
+const IPNIZATIONLINK="https://script.google.com/macros/s/AKfycbzaorO7GBasKq2MVwHE2vjmX6KEZz61p7yGN-E_WTt2Tu7KG1S0q92UEmQtdsMhurXL/exec";
+const SUBMIZATIONLINK="https://script.google.com/macros/s/AKfycbxFpkFVeQ4j9BfmzULxF8mWpik6UcRe6NvGO7YiZ0fpVfzjdbEuXvs91oNaxn_gaZ383g/exec";
 const DOCTORMJOMBAALICONNECTIONLINK="https://docs.google.com/spreadsheets/d/1dIg-pAEqD8Yie54NMaJA516W9j5RbHs6N-tqaQO0Ork/edit?usp=sharing";
 const ERANDIXSITEMANAGERLINK="https://docs.google.com/spreadsheets/d/18BDAlhLQIqGOZ0CA2DWs-_2fRVcEtbvit56uBZjPAfQ/edit?usp=sharing";
 const GETEMAILLINK="https://script.google.com/macros/s/AKfycbwXwz2l9e5NVZMxFjxvHAGRqbBxA7blCG0fXoNzoc658FSQj-yXCKztns4-F4r1BsNM/exec";

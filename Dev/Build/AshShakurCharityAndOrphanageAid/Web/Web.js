@@ -164,9 +164,7 @@ const MOBILEVIEW=()=>{
 
                             BOTTOMNAV("","Complaints",(ELIMS)=>{
 
-                                SERVERASSETS("Policies/Ascoa/Complain.txt",(data)=>{
-
-                                    DISPLAY(ELIMS,data);
+                                COMPLAINTSVIEW(ELIMS,ASCODATABASELINK,"","ASCOA",()=>{
 
                                 });
                             
@@ -188,9 +186,7 @@ const MOBILEVIEW=()=>{
 
                             BOTTOMNAV("","Tech Support",(ELIMS)=>{
 
-                                SERVERASSETS("Policies/Ascoa/Tech.txt",(data)=>{
-
-                                    DISPLAY(ELIMS,data);
+                                TECHSUPPORTVIEW(ELIMS,ERANDIXMAINLINK,"","Erandix",()=>{
 
                                 });
                             
@@ -1039,13 +1035,11 @@ const MOBILEVIEW=()=>{
 
                 RADIUS(ELEMENTIS,"5px");
 
-                TEXTVIEW(ELEMENTIS,"App Mode",(ELEMENTSES)=>{
+                MODETEXT(ELEMENTIS,(ELIMS)=>{
 
-                    MARGINTOP(ELEMENTSES,"2%");
+                    MARGINTOP(ELIMS,"2%");
 
-                    FONTSIZE(ELEMENTSES,"15px");
-
-                    CHANGEMODE(ELEMENTSES);
+                    FONTSIZE(ELIMS,"15px");
 
                 });
 
