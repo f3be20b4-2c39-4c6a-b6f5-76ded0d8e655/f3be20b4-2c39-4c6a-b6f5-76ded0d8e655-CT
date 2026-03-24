@@ -1444,7 +1444,7 @@ const SUBJECTSECTION=()=>{
 
                         BREAK(ELEMENTS);
 
-                        TEXTVIEW(ELEMENTS,"Inshallah To You.",(ELSE)=>{
+                        TEXTVIEW(ELEMENTS,"MAY ALLAH GRANT US EASE IN SHA ALLAH",(ELSE)=>{
 
                             COLOR(ELSE,RED);
 
