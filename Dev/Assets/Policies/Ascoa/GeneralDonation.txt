@@ -43,28 +43,28 @@
 </div>
 
 <div class="InlineView">
-    <h2 class="auto" >100 People Food Pack</h2>
+    <h2 class="auto" >100 People </h2>
     <p class="auto"  >200€</p>
 </div>
 
 <div class="InlineView">
-    <h2 class="auto" >200 People Food Pack</h2>
+    <h2 class="auto" >200 People </h2>
     <p class="auto"  >400€</p>
 </div>
 
 <div class="InlineView">
-    <h2 class="auto" >500 People Food Pack </h2>
+    <h2 class="auto" >500 People </h2>
     <p class="auto"  >1000€</p>
 </div>
 
 <div class="InlineView">
-    <h2 class="auto" >Hot Meals </h2>
+    <h2 class="auto" >Water well   </h2>
     <p class="auto"  >1200€</p>
 </div>
 
 <div class="InlineView">
     <h2 class="auto" >Orphan Feeding </h2>
-    <p class="auto"  >2000€</p>
+    <p class="auto"  >200€</p>
 </div>
 
 <div class="InlineView">
