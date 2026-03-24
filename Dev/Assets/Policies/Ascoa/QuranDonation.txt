@@ -31,7 +31,8 @@
 
 <div class="InlineView">
     <h2 class="auto" >03898300007 </h2>
-    <p class="auto" >SWIFT CODE : AFRIKA</p>
+    <p class="auto" >SWIFT CODE : AFRIUGKAXXX</p>
+    
 </div>
 
 <h1 class="Orange">For Western Union</h1>
